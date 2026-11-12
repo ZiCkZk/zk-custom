@@ -61,3 +61,9 @@ Registro de las decisiones tomadas, para saber por qué el tema es como es.
 Se elige en el asistente (`ZK-Custom.exe`), que guarda las elecciones en `config.json` → `wizard.selections` y `wizard.options`.
 
 - [ ] Elegir un tema listo o cada sección, y aplicarlo a este equipo
+
+## Contenido de terceros (noviembre 2026)
+
+- **VSThemes fuera:** no tiene API, bloquea a los bots (429) y muchos packs traen instaladores `.exe`. Descartado.
+- **Wallhaven dentro:** API pública y estable (45 peticiones por minuto sin clave). Solo `purity=100` (apto para todos) y `atleast=1920x1080`. Su filtro de color admite una lista fija de 29 colores, así que se usa el más cercano al principal de la paleta.
+- **Cursores de GitHub:** BreezeX, Notwaita, Capitaine (8 variantes) y AOSP traen versión para Windows con `install.inf`. Se lee el `.inf` sin ejecutarlo; si hay varios, se prefiere `install.inf` antes que las variantes (`Install_1x.inf`). Nunca se ejecutan `.exe` de los packs.

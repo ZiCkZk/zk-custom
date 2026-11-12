@@ -15,7 +15,7 @@ $dir = Expand-ToCache -ZipPath $zip -Name $name
 $infs = @(Get-ChildItem -LiteralPath $dir -Recurse -Filter '*.inf')
 $variant = if ($c.variant) { $c.variant } elseif ($infs | Where-Object { $_.Directory.Name -like '*Regular*' }) { 'Regular' } else { $null }
 if ($variant) { $infs = @($infs | Where-Object { $_.Directory.Name -like "*$variant*" }) }
-$inf = $infs | Sort-Object { $_.Directory.Name.Length } | Select-Object -First 1
+$inf = $infs | Sort-Object { $_.Directory.Name.Length }, { if ($_.Name -ieq 'install.inf') { 0 } else { 1 } } | Select-Object -First 1   # el install.inf principal antes que variantes (_1x)
 if (-not $inf) { throw "No se encontro ningun .inf$(if ($c.variant) { " de la variante '$($c.variant)'" }) en $name." }
 
 $s = Read-CursorInf -Path $inf.FullName

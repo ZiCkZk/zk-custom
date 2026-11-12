@@ -24,7 +24,7 @@ La primera vez que abras `ZK-Custom.exe`, Windows SmartScreen puede avisar porqu
    - **Básico:** colores de tu paleta, acento, transparencia y redondeo.
    - **Avanzado:** fondo, borde y texto por separado.
    - La vista previa dibuja la barra, el menú Inicio, las notificaciones, el Explorador, la app Configuración y la terminal con esos ajustes. Al pasar el ratón por una tarjeta se ve la captura del tema; sin ratón, el tema elegido aparece en miniatura en la esquina.
-   - **Botón Inicio:** 22 orbs dibujados para ZK-Custom (esfera de cristal, anillo neón, círculo, cuadrado redondeado, contorno y planeta), 30 orbs gamer y de cómic (corazón y espada pixel, moneda, estrella, mando, joystick, poción, escudo, dado de rol, shuriken, rayo, «POW!», «BOOM!» y «WOW!"), 4 orbs con los colores de tu paleta, tu biblioteca **Mis orbs** (importas varias imágenes de golpe; el buscador abre imágenes con fondo transparente y DeviantArt para el personaje o juego que escribas) o un orb con estados en modo avanzado. Puedes subir hasta 3 imágenes: normal, al pasar el ratón y pulsado. Admite PNG, JPG y GIF animado. También puedes ajustar el tamaño, cuánto crece y gira al pasar el ratón y la animación del GIF.
+   - **Botón Inicio:** el logo de Windows en 9 colores (rosa, morado, azul, verde...) o tu biblioteca **Mis orbs**: importas varias imágenes de golpe o buscas en DeviantArt el personaje o juego que escribas. En modo avanzado puedes crear un orb con estados: hasta 3 imágenes (normal, al pasar el ratón y pulsado) en PNG, JPG o GIF animado. También puedes ajustar el tamaño, cuánto crece y gira al pasar el ratón y la animación del GIF.
 4. Las secciones con cambios sin aplicar llevan un punto naranja. **Aplicar a mi PC** aplica todo lo pendiente de una vez y el progreso se ve en la pestaña **Registro**.
 5. **Guardar en config.json** deja tus elecciones listas para `Install.cmd`.
 
@@ -34,9 +34,9 @@ La primera vez que abras `ZK-Custom.exe`, Windows SmartScreen puede avisar porqu
 |---|---|
 | Inicio | Temas listos |
 | Colores | Paleta (25: oscuras, neón, cálidas, verdes, rojas, doradas, grises y 4 claras), día y noche automático (cambia la paleta según la hora) |
-| Escritorio | Fondo (600 en 31 categorías o una imagen tuya, también para la pantalla de bloqueo), fondo animado (6 propios con tu paleta o tu vídeo/GIF, con Lively Wallpaper), barra de tareas, tamaño de la barra, botón Inicio, reloj, menú Inicio, notificaciones |
+| Escritorio | Fondo (600 en 31 categorías, búsqueda en Wallhaven a juego con tu paleta o una imagen tuya, también para la pantalla de bloqueo), fondo animado (6 propios con tu paleta o tu vídeo/GIF, con Lively Wallpaper), barra de tareas, tamaño de la barra, botón Inicio, reloj, menú Inicio, notificaciones |
 | Ventanas | Explorador, app Configuración, efectos (cristal, acrílico, Mica), esquinas, bordes, menús contextuales |
-| Iconos y ratón | Iconos (175 packs), carpetas de colores, cursores, estela del ratón (largo, grosor y color), rectángulo de selección |
+| Iconos y ratón | Iconos (175 packs), carpetas de colores, cursores (36 packs reales y 19 dibujados), estela del ratón (largo, grosor y color), rectángulo de selección |
 | Pantalla de bloqueo | Reloj de bloqueo (10 estilos) |
 | Terminal | Fuente (22 Nerd Fonts, cada muestra dibujada con su letra real), tamaño y opacidad |
 | Detalles | Ajustes visuales nativos (menú contextual completo, extensiones, iconos del escritorio...) |
@@ -106,5 +106,6 @@ La ventana de ZK-Custom usa los colores de la paleta que elijas y cambia al mome
 
 - **DeviantArt desde la app:** en *Botón Inicio → Ajustes* escribes un personaje, juego o marca y los resultados aparecen como tarjetas. Al elegir uno se descarga, se convierte en orb y se guarda en *Mis orbs*. Las tiras clásicas de 3 estados (normal, al pasar el ratón y pulsado) se separan solas. *Mis orbs* queda solo en tu equipo y no se sube al repositorio.
 - **Convertidor:** cualquier imagen que importes se convierte en orb. Si tiene fondo transparente se respeta su forma; si no, se mete en una esfera con aro y reflejo.
+- **Wallhaven desde la app:** en *Fondo de pantalla → Ajustes* buscas fondos en Wallhaven (su API pública; solo imágenes aptas para todos y de 1920x1080 o más). El botón *A juego con mi paleta* filtra por el color de Wallhaven más parecido al principal de tu paleta. Los resultados salen en la categoría «Wallhaven» y *Más resultados* trae la siguiente página.
 - **Fondos animados y salvapantallas:** Lively Wallpaper se maneja en segundo plano, sin ventana, y arranca con Windows. El mismo fondo animado puede usarse como salvapantallas tras los minutos que elijas.
 - **Mis perfiles:** guarda tu estilo completo con un nombre, vuelve a él con un clic y expórtalo o impórtalo como archivo (`profiles\`).

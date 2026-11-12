@@ -563,7 +563,8 @@ $OptSpecs = @{
     )
     wallpaper = @(
         @{ K = 'category';              L = 'Categoría';                       T = 'category' }
-        @{ K = 'pick';                  L = 'Elegir imagen de mi equipo...';   T = 'button' }
+        @{ K = 'wallhaven';             L = 'Buscar más fondos en Wallhaven';  T = 'wallhaven' }
+        @{ K = 'pick';                L = 'Elegir imagen de mi equipo...';   T = 'button' }
         @{ K = 'wallpaper.style';       L = 'Ajuste de la imagen';             T = 'choice'; Cfg = $true; D = 'Fill'; Choices = @('Fill', 'Fit', 'Stretch', 'Center', 'Span', 'Tile') }
         @{ K = 'wallpaper.lockScreen';  L = 'Usar también en la pantalla de bloqueo'; T = 'toggle'; Cfg = $true }
     )
@@ -909,6 +910,63 @@ function Start-DeviantArtSearch([string]$Query) {
     $DaTimer.Start()
     Set-Status "Buscando «$Query» en DeviantArt..."
 }
+# ---------------- Wallhaven (API pública, solo imágenes aptas para todos) ----------------
+$WhColors = '660000 990000 cc0000 cc3333 ea4c88 993399 663399 333399 0066cc 0099cc 66cccc 77cc33 669900 336600 666600 999900 cccc33 ffff00 ffcc33 ff9900 ff6600 cc6633 996633 663300 000000 999999 cccccc ffffff 424153' -split ' '
+function Get-WallhavenColor([string]$Hex) {
+    # El color de Wallhaven más cercano al dado (su filtro solo admite esta lista fija)
+    $h = $Hex.TrimStart('#'); if ($h.Length -ne 6) { return $null }
+    $r = [Convert]::ToInt32($h.Substring(0, 2), 16); $g = [Convert]::ToInt32($h.Substring(2, 2), 16); $b = [Convert]::ToInt32($h.Substring(4, 2), 16)
+    $best = $null; $bd = [double]::MaxValue
+    foreach ($c in $WhColors) {
+        $d = [Math]::Pow(($r - [Convert]::ToInt32($c.Substring(0, 2), 16)) * 0.30, 2) + [Math]::Pow(($g - [Convert]::ToInt32($c.Substring(2, 2), 16)) * 0.59, 2) + [Math]::Pow(($b - [Convert]::ToInt32($c.Substring(4, 2), 16)) * 0.11, 2)
+        if ($d -lt $bd) { $bd = $d; $best = $c }
+    }
+    $best
+}
+$WhTimer = New-Object Windows.Threading.DispatcherTimer
+$WhTimer.Interval = [TimeSpan]::FromMilliseconds(300)
+$WhTimer.Add_Tick({
+    if (-not $State.WhJob -or -not $State.WhJob.Handle.IsCompleted) { return }
+    $WhTimer.Stop()
+    $res = $null; $err = $null
+    try { $res = $State.WhJob.Shell.EndInvoke($State.WhJob.Handle) | Select-Object -First 1 } catch { $err = $_.Exception.InnerException.Message; if (-not $err) { $err = $_.Exception.Message } }
+    $State.WhJob.Shell.Dispose(); $State.WhJob = $null
+    if ($err -or -not $res) { Set-Status "Wallhaven no respondió: $err"; return }
+    $step = $StepByKey.wallpaper; $p = Get-Palette (Get-CurrentSel)
+    [void](Get-StepItems $step); $list = $State.AllItems['wallpaper']   # la lista viva, no una copia
+    if ($State.WhPage -le 1) { foreach ($old in @($list | Where-Object { "$($_.Id)" -like 'wh-*' })) { [void]$list.Remove($old) } }
+    $at = @($list | Where-Object { "$($_.Id)" -like 'wh-*' }).Count; $n = 0
+    foreach ($w in @($res.data)) {
+        if (-not $w.path) { continue }
+        $mb = [Math]::Round([double]$w.file_size / 1MB, 1)
+        $it = [ordered]@{ id = "wh-$($w.id)"; name = "Wallhaven $($w.id)"; description = "$($w.resolution) · $mb MB · Wallhaven"; category = 'Wallhaven'
+            preview = $w.thumbs.small; previewLarge = $w.thumbs.large; reference = $w.url
+            apply = [ordered]@{ type = 'wallpaper'; url = $w.path; size = [long]$w.file_size; name = "Wallhaven $($w.id)" } }
+        $list.Insert($at + $n, (New-CardItem $step $it $p)); $n++
+    }
+    $State.WhLastPage = [int]$res.meta.last_page
+    $State.Category = 'Wallhaven'; $UI.Search.Text = ''; Update-Items; Build-Options
+    $tot = @($list | Where-Object { "$($_.Id)" -like 'wh-*' }).Count
+    Set-Status $(if ($tot) { "$tot fondos de Wallhaven (de $($res.meta.total)). Haz clic en uno para elegirlo." } else { 'Wallhaven no encontró fondos con esa búsqueda.' })
+})
+function Start-WallhavenSearch([string]$Query, [string]$Color, [int]$Page = 1) {
+    if ($State.WhJob) { return }
+    $State.WhQuery = $Query; $State.WhColor = $Color; $State.WhPage = $Page
+    $url = 'https://wallhaven.cc/api/v1/search?categories=110&purity=100&atleast=1920x1080&page=' + $Page
+    $url += $(if ($Query) { '&sorting=relevance&q=' + [uri]::EscapeDataString($Query) } else { '&sorting=toplist' })
+    if ($Color) { $url += '&colors=' + $Color }
+    $ps = [powershell]::Create()
+    [void]$ps.AddScript({
+        param($u)
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        Invoke-RestMethod $u -Headers @{ 'User-Agent' = 'Mozilla/5.0 zk-custom' } -TimeoutSec 25
+    }).AddArgument($url)
+    $State.WhJob = @{ Shell = $ps; Handle = $ps.BeginInvoke() }
+    $WhTimer.Start()
+    $txt = @(); if ($Query) { $txt += "«$Query»" }; if ($Color) { $txt += "color #$Color" }
+    Set-Status "Buscando fondos en Wallhaven $($txt -join ' + ')..."
+}
+
 function Import-DeviantArtOrb($a) {
     # Descarga la imagen elegida, la convierte y la selecciona
     $tmp = Join-Path $CacheDir ('da-' + [IO.Path]::GetRandomFileName() + '.png')
@@ -1856,6 +1914,31 @@ function Build-Options {
                 $web.Add_Click({ param($c) $txt = $c.Tag.Text.Trim(); if ($txt) { Start-Process ('https://www.deviantart.com/search?q=' + [uri]::EscapeDataString("$txt start orb")) } })
                 [void]$UI.OptsList.Children.Add($web)
             }
+            'wallhaven' {
+                [void]$UI.OptsList.Children.Add((New-Label $s.L))
+                $dp = New-Object Windows.Controls.DockPanel
+                $go = New-Object Windows.Controls.Button -Property @{ Content = 'Buscar'; Padding = '10,4' }
+                [Windows.Controls.DockPanel]::SetDock($go, 'Right'); [void]$dp.Children.Add($go)
+                $q = New-Object Windows.Controls.TextBox -Property @{ Text = $State.WhQuery; ToolTip = 'En inglés va mejor: mountains, city night, space, forest, minimal...' }
+                [void]$dp.Children.Add($q); $go.Tag = $q
+                $q.Add_KeyDown({ param($c, $e) if ($e.Key -eq 'Return') { Start-WallhavenSearch $c.Text.Trim() $null } })
+                $go.Add_Click({ param($c) Start-WallhavenSearch $c.Tag.Text.Trim() $null })
+                [void]$UI.OptsList.Children.Add($dp)
+                $wc = Get-WallhavenColor $p.primary
+                $mt = New-Object Windows.Controls.Button -Property @{ Margin = '0,6,0,0'; HorizontalAlignment = 'Left'; Padding = '8,4'; Tag = @{ Q = $q; C = $wc } }
+                $sp = New-Object Windows.Controls.StackPanel -Property @{ Orientation = 'Horizontal' }
+                [void]$sp.Children.Add((New-Object Windows.Controls.Border -Property @{ Width = 14; Height = 14; CornerRadius = 7; Margin = '0,0,6,0'; Background = (B "#$wc") }))
+                [void]$sp.Children.Add((New-Object Windows.Controls.TextBlock -Property @{ Text = 'A juego con mi paleta' }))
+                $mt.Content = $sp; $mt.ToolTip = "Fondos donde predomina #$wc, el color de Wallhaven más parecido al principal de tu paleta ($($p.primary))"
+                $mt.Add_Click({ param($c) Start-WallhavenSearch $c.Tag.Q.Text.Trim() $c.Tag.C })
+                [void]$UI.OptsList.Children.Add($mt)
+                if ($State.WhPage -and $State.WhLastPage -gt $State.WhPage -and $State.Category -eq 'Wallhaven') {
+                    $more = New-Object Windows.Controls.Button -Property @{ Content = 'Más resultados'; Margin = '0,6,0,0'; HorizontalAlignment = 'Left'; Padding = '8,4' }
+                    $more.Add_Click({ Start-WallhavenSearch $State.WhQuery $State.WhColor ($State.WhPage + 1) })
+                    [void]$UI.OptsList.Children.Add($more)
+                }
+                [void]$UI.OptsList.Children.Add((New-Object Windows.Controls.TextBlock -Property @{ Text = 'Busca en Wallhaven (solo fondos aptos para todos, 1920x1080 o más). Los resultados salen en la categoría «Wallhaven».'; Foreground = (UiB 'C_Muted'); FontSize = 11; TextWrapping = 'Wrap'; Margin = '0,4,0,0' }))
+            }
             'category' {
                 [void]$UI.OptsList.Children.Add((New-Label $s.L))
                 $cmb = New-Object Windows.Controls.ComboBox -Property @{ MaxDropDownHeight = 460; Foreground = '#1A1B26' }
@@ -2102,12 +2185,13 @@ Set-Status 'Elige un tema listo o ve sección por sección. La vista previa camb
 if ($SelfTest -and $Snapshot) {
     New-Item -ItemType Directory -Force -Path $Snapshot | Out-Null
     $Window.Left = -3000; $Window.ShowActivated = $false; $Window.Show()
-    $shots = @{}; foreach ($k in 'themes', 'daynight', 'animated', 'startbtn', 'folders') { $shots[[array]::IndexOf(@($Steps | ForEach-Object { $_.Key }), $k)] = $k }
+    $shots = @{}; foreach ($k in 'themes', 'wallpaper', 'cursors', 'animated', 'folders') { $shots[[array]::IndexOf(@($Steps | ForEach-Object { $_.Key }), $k)] = $k }
     foreach ($i in ($shots.Keys | Sort-Object)) {
         Show-Step $i
         if ($i -eq 3) { $State.Advanced = $true; $State.Config.wizard.options.taskbar = [ordered]@{ usePalette = $true; transp = 30; radius = 12 }; Build-Options; $State.Hover = Find-Item 'taskbar' 'Bubbles'; Request-Render }
         if ($shots[$i] -eq 'animated') { $UI.Items.SelectedItem = Find-Item 'animated' 'synthgrid' }
-        if ($shots[$i] -eq 'daynight') { $UI.Items.SelectedItem = Find-Item 'daynight' 'nord' }
+        if ($shots[$i] -eq 'wallpaper') { Start-WallhavenSearch '' (Get-WallhavenColor (Get-Palette (Get-CurrentSel)).primary) }
+        if ($shots[$i] -eq 'cursors') { $UI.Items.SelectedItem = Find-Item 'cursors' 'capitaine-nord' }
         if ($shots[$i] -eq 'folders') { $State.Config.folders = [ordered]@{ ([Environment]::GetFolderPath('MyDocuments')) = '#0090FF'; (Join-Path $env:USERPROFILE 'Downloads') = '#30A46C' }; Build-Folders; Request-Render }
         if ($i -eq 5) { $UI.Items.SelectedItem = Find-Item 'startbtn' 'orb-planet-morado' }
         if ($i -eq 7) { $State.Config.wizard.options.startmenu = [ordered]@{ usePalette = $true; transp = 35; radius = 16; accent = '#BB9AF7' }; $UI.Items.SelectedItem = Find-Item 'startmenu' 'WindowGlass'; Build-Options; Request-Render }

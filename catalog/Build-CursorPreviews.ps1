@@ -39,7 +39,7 @@ foreach ($c in $packs) {
         $infs = @(Get-ChildItem $dir -Recurse -Filter *.inf)
         $variant = if ($a.variant) { $a.variant } else { 'Regular' }
         $pick = @($infs | Where-Object { $_.Directory.Name -like "*$variant*" }); if (-not $pick) { $pick = $infs }
-        $inf = $pick | Sort-Object { $_.Directory.Name.Length } | Select-Object -First 1
+        $inf = $pick | Sort-Object { $_.Directory.Name.Length }, { if ($_.Name -ieq 'install.inf') { 0 } else { 1 } } | Select-Object -First 1
         $s = Read-CursorInf -Path $inf.FullName
         $files = @()
         foreach ($k in $show) {

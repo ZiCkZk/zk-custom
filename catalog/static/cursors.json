@@ -340,5 +340,245 @@
         "preview":  "previews/cursors/posy-mono-black.png",
         "previewLarge":  "previews/cursors/posy-mono-black.png",
         "previewApprox":  false
+    },
+    {
+        "id":  "breezex-dark",
+        "name":  "BreezeX Dark",
+        "description":  "Moderno estilo KDE Breeze, gris oscuro con borde claro. GPL-3.0.",
+        "reference":  "https://github.com/ful1e5/BreezeX_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/BreezeX_Cursor",
+                      "asset":  "^BreezeX-Dark-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/breezex-dark.png",
+        "previewLarge":  "previews/cursors/breezex-dark.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "breezex-black",
+        "name":  "BreezeX Black",
+        "description":  "Estilo Breeze en negro intenso.",
+        "reference":  "https://github.com/ful1e5/BreezeX_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/BreezeX_Cursor",
+                      "asset":  "^BreezeX-Black-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/breezex-black.png",
+        "previewLarge":  "previews/cursors/breezex-black.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "breezex-light",
+        "name":  "BreezeX Light",
+        "description":  "Estilo Breeze en blanco, ideal para fondos oscuros.",
+        "reference":  "https://github.com/ful1e5/BreezeX_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/BreezeX_Cursor",
+                      "asset":  "^BreezeX-Light-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/breezex-light.png",
+        "previewLarge":  "previews/cursors/breezex-light.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "notwaita-black",
+        "name":  "Notwaita Black",
+        "description":  "Inspirado en GNOME Adwaita, negro y limpio.",
+        "reference":  "https://github.com/ful1e5/notwaita-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/notwaita-cursor",
+                      "asset":  "^Notwaita-Black-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/notwaita-black.png",
+        "previewLarge":  "previews/cursors/notwaita-black.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "notwaita-gray",
+        "name":  "Notwaita Gray",
+        "description":  "Estilo Adwaita en gris suave.",
+        "reference":  "https://github.com/ful1e5/notwaita-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/notwaita-cursor",
+                      "asset":  "^Notwaita-Gray-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/notwaita-gray.png",
+        "previewLarge":  "previews/cursors/notwaita-gray.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "notwaita-white",
+        "name":  "Notwaita White",
+        "description":  "Estilo Adwaita en blanco.",
+        "reference":  "https://github.com/ful1e5/notwaita-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/notwaita-cursor",
+                      "asset":  "^Notwaita-White-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/notwaita-white.png",
+        "previewLarge":  "previews/cursors/notwaita-white.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine",
+        "name":  "Capitaine",
+        "description":  "Inspirado en macOS, negro con sombra suave. Muy popular en Linux.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors"
+                  },
+        "preview":  "previews/cursors/capitaine.png",
+        "previewLarge":  "previews/cursors/capitaine.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-white",
+        "name":  "Capitaine White",
+        "description":  "Capitaine en blanco.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors - White"
+                  },
+        "preview":  "previews/cursors/capitaine-white.png",
+        "previewLarge":  "previews/cursors/capitaine-white.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-gruvbox",
+        "name":  "Capitaine Gruvbox",
+        "description":  "Capitaine con los tonos cálidos de Gruvbox.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors (Gruvbox)"
+                  },
+        "preview":  "previews/cursors/capitaine-gruvbox.png",
+        "previewLarge":  "previews/cursors/capitaine-gruvbox.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-gruvbox-white",
+        "name":  "Capitaine Gruvbox White",
+        "description":  "Gruvbox en versión clara.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors (Gruvbox) - White"
+                  },
+        "preview":  "previews/cursors/capitaine-gruvbox-white.png",
+        "previewLarge":  "previews/cursors/capitaine-gruvbox-white.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-nord",
+        "name":  "Capitaine Nord",
+        "description":  "Capitaine con los azules fríos de Nord.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors (Nord)"
+                  },
+        "preview":  "previews/cursors/capitaine-nord.png",
+        "previewLarge":  "previews/cursors/capitaine-nord.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-nord-white",
+        "name":  "Capitaine Nord White",
+        "description":  "Nord en versión clara.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors (Nord) - White"
+                  },
+        "preview":  "previews/cursors/capitaine-nord-white.png",
+        "previewLarge":  "previews/cursors/capitaine-nord-white.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-palenight",
+        "name":  "Capitaine Palenight",
+        "description":  "Capitaine con los morados de Palenight.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors (Palenight)"
+                  },
+        "preview":  "previews/cursors/capitaine-palenight.png",
+        "previewLarge":  "previews/cursors/capitaine-palenight.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "capitaine-palenight-white",
+        "name":  "Capitaine Palenight White",
+        "description":  "Palenight en versión clara.",
+        "reference":  "https://github.com/sainnhe/capitaine-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "sainnhe/capitaine-cursors",
+                      "asset":  "^Windows\\.zip$",
+                      "variant":  "Capitaine Cursors (Palenight) - White"
+                  },
+        "preview":  "previews/cursors/capitaine-palenight-white.png",
+        "previewLarge":  "previews/cursors/capitaine-palenight-white.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "aosp",
+        "name":  "AOSP (Android)",
+        "description":  "Los cursores de Android (AOSP), redondeados y amables. GPL-3.0.",
+        "reference":  "https://github.com/Tech-Tac/aosp-cursors",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "Tech-Tac/aosp-cursors",
+                      "asset":  "^aosp-cursors-windows-1\\.3\\.1\\.zip$",
+                      "variant":  null
+                  },
+        "preview":  "previews/cursors/aosp.png",
+        "previewLarge":  "previews/cursors/aosp.png",
+        "previewApprox":  false
     }
 ]
