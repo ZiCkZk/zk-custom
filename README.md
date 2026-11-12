@@ -63,7 +63,6 @@ Personalizacion/                   (carpeta del proyecto ZK-Custom)
 ├─ catalog/
 │  ├─ Build-Catalog.ps1           lee mods de Windhawk, capturas y galerías de fondos
 │  ├─ Build-FontPreviews.ps1      dibuja la muestra de cada fuente con su letra real
-│  ├─ Build-Orbs.ps1              dibuja la galería de orbs (usa modules\OrbArt.ps1)
 │  ├─ generated/                  barra, Inicio, Explorador, notificaciones, Configuración, iconos, cursores, fondos
 │  ├─ static/                     temas listos, paletas, cursores, fuentes, efectos, esquinas, bordes, menús,
 │  │                              selección, estela, reloj, reloj de bloqueo, tamaño de barra, botón Inicio, ajustes
@@ -105,7 +104,6 @@ La ventana de ZK-Custom usa los colores de la paleta que elijas y cambia al mome
 - **Cambios por sección:** elegir algo en una sección solo marca esa sección como pendiente, y al aplicar solo se reenvían a Windhawk los mods que cambiaron. Cambiar la paleta solo vuelve a marcar las secciones donde activaste «Usar los colores de mi paleta».
 ## Orbs, fondos animados y perfiles
 
-- **Orbs propios:** 22 diseños (música, gaming y otros) en esfera 3D con reflejo, en 4 colores y con los colores de tu paleta. Se regeneran con `catalog\Build-Orbs.ps1`.
 - **DeviantArt desde la app:** en *Botón Inicio → Ajustes* escribes un personaje, juego o marca y los resultados aparecen como tarjetas. Al elegir uno se descarga, se convierte en orb y se guarda en *Mis orbs*. Las tiras clásicas de 3 estados (normal, al pasar el ratón y pulsado) se separan solas. *Mis orbs* queda solo en tu equipo y no se sube al repositorio.
 - **Convertidor:** cualquier imagen que importes se convierte en orb. Si tiene fondo transparente se respeta su forma; si no, se mete en una esfera con aro y reflejo.
 - **Fondos animados y salvapantallas:** Lively Wallpaper se maneja en segundo plano, sin ventana, y arranca con Windows. El mismo fondo animado puede usarse como salvapantallas tras los minutos que elijas.

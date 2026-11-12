@@ -20,7 +20,7 @@
                            "selection":  "palette",
                            "clock":  "seconds",
                            "fonts":  "jetbrains-mono-nf",
-                           "startbtn":  "orb-windows-paleta"
+                           "startbtn":  "accent"
                        }
     },
     {
@@ -43,7 +43,7 @@
                            "selection":  "neon",
                            "clock":  "weekday",
                            "fonts":  "martian-mono-nf",
-                           "startbtn":  "orb-equalizer-morado",
+                           "startbtn":  "purple",
                            "lockclock":  "cyberpunk"
                        }
     },
@@ -68,7 +68,7 @@
                            "selection":  "neon",
                            "clock":  "seconds",
                            "fonts":  "departure-mono-nf",
-                           "startbtn":  "orb-bolt-rojo",
+                           "startbtn":  "red",
                            "lockclock":  "cyberpunk"
                        }
     },
@@ -117,7 +117,7 @@
                            "selection":  "palette",
                            "clock":  "weekday",
                            "fonts":  "commit-mono-nf",
-                           "startbtn":  "orb-leaf-verde",
+                           "startbtn":  "green",
                            "lockclock":  "aura"
                        }
     },
@@ -141,7 +141,7 @@
                            "selection":  "rounded",
                            "clock":  "seconds",
                            "fonts":  "ibm-plex-mono-nf",
-                           "startbtn":  "orb-crystal-azul",
+                           "startbtn":  "blue",
                            "lockclock":  "flip"
                        }
     },
@@ -166,7 +166,7 @@
                            "selection":  "palette",
                            "clock":  "seconds",
                            "fonts":  "victor-mono-nf",
-                           "startbtn":  "orb-flame-rojo",
+                           "startbtn":  "red",
                            "lockclock":  "verticalImpact"
                        }
     },
@@ -191,7 +191,7 @@
                            "selection":  "neon",
                            "clock":  "seconds",
                            "fonts":  "3270-nf",
-                           "startbtn":  "orb-windows-verde",
+                           "startbtn":  "green",
                            "lockclock":  "pixel"
                        }
     },
@@ -213,7 +213,7 @@
                            "cursors":  "bibata-original-classic",
                            "trail":  "none",
                            "selection":  "rounded",
-                           "startbtn":  "orb-windows-azul",
+                           "startbtn":  "blue",
                            "tbsize":  "comfy",
                            "borders":  "none",
                            "lockclock":  "vintage",
@@ -239,7 +239,7 @@
                            "cursors":  "fuchsia-pop",
                            "trail":  "rainbow",
                            "selection":  "pill",
-                           "startbtn":  "orb-planet-morado",
+                           "startbtn":  "purple",
                            "tbsize":  "large",
                            "borders":  "accent",
                            "lockclock":  "cyberpunk",
@@ -265,7 +265,7 @@
                            "cursors":  "macos",
                            "trail":  "none",
                            "selection":  "rounded",
-                           "startbtn":  "orb-note-azul",
+                           "startbtn":  "blue",
                            "tbsize":  "large",
                            "borders":  "invisible",
                            "lockclock":  "macos",
@@ -291,7 +291,7 @@
                            "cursors":  "bibata-modern-amber",
                            "trail":  "fire",
                            "selection":  "palette",
-                           "startbtn":  "orb-flame-rojo",
+                           "startbtn":  "red",
                            "tbsize":  "none",
                            "borders":  "none",
                            "lockclock":  "verticalSegoe",
@@ -317,7 +317,7 @@
                            "cursors":  "bibata-original-amber",
                            "trail":  "fire",
                            "selection":  "palette",
-                           "startbtn":  "orb-vinyl-rojo",
+                           "startbtn":  "red",
                            "tbsize":  "compact",
                            "borders":  "accent",
                            "lockclock":  "vintage",
@@ -343,7 +343,7 @@
                            "cursors":  "bibata-modern-classic",
                            "trail":  "none",
                            "selection":  "neon",
-                           "startbtn":  "orb-star-paleta",
+                           "startbtn":  "accent",
                            "tbsize":  "comfy",
                            "borders":  "accent",
                            "lockclock":  "flip",
@@ -369,7 +369,7 @@
                            "cursors":  "google-dot-blue",
                            "trail":  "ice",
                            "selection":  "pill",
-                           "startbtn":  "orb-headphones-azul",
+                           "startbtn":  "blue",
                            "tbsize":  "comfy",
                            "borders":  "none",
                            "lockclock":  "aura",
@@ -395,7 +395,7 @@
                            "cursors":  "xcursor-pro-red",
                            "trail":  "rainbow",
                            "selection":  "neon",
-                           "startbtn":  "orb-gamepad-paleta",
+                           "startbtn":  "accent",
                            "tbsize":  "compact",
                            "borders":  "accent",
                            "lockclock":  "cyberpunk",
@@ -421,7 +421,7 @@
                            "cursors":  "banana",
                            "trail":  "rainbow",
                            "selection":  "pill",
-                           "startbtn":  "orb-star-rojo",
+                           "startbtn":  "red",
                            "tbsize":  "large",
                            "borders":  "accent",
                            "lockclock":  "verticalImpact",
