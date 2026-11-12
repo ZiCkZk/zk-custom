@@ -62,6 +62,7 @@ namespace ZK {
 Import-Module (Join-Path $Root 'modules\Core.psm1') -Force -DisableNameChecking
 Import-Module (Join-Path $Root 'modules\Windhawk.psm1') -Force -DisableNameChecking
 . (Join-Path $Root 'modules\OrbArt.ps1')
+. (Join-Path $Root 'modules\OrbPremium.ps1')
 
 # ======================================================================================
 #  Datos
@@ -88,6 +89,7 @@ if (-not (Test-Path (Join-Path $CatalogDir 'generated\wallpapers.json'))) {
 
 # Region = dónde se dibuja la captura del estilo en la vista previa
 $Steps = @(
+    @{ Key = 'profiles';      Title = 'Mis perfiles';          Group = 'Inicio';     Kind = 'profiles'; Help = 'Tus estilos guardados. Guarda el actual con un nombre en Ajustes y vuelve a él con un clic; también puedes exportarlos o importarlos como archivo.'; Opts = 'profiles' }
     @{ Key = 'themes';        Title = 'Temas listos';          Group = 'Inicio';     Kind = 'themes';  Help = 'Combinaciones completas hechas a mano. Elige una y luego ajusta lo que quieras en las demás secciones.'; Catalog = @('static\themes.json') }
     @{ Key = 'palette';       Title = 'Paleta de colores';     Group = 'Colores';    Help = 'Color de acento, bordes y colores de la terminal. Las paletas "(claro)" activan el modo claro.'; Catalog = @('static\palettes.json'); Modules = @('Theme', 'Terminal'); Restart = $true }
     @{ Key = 'daynight';      Title = 'Día y noche';           Group = 'Colores';    Help = 'Cambia tu paleta y el modo claro/oscuro solo según la hora. En Ajustes eliges a qué hora empieza el día y la noche.'; Catalog = @('static\daynight.json'); Modules = @('DayNight'); Opts = 'daynight' }
@@ -123,7 +125,7 @@ $State = @{
     RestorePointDone = $false; Loading = $false; Dirty = $false; Hover = $null; Category = 'Tokyo Night'
     Advanced = $false; Pending = New-Object System.Collections.Generic.HashSet[string]; PendingRestart = $false
 }
-foreach ($k in 'wizard', 'windhawk', 'modules', 'taskbar', 'terminal', 'wallpaper', 'theme', 'tweaks', 'meta') { if (-not $State.Config[$k]) { $State.Config[$k] = [ordered]@{} } }
+foreach ($k in 'wizard', 'windhawk', 'modules', 'taskbar', 'terminal', 'wallpaper', 'theme', 'tweaks', 'meta', 'animated') { if (-not $State.Config[$k]) { $State.Config[$k] = [ordered]@{} } }
 foreach ($k in 'selections', 'options') { if (-not $State.Config.wizard[$k]) { $State.Config.wizard[$k] = [ordered]@{} } }
 if ($null -eq $State.Config.windhawk.mods) { $State.Config.windhawk.mods = @() }
 $State.Config.windhawk.Remove('channel')
@@ -350,7 +352,7 @@ function Render-Mock($m, $p) {
             }
             $dc.DrawRoundedRectangle((B '#000000' 0.6), $null, (Rc 60 82 280 52), 8, 8)
             Txt $dc "$($m.text)" 200 88 14 '#FFFFFF' -weight 'SemiBold' -align 'Center'
-            Txt $dc 'Sin captura oficial · pulsa «Probar 20 s»' 200 110 11 '#DCE6F5' -align 'Center'
+            Txt $dc 'Sin captura oficial del autor' 200 110 11 '#DCE6F5' -align 'Center'
         }
         'default' {
             # Opción «como viene en Windows»
@@ -425,6 +427,7 @@ function Get-TrailDash($len) {
 }
 
 function Get-StepItems($step) {
+    if ($step.Key -eq 'profiles' -and -not $State.AllItems.ContainsKey('profiles')) { $State.AllItems['profiles'] = Get-ProfileItems; return $State.AllItems['profiles'] }
     if ($State.AllItems.ContainsKey($step.Key)) { return $State.AllItems[$step.Key] }
     $p = Get-Palette $null
     $list = New-Object System.Collections.Generic.List[object]
@@ -434,7 +437,10 @@ function Get-StepItems($step) {
         $data = Read-Json $path   # PS 5.1 entrega la lista como un único objeto: se recorre aquí
         foreach ($it in $data) { $list.Add((New-CardItem $step $it $p)) }
         # «Mis orbs» va justo después de las opciones de color del logo
-        if ($step.Key -eq 'startbtn' -and $rel -like '*startbutton.json') { foreach ($lo in (Get-LibraryOrbItems)) { $list.Add((New-CardItem $step $lo $p)) } }
+        if ($step.Key -eq 'startbtn' -and $rel -like '*startbutton.json') {
+            foreach ($da in @($State.DaItems)) { if ($da) { $list.Insert(0, $da) } }   # resultados de DeviantArt arriba del todo
+            foreach ($lo in (Get-LibraryOrbItems)) { $list.Add((New-CardItem $step $lo $p)) }
+        }
     }
     $State.AllItems[$step.Key] = $list
     $list
@@ -443,7 +449,7 @@ function Get-StepItems($step) {
 function New-CardItem($step, $it, $p) {
     $sw = $null; $m = $it.mock; $prev = Resolve-Img $it.preview
     if ($it.apply.type -eq 'orb') {
-        if ($it.apply.palette) { $prev = New-OrbImage -Style $it.apply.style -Color1 $p.primary -Color2 $p.highlight }
+        if ($it.apply.palette) { $prev = if ($it.apply.premium) { New-PremiumOrb -Glyph $it.apply.style -Color1 $p.primary -Color2 $p.highlight -Size 128 } else { New-OrbImage -Style $it.apply.style -Color1 $p.primary -Color2 $p.highlight } }
         elseif ($it.apply.custom) { $cf = @($State.Config.wizard.options.startbtn.customFiles); if ($cf.Count -and (Test-Path (Join-Path $Root $cf[0]))) { $prev = Join-Path $Root $cf[0] } }
     }
     if ($it.apply.type -eq 'palette') { $pl = $it.apply.palette; $sw = @($pl.base, $pl.surface, $pl.primary, $pl.secondary, $pl.highlight, $pl.text) }
@@ -514,7 +520,18 @@ $OptSpecs = @{
         @{ K = 'hoverRotation'; L = 'Girar al pasar el ratón';             T = 'slider'; D = 4; Min = -30; Max = 30; U = '°'; Adv = $true }
         @{ K = 'gifPlayback';   L = 'Animación (orbs GIF)';                T = 'choice'; D = 'hover'; Choices = @('hover', 'always', 'pressed', 'stopped'); Adv = $true }
     )
-    animated = @( @{ K = 'pickVideo'; L = 'Elegir vídeo o GIF de mi equipo...'; T = 'button' } )
+    profiles = @(
+        @{ K = 'saveProfile';   L = 'Guardar mi estilo actual como perfil...'; T = 'button' }
+        @{ K = 'exportProfile'; L = 'Exportar el perfil elegido...';           T = 'button' }
+        @{ K = 'importProfile'; L = 'Importar un perfil...';                   T = 'button' }
+        @{ K = 'deleteProfile'; L = 'Borrar el perfil elegido';                T = 'button' }
+    )
+    animated = @(
+        @{ K = 'pickVideo';             L = 'Elegir vídeo o GIF de mi equipo...';           T = 'button' }
+        @{ K = 'animated.hideLively';   L = 'Lively en segundo plano (sin ventana)';         T = 'toggle'; Cfg = $true; D = $true }
+        @{ K = 'animated.screensaver';  L = 'Usar también como salvapantallas';              T = 'toggle'; Cfg = $true; D = $false }
+        @{ K = 'animated.saverMinutes'; L = 'Salvapantallas tras';                           T = 'slider'; Cfg = $true; D = 10; Min = 1; Max = 60; U = ' min' }
+    )
     daynight = @(
         @{ K = 'dayHour';   L = 'Empieza el día a las';   T = 'slider'; D = 7;  Min = 4;  Max = 12; U = ':00' }
         @{ K = 'nightHour'; L = 'Empieza la noche a las'; T = 'slider'; D = 19; Min = 15; Max = 23; U = ':00' }
@@ -643,7 +660,7 @@ function Set-OptsFromItem($step, $item) {
 # ======================================================================================
 
 function Set-WindhawkEntry($mod, $name, $settings, [bool]$enabled = $true) {
-    if ($State.StepModsCollector) { [void]$State.StepModsCollector.Add($mod) }   # qué mods toca cada sección (para «Probar 20 s»)
+    if ($State.StepModsCollector) { [void]$State.StepModsCollector.Add($mod) }   # qué mods toca cada sección
     $mods = @($State.Config.windhawk.mods | Where-Object { $_.id -ne $mod })
     $e = [ordered]@{ id = $mod; name = $name; enabled = $enabled }
     if ($settings -and $settings.Count) { $e.settings = $settings }
@@ -695,9 +712,14 @@ function Set-SelectionCore($step, $item, [switch]$FromUser) {
                             $cfg.fonts = @($f); $cfg.terminal.font = $a.family; $cfg.modules.Fonts = $true; $cfg.modules.Terminal = $true }
         'wallpaper'       { $cfg.wallpaper.file = $null; $cfg.wallpaper.url = $a.url; $cfg.wallpaper.size = $a.size; $cfg.wallpaper.name = $a.name; $cfg.modules.Wallpaper = $true }
         'wallpaper-local' { $cfg.modules.Wallpaper = $true }
-        'animated'        { $old = $cfg.animated; $cfg.animated = [ordered]@{ style = $a.style; file = $(if ($old -and $a.style -eq 'video') { $old.file } else { $null }) }; $cfg.modules.Animated = $true }
+        'animated'        { $old = $cfg.animated; $cfg.animated = [ordered]@{ style = $a.style; file = $(if ($old -and $a.style -eq 'video') { $old.file } else { $null }); hideLively = $(if ($old -and $null -ne $old.hideLively) { $old.hideLively } else { $true }); screensaver = [bool]$old.screensaver; saverMinutes = $(if ($old.saverMinutes) { $old.saverMinutes } else { 10 }) }; $cfg.modules.Animated = $true }
         'daynight'        { $o = Get-Opts $step
                             $cfg.daynight = [ordered]@{ enabled = [bool]$a.enabled; day = $a.day; night = $a.night; dayHour = [int]$o.dayHour; nightHour = [int]$o.nightHour }; $cfg.modules.DayNight = $true }
+        'orb-da'          { $libId = Import-DeviantArtOrb $a
+                            $item = Find-Item 'startbtn' $libId
+                            if (-not $item) { Set-Status 'No se pudo convertir esa imagen.'; return }
+                            Set-OrbEntry (Get-OrbFiles $item $p) (Get-Opts $step)
+                            Set-Status "«$($a.title)» convertido y guardado en «Mis orbs». Pulsa ""Aplicar a mi PC"" para verlo en la barra." }
         'orb'             { $files = Get-OrbFiles $item $p
                             if (-not $files.normal) { Set-Status 'Sube tu imagen con «Subir mi orb...» en el panel Ajustes.'; return }
                             Set-OrbEntry $files (Get-Opts $step) }
@@ -714,7 +736,7 @@ function Get-OrbFiles($item, $p) {
     if ($a.files) { foreach ($k in 'normal', 'hover', 'pressed') { $out[$k] = $a.files[$k] } }
     elseif ($a.palette) {
         $name = "paleta-$($a.style)-$($p.primary.TrimStart('#'))$($p.highlight.TrimStart('#'))"
-        $set = Save-OrbSet -Style $a.style -Color1 $p.primary -Color2 $p.highlight -Dir (Join-Path $Root 'assets\orbs') -Name $name
+        $set = if ($a.premium) { Save-PremiumOrbSet -Glyph $a.style -Color1 $p.primary -Color2 $p.highlight -Dir (Join-Path $Root 'assets\orbs') -Name $name -Size 128 } else { Save-OrbSet -Style $a.style -Color1 $p.primary -Color2 $p.highlight -Dir (Join-Path $Root 'assets\orbs') -Name $name }
         foreach ($k in 'normal', 'hover', 'pressed') { $out[$k] = "assets/orbs/" + [IO.Path]::GetFileName($set[$k]) }
     }
     elseif ($a.custom) {
@@ -741,30 +763,162 @@ function Set-OrbEntry($files, $o) {
     Set-WindhawkEntry 'taskbar-start-button-colorizer' 'Start button colorizer' $null $false
 }
 
+# ---------------- Perfiles ----------------
+# Cada perfil es profiles\<nombre>.json con el estilo completo (config.json en ese momento).
+$ProfileDir = Join-Path $Root 'profiles'
+function Get-ProfileItems {
+    $list = New-Object System.Collections.Generic.List[object]
+    if (-not (Test-Path $ProfileDir)) { return $list }
+    $p = Get-Palette $null
+    foreach ($f in (Get-ChildItem $ProfileDir -Filter *.json | Sort-Object LastWriteTime -Descending)) {
+        try {
+            $pr = Read-Json $f.FullName
+            $sel = if ($pr.config.wizard.selections) { $pr.config.wizard.selections } else { [ordered]@{} }
+            $list.Add((New-CardItem $StepByKey.profiles ([ordered]@{ id = $f.BaseName; name = $pr.name; description = "Guardado el $($pr.created)"
+                category = 'Perfil'; selections = $sel; apply = [ordered]@{ type = 'profile'; file = $f.FullName } }) $p))
+        } catch { }
+    }
+    $list
+}
+function Save-Profile {
+    Add-Type -AssemblyName Microsoft.VisualBasic
+    $name = [Microsoft.VisualBasic.Interaction]::InputBox('Nombre para este estilo (por ejemplo: Gaming, Trabajo, Noche):', 'Guardar perfil', $State.Config.meta.name)
+    if (-not $name.Trim()) { return }
+    New-Item -ItemType Directory -Force -Path $ProfileDir | Out-Null
+    $slug = ($name -replace '[^\w\- ]', '' -replace '\s+', '-').Trim('-').ToLower(); if (-not $slug) { $slug = 'perfil' }
+    $data = [ordered]@{ name = $name.Trim(); created = (Get-Date -Format 'dd/MM/yyyy HH:mm'); config = $State.Config }
+    Write-Json $data (Join-Path $ProfileDir "$slug.json")
+    $State.AllItems.Remove('profiles'); Update-ThemeCards 'profiles'; Update-Items
+    Set-Status "Perfil «$($name.Trim())» guardado."
+}
+function Use-Profile($item) {
+    # Carga el perfil: pasa a ser tu configuración actual y se marca lo que hay que aplicar
+    $pr = Read-Json $item.Raw.apply.file
+    $before = @{}; foreach ($s in $Steps) { if ($s.Modules) { $before[$s.Key] = ConvertTo-Json $State.Config.wizard.selections[$s.Key] -Compress } }
+    $State.Config = $pr.config
+    foreach ($k in 'wizard', 'windhawk', 'modules', 'taskbar', 'terminal', 'wallpaper', 'theme', 'tweaks', 'meta', 'animated') { if (-not $State.Config[$k]) { $State.Config[$k] = [ordered]@{} } }
+    foreach ($k in 'selections', 'options') { if (-not $State.Config.wizard[$k]) { $State.Config.wizard[$k] = [ordered]@{} } }
+    # Se marcan las secciones cuya elección cambia respecto a lo que tenías
+    foreach ($s in $Steps) {
+        if (-not $s.Modules) { continue }
+        $now = ConvertTo-Json $State.Config.wizard.selections[$s.Key] -Compress
+        if ($now -ne $before[$s.Key] -or $s.Kind -in 'tweaks', 'folders') { Add-Pending $s }
+    }
+    $State.Config.wizard.selections.profiles = $item.Id
+    foreach ($k in @($State.AllItems.Keys)) { if ($k -notin 'wallpaper', 'icons', 'profiles', 'themes') { $State.AllItems.Remove($k) } }
+    $State.LocalWall = $null; $State.Dirty = $true
+    Update-UiTheme; $UI.TweaksList.Children.Clear()
+    Set-Status "Perfil «$($item.Name)» cargado. Pulsa ""Aplicar a mi PC"" para ponerlo en tu equipo."
+}
+function Export-Profile {
+    $id = $State.Config.wizard.selections.profiles; $it = Find-Item 'profiles' $id
+    if (-not $it) { Set-Status 'Elige primero un perfil de la lista.'; return }
+    $dlg = New-Object Microsoft.Win32.SaveFileDialog -Property @{ FileName = "$($it.Id).zkprofile.json"; Filter = 'Perfil de ZK-Custom|*.json' }
+    if ($dlg.ShowDialog($Window)) { Copy-Item $it.Raw.apply.file $dlg.FileName -Force; Set-Status "Perfil exportado a $($dlg.FileName)" }
+}
+function Import-Profile {
+    $dlg = New-Object Microsoft.Win32.OpenFileDialog -Property @{ Filter = 'Perfil de ZK-Custom|*.json'; Multiselect = $true }
+    if (-not $dlg.ShowDialog($Window)) { return }
+    New-Item -ItemType Directory -Force -Path $ProfileDir | Out-Null
+    $n = 0
+    foreach ($f in $dlg.FileNames) {
+        try { $pr = Read-Json $f; if (-not $pr.config) { throw 'no es un perfil' }; Copy-Item $f (Join-Path $ProfileDir ([IO.Path]::GetFileName($f) -replace '\.zkprofile', '')) -Force; $n++ }
+        catch { Set-Status "$([IO.Path]::GetFileName($f)) no es un perfil de ZK-Custom." }
+    }
+    $State.AllItems.Remove('profiles'); Update-ThemeCards 'profiles'; Update-Items
+    if ($n) { Set-Status "$n perfil(es) importados." }
+}
+function Remove-Profile {
+    $id = $State.Config.wizard.selections.profiles; $it = Find-Item 'profiles' $id
+    if (-not $it) { Set-Status 'Elige primero un perfil de la lista.'; return }
+    if ([Windows.MessageBox]::Show("¿Borrar el perfil «$($it.Name)»?", 'ZK-Custom', 'YesNo', 'Question') -ne 'Yes') { return }
+    Remove-Item $it.Raw.apply.file -Force; $State.Config.wizard.selections.Remove('profiles')
+    $State.AllItems.Remove('profiles'); Update-ThemeCards 'profiles'; Update-Items
+    Set-Status 'Perfil borrado.'
+}
+
 $OrbLibrary = Join-Path $Root 'assets\orbs\library'
 function Get-LibraryOrbItems {
     # Cada imagen de assets\orbs\library es un orb de «Mis orbs»
     if (-not (Test-Path $OrbLibrary)) { return @() }
-    foreach ($f in (Get-ChildItem $OrbLibrary -File | Where-Object { $_.Extension -match '^\.(png|jpe?g|gif|webp)$' } | Sort-Object Name)) {
+    # Cada orb son hasta 3 archivos: nombre.png, nombre-hover.png y nombre-pressed.png
+    foreach ($f in (Get-ChildItem $OrbLibrary -File | Where-Object { $_.Extension -match '^\.(png|jpe?g|gif|webp)$' -and $_.BaseName -notmatch '-(hover|pressed)$' } | Sort-Object Name)) {
         $nice = ($f.BaseName -replace '[-_]+', ' ').Trim()
-        [ordered]@{ id = "lib-$($f.Name)"; name = $(if ($nice) { $nice.Substring(0, 1).ToUpper() + $nice.Substring(1) } else { $f.Name }); description = "De tu biblioteca ($($f.Extension.TrimStart('.').ToUpper()))"
+        $files = [ordered]@{ normal = "assets/orbs/library/$($f.Name)" }
+        foreach ($st in 'hover', 'pressed') { $sf = Join-Path $OrbLibrary "$($f.BaseName)-$st$($f.Extension)"; if (Test-Path $sf) { $files[$st] = "assets/orbs/library/$($f.BaseName)-$st$($f.Extension)" } }
+        [ordered]@{ id = "lib-$($f.Name)"; name = $(if ($nice) { $nice.Substring(0, 1).ToUpper() + $nice.Substring(1) } else { $f.Name }); description = "De tu biblioteca$(if ($files.Count -gt 1) { ' · con estados' })"
             category = 'Mis orbs'; preview = "..\assets\orbs\library\$($f.Name)"
-            apply = [ordered]@{ type = 'orb'; files = [ordered]@{ normal = "assets/orbs/library/$($f.Name)" } } }
+            apply = [ordered]@{ type = 'orb'; files = $files } }
     }
 }
-function Import-OrbLibrary {
-    $dlg = New-Object Microsoft.Win32.OpenFileDialog -Property @{ Multiselect = $true; Filter = 'Imágenes|*.png;*.jpg;*.jpeg;*.gif;*.webp' }
-    if (-not $dlg.ShowDialog($Window)) { return }
+function Add-ImageToLibrary([string]$Path, [string]$Title) {
+    # Convierte la imagen en orb (recorte, aro y brillo; separa tiras de 3 estados) y la guarda en «Mis orbs»
     New-Item -ItemType Directory -Force -Path $OrbLibrary | Out-Null
+    $base = ($Title -replace '[^\w\- ]', '' -replace '\s+', '-').Trim('-'); if (-not $base) { $base = 'orb' }
+    if ($base.Length -gt 40) { $base = $base.Substring(0, 40) }
+    $name = $base; $i = 2
+    while (Test-Path (Join-Path $OrbLibrary "$name.png")) { $name = "$base-$i"; $i++ }
+    [void](ConvertTo-OrbSet -Source $Path -Dir $OrbLibrary -Name $name -Mode auto)
+    "lib-$name.png"
+}
+function Import-OrbLibrary {
+    $dlg = New-Object Microsoft.Win32.OpenFileDialog -Property @{ Multiselect = $true; Filter = 'Imágenes|*.png;*.jpg;*.jpeg;*.gif;*.webp;*.bmp' }
+    if (-not $dlg.ShowDialog($Window)) { return }
     $n = 0
-    foreach ($f in $dlg.FileNames) {
-        $base = ([IO.Path]::GetFileNameWithoutExtension($f) -replace '[^\w\- ]', '').Trim(); if (-not $base) { $base = 'orb' }
-        $ext = [IO.Path]::GetExtension($f).ToLower(); $dest = Join-Path $OrbLibrary "$base$ext"; $i = 2
-        while (Test-Path $dest) { $dest = Join-Path $OrbLibrary "$base-$i$ext"; $i++ }
-        Copy-Item $f $dest; $n++
-    }
+    foreach ($f in $dlg.FileNames) { try { [void](Add-ImageToLibrary $f ([IO.Path]::GetFileNameWithoutExtension($f))); $n++ } catch { Set-Status "No se pudo convertir $([IO.Path]::GetFileName($f)): $($_.Exception.Message)" } }
     $State.AllItems.Remove('startbtn'); $UI.Search.Text = ''; Update-Items
-    Set-Status "$n orb(s) añadidos a «Mis orbs». Elige uno y pulsa ""Aplicar a mi PC""."
+    Set-Status "$n orb(s) convertidos y añadidos a «Mis orbs». Elige uno y pulsa ""Aplicar a mi PC""."
+}
+
+# ---------------- Explorador de DeviantArt ----------------
+# Busca en la web pública de DeviantArt y muestra los resultados como tarjetas; al elegir uno se descarga
+# (API pública oEmbed), se convierte en orb y se guarda solo en tu biblioteca local.
+$DaTimer = New-Object Windows.Threading.DispatcherTimer
+$DaTimer.Interval = [TimeSpan]::FromMilliseconds(400)
+$DaTimer.Add_Tick({
+    if (-not $State.DaJob -or -not $State.DaJob.Handle.IsCompleted) { return }
+    $DaTimer.Stop()
+    $res = @(); try { $res = @($State.DaJob.Shell.EndInvoke($State.DaJob.Handle)) } catch { }
+    $State.DaJob.Shell.Dispose(); $State.DaJob = $null
+    $p = Get-Palette (Get-CurrentSel)
+    $State.DaItems = @(foreach ($r in $res) { if ($r.url) {
+        New-CardItem $StepByKey.startbtn ([ordered]@{ id = "da-$($r.id)"; name = $r.title; description = "DeviantArt · $($r.author)"; category = 'DeviantArt'
+            preview = $r.thumb; previewLarge = $r.url; reference = $r.link; apply = [ordered]@{ type = 'orb-da'; url = $r.url; title = $r.title } }) $p } })
+    $State.AllItems.Remove('startbtn'); $UI.Search.Text = ''; Update-Items
+    Set-Status $(if ($State.DaItems.Count) { "$($State.DaItems.Count) resultados de DeviantArt (arriba). Haz clic en uno para convertirlo y añadirlo a «Mis orbs»." } else { 'DeviantArt no devolvió resultados para esa búsqueda.' })
+})
+function Start-DeviantArtSearch([string]$Query) {
+    if ($State.DaJob) { return }
+    $ps = [powershell]::Create()
+    [void]$ps.AddScript({
+        param($q)
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        $h = @{ 'User-Agent' = 'Mozilla/5.0 zk-custom' }
+        $page = (Invoke-WebRequest ('https://www.deviantart.com/search?q=' + [uri]::EscapeDataString($q)) -UseBasicParsing -Headers $h -TimeoutSec 25).Content
+        $links = [regex]::Matches($page, 'https://www\.deviantart\.com/([\w-]+)/art/[\w-]+-(\d+)') | ForEach-Object { $_.Value } | Select-Object -Unique | Select-Object -First 24
+        foreach ($l in $links) {
+            try {
+                $o = Invoke-RestMethod ('https://backend.deviantart.com/oembed?url=' + [uri]::EscapeDataString($l)) -Headers $h -TimeoutSec 15
+                if ($o.type -eq 'photo' -and $o.url) {
+                    [pscustomobject]@{ id = ($l -replace '.*-(\d+)$', '$1'); title = $o.title; author = $o.author_name; link = $l; url = $o.url; thumb = $(if ($o.thumbnail_url) { $o.thumbnail_url } else { $o.url }) }
+                }
+            } catch { }
+        }
+    }).AddArgument($Query)
+    $State.DaJob = @{ Shell = $ps; Handle = $ps.BeginInvoke() }
+    $DaTimer.Start()
+    Set-Status "Buscando «$Query» en DeviantArt..."
+}
+function Import-DeviantArtOrb($a) {
+    # Descarga la imagen elegida, la convierte y la selecciona
+    $tmp = Join-Path $CacheDir ('da-' + [IO.Path]::GetRandomFileName() + '.png')
+    try {
+        Set-Status "Descargando y convirtiendo «$($a.title)»..."; $Window.Dispatcher.Invoke([Action]{}, 'Render')
+        Invoke-WebRequest $a.url -OutFile $tmp -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0 zk-custom' } -TimeoutSec 30
+        $id = Add-ImageToLibrary $tmp $a.title
+    } finally { Remove-Item $tmp -Force -ErrorAction SilentlyContinue }
+    $State.AllItems.Remove('startbtn')
+    $id
 }
 function Remove-LibraryOrb {
     $id = "$($State.Config.wizard.selections.startbtn)"
@@ -1436,7 +1590,6 @@ $XamlText = @'
         <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
           <Button x:Name="BtnUndo" Content="Deshacer último cambio" IsEnabled="False"/>
           <Button x:Name="BtnSave" Content="Guardar en config.json"/>
-          <Button x:Name="BtnTry" Content="Probar 20 s" ToolTip="Aplica solo lo elegido en esta sección, espera 20 segundos y lo deshace solo"/>
           <Button x:Name="BtnApply" Content="Aplicar a mi PC" Style="{StaticResource Primary}" Padding="20,8"/>
         </StackPanel>
         <TextBlock x:Name="Status" VerticalAlignment="Center" Foreground="#9AA5CE" TextTrimming="CharacterEllipsis"/>
@@ -1493,7 +1646,7 @@ function Set-Res($el, $prop, [string]$key) { $el.SetResourceReference($prop, $ke
 function UiB([string]$key) { $Window.Resources[$key] }
 $UI = @{}
 foreach ($n in 'BtnCatalog','WhStatus','StepList','Preview','PreviewLabel','StepTitle','StepHelp','SearchRow','Search','Count','Items','TweaksPanel','TweaksList','Summary',
-               'TabOpts','TabLog','OptsPane','ModeBar','ModeBasic','ModeAdv','OptsList','LogPane','Log','BtnUndo','BtnSave','BtnApply','BtnTry','Status') { $UI[$n] = $Window.FindName($n) }
+               'TabOpts','TabLog','OptsPane','ModeBar','ModeBasic','ModeAdv','OptsList','LogPane','Log','BtnUndo','BtnSave','BtnApply','Status') { $UI[$n] = $Window.FindName($n) }
 
 function Set-Status($text) { $UI.Status.Text = $text }
 function Show-Tab([string]$t) {
@@ -1516,7 +1669,7 @@ $RenderTimer = New-Object Windows.Threading.DispatcherTimer
 $RenderTimer.Interval = [TimeSpan]::FromMilliseconds(90)
 $RenderTimer.Add_Tick({
     $RenderTimer.Stop()
-    try { Update-Preview; if ($Steps[$State.Index].Kind -eq 'themes') { Update-ThemeCards } }
+    try { Update-Preview; if ($Steps[$State.Index].Kind -in 'themes', 'profiles') { Update-ThemeCards $Steps[$State.Index].Key } }
     catch { Set-Status "No se pudo dibujar la vista previa: $($_.Exception.Message)" }
 })
 function Request-Render { $RenderTimer.Stop(); $RenderTimer.Start() }
@@ -1525,9 +1678,9 @@ function Update-Preview {
     $step = $Steps[$State.Index]
     $ov = @{}
     $State.HoverStep = $null
-    if ($State.Hover -and $step.Kind -ne 'themes') { $ov[$step.Key] = $State.Hover }
-    if ($step.Kind -eq 'themes') {
-        $t = if ($State.Hover) { $State.Hover } else { Find-Item 'themes' $State.Config.wizard.selections.themes }
+    if ($State.Hover -and $step.Kind -notin 'themes', 'profiles') { $ov[$step.Key] = $State.Hover }
+    if ($step.Kind -in 'themes', 'profiles') {
+        $t = if ($State.Hover) { $State.Hover } else { Find-Item $step.Key $State.Config.wizard.selections[$step.Key] }
         if ($t) { foreach ($k in $t.Raw.selections.Keys) { $it = Find-Item $k $t.Raw.selections[$k]; if ($it) { $ov[$k] = $it } } }
     }
     $sel = Get-CurrentSel $ov
@@ -1539,9 +1692,9 @@ function Update-Preview {
 }
 
 $ThemeImgs = @{}
-function Update-ThemeCards {
-    # Cada tema se dibuja con el mismo escritorio simulado; se crean tarjetas nuevas para que WPF las repinte
-    foreach ($it in (Get-StepItems $StepByKey.themes)) {
+function Update-ThemeCards([string]$Key = 'themes') {
+    # Cada tema o perfil se dibuja con el mismo escritorio simulado
+    foreach ($it in (Get-StepItems $StepByKey[$Key])) {
         $ov = @{}; foreach ($k in $it.Raw.selections.Keys) { $x = Find-Item $k $it.Raw.selections[$k]; if ($x) { $ov[$k] = $x } }
         $it.Preview = Render-Desktop (Get-CurrentSel $ov) '' 0.5
     }
@@ -1645,6 +1798,7 @@ function Build-Options {
     foreach ($s in $specs) {
         if ($s.Adv -and -not $State.Advanced) { continue }
         $val = if ($s.Cfg) { Get-CfgValue $s.K } else { $o[$s.K] }
+        if ($null -eq $val -and $null -ne $s.D) { $val = $s.D }
         switch ($s.T) {
             'toggle' {
                 $cb = New-Object Windows.Controls.CheckBox -Property @{ Content = $s.L; Margin = '0,10,0,0'; Tag = $s }
@@ -1694,12 +1848,13 @@ function Build-Options {
                 [Windows.Controls.DockPanel]::SetDock($go, 'Right'); [void]$dp.Children.Add($go)
                 $q = New-Object Windows.Controls.TextBox -Property @{ Text = $State.OrbQuery; ToolTip = 'Por ejemplo: Zelda, Halo, Sonic, Hollow Knight' }
                 [void]$dp.Children.Add($q); $go.Tag = $q
-                $go.Add_Click({ param($c) $txt = $c.Tag.Text.Trim(); if (-not $txt) { return }; $State.OrbQuery = $txt
-                    # Imágenes con fondo transparente (Google) y la comunidad de orbs de DeviantArt
-                    Start-Process ('https://www.google.com/search?tbm=isch&tbs=ic:trans&q=' + [uri]::EscapeDataString("$txt start orb png"))
-                    Start-Process ('https://www.deviantart.com/search?q=' + [uri]::EscapeDataString("$txt start orb")) })
+                $q.Add_KeyDown({ param($c, $e) if ($e.Key -eq 'Return') { $txt = $c.Text.Trim(); if ($txt) { $State.OrbQuery = $txt; Start-DeviantArtSearch "$txt start orb" } } })
+                $go.Add_Click({ param($c) $txt = $c.Tag.Text.Trim(); if (-not $txt) { return }; $State.OrbQuery = $txt; Start-DeviantArtSearch "$txt start orb" })
                 [void]$UI.OptsList.Children.Add($dp)
-                [void]$UI.OptsList.Children.Add((New-Object Windows.Controls.TextBlock -Property @{ Text = 'Descarga los que te gusten (mejor PNG cuadrado con fondo transparente) y añádelos con el botón de abajo. Quedan guardados en «Mis orbs».'; Foreground = (UiB 'C_Muted'); FontSize = 11; TextWrapping = 'Wrap'; Margin = '0,4,0,0' }))
+                [void]$UI.OptsList.Children.Add((New-Object Windows.Controls.TextBlock -Property @{ Text = 'Busca en DeviantArt sin salir de ZK-Custom: los resultados salen arriba como tarjetas. Al hacer clic en uno se descarga, se convierte en orb (con sus 3 estados si los trae) y se guarda en «Mis orbs», solo en tu equipo.'; Foreground = (UiB 'C_Muted'); FontSize = 11; TextWrapping = 'Wrap'; Margin = '0,4,0,0' }))
+                $web = New-Object Windows.Controls.Button -Property @{ Content = 'Abrir la búsqueda en el navegador'; Margin = '0,8,0,0'; HorizontalAlignment = 'Left'; Tag = $q }
+                $web.Add_Click({ param($c) $txt = $c.Tag.Text.Trim(); if ($txt) { Start-Process ('https://www.deviantart.com/search?q=' + [uri]::EscapeDataString("$txt start orb")) } })
+                [void]$UI.OptsList.Children.Add($web)
             }
             'category' {
                 [void]$UI.OptsList.Children.Add((New-Label $s.L))
@@ -1711,7 +1866,7 @@ function Build-Options {
             }
             'button' {
                 $btn = New-Object Windows.Controls.Button -Property @{ Content = $s.L; Margin = '0,14,0,0'; HorizontalAlignment = 'Left'; Tag = $s.K }
-                $btn.Add_Click({ param($c) switch ($c.Tag) { 'uploadOrb' { Select-CustomOrb } 'importOrbs' { Import-OrbLibrary } 'removeOrb' { Remove-LibraryOrb } 'pickVideo' { Select-AnimatedVideo } default { Select-LocalWallpaper } } })
+                $btn.Add_Click({ param($c) switch ($c.Tag) { 'uploadOrb' { Select-CustomOrb } 'importOrbs' { Import-OrbLibrary } 'removeOrb' { Remove-LibraryOrb } 'pickVideo' { Select-AnimatedVideo } 'saveProfile' { Save-Profile } 'exportProfile' { Export-Profile } 'importProfile' { Import-Profile } 'deleteProfile' { Remove-Profile } default { Select-LocalWallpaper } } })
                 if ($s.K -eq 'removeOrb' -and "$($State.Config.wizard.selections.startbtn)" -notlike 'lib-*') { continue }
                 if ($s.K -eq 'uploadOrb') {
                     [void]$UI.OptsList.Children.Add($btn)
@@ -1757,7 +1912,7 @@ function Show-Step([int]$i) {
     $UI.SearchRow.Visibility   = $(if ($isList -and $step.Kind -ne 'themes') { 'Visible' } else { 'Collapsed' })
     $UI.TweaksPanel.Visibility = $(if ($step.Kind -in 'tweaks', 'folders') { 'Visible' } else { 'Collapsed' })
     $UI.Summary.Visibility     = $(if ($step.Kind -eq 'summary') { 'Visible' } else { 'Collapsed' })
-    if ($isList) { $UI.Search.Text = ''; if ($step.Kind -eq 'themes') { Update-ThemeCards }; Update-Items }
+    if ($isList) { $UI.Search.Text = ''; if ($step.Kind -in 'themes', 'profiles') { Update-ThemeCards $step.Key }; Update-Items }
     if ($step.Kind -eq 'tweaks') { Build-Tweaks }
     if ($step.Kind -eq 'folders') { Build-Folders }
     if ($step.Kind -eq 'summary') { Update-Summary }
@@ -1799,24 +1954,11 @@ $Timer.Add_Tick({
         $Timer.Stop()
         $code = $State.Proc.ExitCode; $State.Proc = $null
         $failed = $UI.Log.Text -match '\[XX\]'
-        $ok = ($code -eq 0 -and -not $failed)
-        if ($State.TryPhase -eq 'applying') {
-            # «Probar 20 s»: aplicado; empieza la cuenta atrás
-            if ($ok) { $State.TryPhase = 'counting'; $State.TrySeconds = 20; $UI.BtnTry.Content = 'Me lo quedo'; $TryTimer.Start() }
-            else { $State.TryPhase = $null }
-        } elseif ($State.TryPhase -eq 'reverting') {
-            Add-Pending $StepByKey[$State.TryStep]
-            foreach ($m in @($State.StepMods[$State.TryStep])) { $State.AppliedMods.Remove($m) }
-            $State.TryPhase = $null; $UI.BtnTry.Content = 'Probar 20 s'
-            $State.Undoing = $false
-            Set-Status 'Prueba terminada: tu PC volvió a como estaba. Si te gustó, pulsa "Aplicar a mi PC".'
-            foreach ($b in 'BtnApply', 'BtnCatalog', 'BtnTry') { $UI[$b].IsEnabled = $true }
-            $UI.BtnUndo.IsEnabled = $false; Update-StepList; return
-        } elseif (-not $State.Undoing -and $code -eq 0) { $State.Pending.Clear(); if ($State.ApplyingMods) { $State.AppliedMods = $State.ApplyingMods } }
+        if (-not $State.Undoing -and $code -eq 0) { $State.Pending.Clear(); if ($State.ApplyingMods) { $State.AppliedMods = $State.ApplyingMods } }
         if ($State.Undoing) { $State.AppliedMods = @{} }   # tras deshacer, la próxima vez se reenvía todo
         $State.Undoing = $false
-        Set-Status $(if ($code -ne 0 -or $failed) { 'Terminado con errores: revisa el Registro (líneas [XX]).' } elseif ($State.TryPhase -eq 'counting') { "Probando «$(Get-SelectionName $StepByKey[$State.TryStep])»: se deshace en 20 s. Pulsa ""Me lo quedo"" para conservarlo." } else { 'Listo. Si algo no te gusta, pulsa "Deshacer último cambio".' })
-        foreach ($b in 'BtnApply', 'BtnCatalog', 'BtnTry') { $UI[$b].IsEnabled = $true }
+        Set-Status $(if ($code -ne 0 -or $failed) { 'Terminado con errores: revisa el Registro (líneas [XX]).' } else { 'Listo. Si algo no te gusta, pulsa "Deshacer último cambio".' })
+        foreach ($b in 'BtnApply', 'BtnCatalog') { $UI[$b].IsEnabled = $true }
         $UI.BtnUndo.IsEnabled = [bool]$State.LastBackup
         Update-WindhawkStatus; Update-StepList
     }
@@ -1829,7 +1971,7 @@ function Start-Run([string[]]$Modules, [bool]$Restart, [string]$Label, $OnlyMods
     # Solo se envían a Windhawk los mods que cambiaron desde la última vez que aplicaste
     $now = Get-ModsPrint
     $changed = @($now.Keys | Where-Object { $now[$_] -ne $State.AppliedMods[$_] })
-    if ($null -ne $OnlyMods) { $changed = @($OnlyMods) }   # «Probar 20 s»: solo los mods de esa sección
+    if ($null -ne $OnlyMods) { $changed = @($OnlyMods) }
     $State.Config.windhawk.applyOnly = $changed
     Write-Json $State.Config $tmp
     $State.Config.windhawk.Remove('applyOnly')
@@ -1872,7 +2014,9 @@ $UI.ModeAdv.Add_Click({ $State.Advanced = $true; $UI.ModeBasic.IsChecked = $fals
 $UI.Items.Add_SelectionChanged({
     if ($State.Loading -or -not $UI.Items.SelectedItem) { return }
     $step = $Steps[$State.Index]; $it = $UI.Items.SelectedItem
-    if ($step.Kind -eq 'themes') {
+    if ($step.Kind -eq 'profiles') {
+        Use-Profile $it
+    } elseif ($step.Kind -eq 'themes') {
         foreach ($k in $it.Raw.selections.Keys) { $x = Find-Item $k $it.Raw.selections[$k]; if ($x) { Set-Selection $StepByKey[$k] $x -FromUser } }
         $State.Config.wizard.selections.themes = $it.Id
         Update-DependentSteps; Update-UiTheme; $UI.TweaksList.Children.Clear()
@@ -1909,34 +2053,8 @@ $UI.BtnApply.Add_Click({
     $restart = [bool](@($steps | Where-Object { $_.Restart }).Count)
     Start-Run $mods $restart 'aplicar'
 })
-$UI.BtnUndo.Add_Click({ if ($State.TryPhase -eq 'counting') { $TryTimer.Stop(); $State.TryPhase = 'reverting' }; Start-Undo })
+$UI.BtnUndo.Add_Click({ Start-Undo })
 
-# ---------------- Probar 20 s ----------------
-$TryTimer = New-Object Windows.Threading.DispatcherTimer
-$TryTimer.Interval = [TimeSpan]::FromSeconds(1)
-$TryTimer.Add_Tick({
-    $State.TrySeconds--
-    if ($State.TrySeconds -gt 0) {
-        Set-Status "Probando «$(Get-SelectionName $StepByKey[$State.TryStep])»: se deshace en $($State.TrySeconds) s. Pulsa ""Me lo quedo"" para conservarlo."
-    } else { $TryTimer.Stop(); $State.TryPhase = 'reverting'; Start-Undo }
-})
-$UI.BtnTry.Add_Click({
-    if ($State.TryPhase -eq 'counting') {
-        # Me lo quedo: se conserva lo probado
-        $TryTimer.Stop(); $State.TryPhase = $null; $UI.BtnTry.Content = 'Probar 20 s'
-        [void]$State.Pending.Remove($State.TryStep)
-        $now = Get-ModsPrint; foreach ($m in @($State.StepMods[$State.TryStep])) { $State.AppliedMods[$m] = $now[$m] }
-        Update-StepList; Set-Status 'Te lo quedas: aplicado a tu PC.'; return
-    }
-    if ($State.Proc) { return }
-    $step = $Steps[$State.Index]
-    if (-not $step.Modules -or $step.Kind -in 'summary', 'themes') { Set-Status 'Elige una sección concreta (barra, iconos, cursores...) para probarla.'; return }
-    if (-not $State.Pending.Contains($step.Key)) { Set-Status 'Elige primero una opción distinta de la que ya tienes aplicada.'; return }
-    $State.TryStep = $step.Key; $State.TryPhase = 'applying'
-    $only = if ($State.StepMods -and $State.StepMods.ContainsKey($step.Key)) { @($State.StepMods[$step.Key]) } else { @() }
-    $UI.BtnTry.IsEnabled = $false
-    Start-Run @($step.Modules) ([bool]$step.Restart) "prueba-$($step.Key)" $only
-})
 $UI.BtnSave.Add_Click({
     $cfgPath = Join-Path $Root 'config.json'
     if (Test-Path $cfgPath) { Copy-Item $cfgPath (Join-Path $CacheDir 'config.anterior.json') -Force }

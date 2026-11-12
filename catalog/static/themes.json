@@ -20,7 +20,7 @@
                            "selection":  "palette",
                            "clock":  "seconds",
                            "fonts":  "jetbrains-mono-nf",
-                           "startbtn":  "orb-glass-paleta"
+                           "startbtn":  "orb-windows-paleta"
                        }
     },
     {
@@ -43,7 +43,7 @@
                            "selection":  "neon",
                            "clock":  "weekday",
                            "fonts":  "martian-mono-nf",
-                           "startbtn":  "orb-neon-rosa",
+                           "startbtn":  "orb-equalizer-morado",
                            "lockclock":  "cyberpunk"
                        }
     },
@@ -68,7 +68,7 @@
                            "selection":  "neon",
                            "clock":  "seconds",
                            "fonts":  "departure-mono-nf",
-                           "startbtn":  "orb-neon-dorado",
+                           "startbtn":  "orb-bolt-rojo",
                            "lockclock":  "cyberpunk"
                        }
     },
@@ -117,7 +117,7 @@
                            "selection":  "palette",
                            "clock":  "weekday",
                            "fonts":  "commit-mono-nf",
-                           "startbtn":  "orb-squircle-verde",
+                           "startbtn":  "orb-leaf-verde",
                            "lockclock":  "aura"
                        }
     },
@@ -141,7 +141,7 @@
                            "selection":  "rounded",
                            "clock":  "seconds",
                            "fonts":  "ibm-plex-mono-nf",
-                           "startbtn":  "orb-glass-cian",
+                           "startbtn":  "orb-crystal-azul",
                            "lockclock":  "flip"
                        }
     },
@@ -166,7 +166,7 @@
                            "selection":  "palette",
                            "clock":  "seconds",
                            "fonts":  "victor-mono-nf",
-                           "startbtn":  "orb-glass-rojo",
+                           "startbtn":  "orb-flame-rojo",
                            "lockclock":  "verticalImpact"
                        }
     },
@@ -191,7 +191,7 @@
                            "selection":  "neon",
                            "clock":  "seconds",
                            "fonts":  "3270-nf",
-                           "startbtn":  "orb-neon-verde",
+                           "startbtn":  "orb-windows-verde",
                            "lockclock":  "pixel"
                        }
     },
@@ -213,7 +213,7 @@
                            "cursors":  "bibata-original-classic",
                            "trail":  "none",
                            "selection":  "rounded",
-                           "startbtn":  "orb-glass-azul",
+                           "startbtn":  "orb-windows-azul",
                            "tbsize":  "comfy",
                            "borders":  "none",
                            "lockclock":  "vintage",
@@ -265,7 +265,7 @@
                            "cursors":  "macos",
                            "trail":  "none",
                            "selection":  "rounded",
-                           "startbtn":  "orb-squircle-azul",
+                           "startbtn":  "orb-note-azul",
                            "tbsize":  "large",
                            "borders":  "invisible",
                            "lockclock":  "macos",
@@ -291,7 +291,7 @@
                            "cursors":  "bibata-modern-amber",
                            "trail":  "fire",
                            "selection":  "palette",
-                           "startbtn":  "orb-glass-rojo",
+                           "startbtn":  "orb-flame-rojo",
                            "tbsize":  "none",
                            "borders":  "none",
                            "lockclock":  "verticalSegoe",
@@ -317,7 +317,7 @@
                            "cursors":  "bibata-original-amber",
                            "trail":  "fire",
                            "selection":  "palette",
-                           "startbtn":  "orb-outline-dorado",
+                           "startbtn":  "orb-vinyl-rojo",
                            "tbsize":  "compact",
                            "borders":  "accent",
                            "lockclock":  "vintage",
@@ -343,7 +343,7 @@
                            "cursors":  "bibata-modern-classic",
                            "trail":  "none",
                            "selection":  "neon",
-                           "startbtn":  "orb-glass-dorado",
+                           "startbtn":  "orb-star-paleta",
                            "tbsize":  "comfy",
                            "borders":  "accent",
                            "lockclock":  "flip",
@@ -369,7 +369,7 @@
                            "cursors":  "google-dot-blue",
                            "trail":  "ice",
                            "selection":  "pill",
-                           "startbtn":  "orb-neon-cian",
+                           "startbtn":  "orb-headphones-azul",
                            "tbsize":  "comfy",
                            "borders":  "none",
                            "lockclock":  "aura",
@@ -395,7 +395,7 @@
                            "cursors":  "xcursor-pro-red",
                            "trail":  "rainbow",
                            "selection":  "neon",
-                           "startbtn":  "orb-gamepad-negro",
+                           "startbtn":  "orb-gamepad-paleta",
                            "tbsize":  "compact",
                            "borders":  "accent",
                            "lockclock":  "cyberpunk",
@@ -421,7 +421,7 @@
                            "cursors":  "banana",
                            "trail":  "rainbow",
                            "selection":  "pill",
-                           "startbtn":  "orb-pow-amarillo",
+                           "startbtn":  "orb-star-rojo",
                            "tbsize":  "large",
                            "borders":  "accent",
                            "lockclock":  "verticalImpact",

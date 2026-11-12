@@ -102,5 +102,11 @@ La ventana de ZK-Custom usa los colores de la paleta que elijas y cambia al mome
 ## Vistas previas y pruebas
 
 - **Todas las opciones tienen vista previa.** Los 175 packs de iconos muestran sus iconos reales, extraídos del propio pack con `catalog\Build-IconPreviews.ps1`. Los cursores muestran sus punteros reales sobre fondo oscuro y claro (`catalog\Build-CursorPreviews.ps1`), y los dibujados por el mod se recrean con sus colores y brillo. Las opciones por defecto se muestran como «Como viene en Windows».
-- **Probar 20 s:** aplica solo lo elegido en la sección actual, cuenta atrás y lo deshace solo. Pulsa **Me lo quedo** para conservarlo. Sirve para los pocos temas de Windhawk que no publican captura.
 - **Cambios por sección:** elegir algo en una sección solo marca esa sección como pendiente, y al aplicar solo se reenvían a Windhawk los mods que cambiaron. Cambiar la paleta solo vuelve a marcar las secciones donde activaste «Usar los colores de mi paleta».
+## Orbs, fondos animados y perfiles
+
+- **Orbs propios:** 22 diseños (música, gaming y otros) en esfera 3D con reflejo, en 4 colores y con los colores de tu paleta. Se regeneran con `catalog\Build-Orbs.ps1`.
+- **DeviantArt desde la app:** en *Botón Inicio → Ajustes* escribes un personaje, juego o marca y los resultados aparecen como tarjetas. Al elegir uno se descarga, se convierte en orb y se guarda en *Mis orbs*. Las tiras clásicas de 3 estados (normal, al pasar el ratón y pulsado) se separan solas. *Mis orbs* queda solo en tu equipo y no se sube al repositorio.
+- **Convertidor:** cualquier imagen que importes se convierte en orb. Si tiene fondo transparente se respeta su forma; si no, se mete en una esfera con aro y reflejo.
+- **Fondos animados y salvapantallas:** Lively Wallpaper se maneja en segundo plano, sin ventana, y arranca con Windows. El mismo fondo animado puede usarse como salvapantallas tras los minutos que elijas.
+- **Mis perfiles:** guarda tu estilo completo con un nombre, vuelve a él con un clic y expórtalo o impórtalo como archivo (`profiles\`).

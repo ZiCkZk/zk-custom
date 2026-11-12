@@ -7,3 +7,9 @@ cache/
 
 # Orbs generados con tu paleta (se regeneran al elegirlos)
 assets/orbs/paleta-*
+
+# Tu biblioteca de orbs (imagenes de otros artistas): solo en tu equipo
+assets/orbs/library/
+assets/orbs/mio-*
+# Videos propios para fondos animados
+assets/animated/
