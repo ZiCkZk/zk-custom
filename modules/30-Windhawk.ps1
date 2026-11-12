@@ -5,6 +5,12 @@ param($Config, $Root)
 
 $ctx  = Get-ZKContext
 $mods = @($Config.windhawk.mods) | Where-Object { $_ -and $_.id }
+# El asistente indica que mods cambiaron; Install.cmd (sin applyOnly) los aplica todos
+if ($null -ne $Config.windhawk.applyOnly) {
+    $only = @($Config.windhawk.applyOnly)
+    $mods = @($mods | Where-Object { $_.id -in $only })
+    if (-not $mods) { Write-Step 'Ningun mod de Windhawk ha cambiado' -Level Skip; return }
+}
 if (-not $mods) { Write-Step 'No hay mods de Windhawk configurados' -Level Skip; return }
 $wanted = @($mods | Where-Object { $null -eq $_.enabled -or $_.enabled })
 

@@ -1,66 +1,344 @@
 [
-  { "id": "none", "name": "Cursores de Windows", "description": "Se mantienen los cursores actuales.", "preview": null, "apply": { "type": "cursor-none" } },
-  { "id": "bibata-modern-ice", "name": "Bibata Modern Ice", "description": "Blanco, moderno y con puntas redondeadas. Código abierto (GPL-3.0).",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F56e7e67a-cf77-407c-871c-f663a93508f7&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F56e7e67a-cf77-407c-871c-f663a93508f7&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Modern-Ice-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "bibata-modern-classic", "name": "Bibata Modern Classic", "description": "Negro, moderno y con puntas redondeadas. Código abierto (GPL-3.0).",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F04df0fbe-36fc-47bd-ad0a-c70eaea871f3&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F04df0fbe-36fc-47bd-ad0a-c70eaea871f3&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Modern-Classic-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "bibata-modern-amber", "name": "Bibata Modern Amber", "description": "Ámbar cálido, moderno y redondeado. Código abierto (GPL-3.0).",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2Fd64d75e5-3ac9-45f3-8afe-e92719fd48d1&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2Fd64d75e5-3ac9-45f3-8afe-e92719fd48d1&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Modern-Amber-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "bibata-original-ice", "name": "Bibata Original Ice", "description": "Blanco con puntas afiladas (la versión clásica de Bibata).",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2Fc64f45d6-cd8d-46e6-8386-e2f3b7012db7&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2Fc64f45d6-cd8d-46e6-8386-e2f3b7012db7&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Original-Ice-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "bibata-original-classic", "name": "Bibata Original Classic", "description": "Negro con puntas afiladas.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2Ffb4cac21-e8a8-46e9-9ce2-688f35bbcbaa&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2Ffb4cac21-e8a8-46e9-9ce2-688f35bbcbaa&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Original-Classic-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "bibata-original-amber", "name": "Bibata Original Amber", "description": "Ámbar con puntas afiladas.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F204a036a-796d-4277-85d2-30b7fb2449f2&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F204a036a-796d-4277-85d2-30b7fb2449f2&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Original-Amber-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "bibata-modern-ice-large", "name": "Bibata Modern Ice (grande)", "description": "Como Ice, un tamaño más grande para pantallas de alta resolución.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F56e7e67a-cf77-407c-871c-f663a93508f7&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2FBibata_Cursor%2Fassets%2F24286590%2F56e7e67a-cf77-407c-871c-f663a93508f7&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/Bibata_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Bibata_Cursor", "asset": "^Bibata-Modern-Ice-Windows\\.zip$", "variant": "Large" } },
-  { "id": "macos", "name": "macOS (negro)", "description": "Cursores al estilo de los Mac: flecha negra con borde blanco y rueda de colores al cargar. GPL-3.0.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2Fapple_cursor%2Fassets%2F24286590%2F07018988-36ee-4913-adc7-365854629a20&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2Fapple_cursor%2Fassets%2F24286590%2F07018988-36ee-4913-adc7-365854629a20&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/apple_cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/apple_cursor", "asset": "^macOS-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "macos-white", "name": "macOS (blanco)", "description": "Estilo Mac en blanco con borde negro; ideal sobre fondos oscuros. GPL-3.0.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2Fapple_cursor%2Fassets%2F24286590%2F1d2bcdf5-d3d7-420a-8dae-68c31b191216&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2Fapple_cursor%2Fassets%2F24286590%2F1d2bcdf5-d3d7-420a-8dae-68c31b191216&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/apple_cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/apple_cursor", "asset": "^macOS-White-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "fuchsia", "name": "Fuchsia", "description": "Minimalista y redondeado, en rosa fucsia. Inspirado en Google Fuchsia.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2Ffuchsia-cursor%2Fassets%2F24286590%2F11dc68d3-fc78-4481-a829-2d05add9833a&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2Ffuchsia-cursor%2Fassets%2F24286590%2F11dc68d3-fc78-4481-a829-2d05add9833a&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/fuchsia-cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/fuchsia-cursor", "asset": "^Fuchsia-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "fuchsia-pop", "name": "Fuchsia Pop", "description": "Fuchsia en tonos melocotón suaves (estilo pop).",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2Ffuchsia-cursor%2Fassets%2F24286590%2Ff53f5edd-67f3-4d56-97f3-bb80677a277a&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2Ffuchsia-cursor%2Fassets%2F24286590%2Ff53f5edd-67f3-4d56-97f3-bb80677a277a&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/fuchsia-cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/fuchsia-cursor", "asset": "^Fuchsia-Pop-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "fuchsia-red", "name": "Fuchsia Red", "description": "Fuchsia en rojo intenso: combina con paletas rojas o cyberpunk.",
-    "preview": "https://wsrv.nl/?url=github.com%2Fful1e5%2Ffuchsia-cursor%2Fassets%2F24286590%2F9d0b8668-6a0d-4176-a64c-1f7982926425&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=github.com%2Fful1e5%2Ffuchsia-cursor%2Fassets%2F24286590%2F9d0b8668-6a0d-4176-a64c-1f7982926425&w=1280&output=jpg&q=85", "reference": "https://github.com/ful1e5/fuchsia-cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/fuchsia-cursor", "asset": "^Fuchsia-Red-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "xcursor-pro-dark", "name": "XCursor Pro Dark", "description": "Moderno y anguloso en negro, con sombra suave. Sin captura: pulsa 'Ver ejemplos'.",
-    "preview": null, "reference": "https://github.com/ful1e5/XCursor-pro",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/XCursor-pro", "asset": "^XCursor-Pro-Dark-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "xcursor-pro-light", "name": "XCursor Pro Light", "description": "Moderno y anguloso en blanco.",
-    "preview": null, "reference": "https://github.com/ful1e5/XCursor-pro",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/XCursor-pro", "asset": "^XCursor-Pro-Light-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "xcursor-pro-red", "name": "XCursor Pro Red", "description": "Moderno y anguloso en rojo.",
-    "preview": null, "reference": "https://github.com/ful1e5/XCursor-pro",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/XCursor-pro", "asset": "^XCursor-Pro-Red-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "google-dot-black", "name": "Google Dot Black", "description": "Redondo y amable, con un punto en la punta. Negro.",
-    "preview": null, "reference": "https://github.com/ful1e5/Google_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Google_Cursor", "asset": "^GoogleDot-Black-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "google-dot-blue", "name": "Google Dot Blue", "description": "Redondo con punto, en azul.",
-    "preview": null, "reference": "https://github.com/ful1e5/Google_Cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/Google_Cursor", "asset": "^GoogleDot-Blue-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "banana", "name": "Banana", "description": "Divertido: cursores amarillos con forma de plátano.",
-    "preview": null, "reference": "https://github.com/ful1e5/banana-cursor",
-    "apply": { "type": "cursor-pack", "source": "github", "repo": "ful1e5/banana-cursor", "asset": "^Banana-Windows\\.zip$", "variant": "Regular" } },
-  { "id": "posy-black", "name": "Posy's Cursor Black", "description": "Negro y muy nítido con escalado alto. Licencia CC BY-NC (uso personal).",
-    "preview": null, "reference": "https://www.michieldb.nl/other/cursors/",
-    "apply": { "type": "cursor-pack", "source": "url", "url": "https://www.michieldb.nl/other/cursors/Posy's%20Cursor%20Black.zip", "fileName": "Posys-Cursor-Black.zip" } },
-  { "id": "posy-default", "name": "Posy's Cursor", "description": "Blanco y muy nítido con escalado alto. Licencia CC BY-NC (uso personal).",
-    "preview": null, "reference": "https://www.michieldb.nl/other/cursors/",
-    "apply": { "type": "cursor-pack", "source": "url", "url": "https://www.michieldb.nl/other/cursors/Posy's%20Cursor.zip", "fileName": "Posys-Cursor.zip" } },
-  { "id": "posy-mono-black", "name": "Posy's Cursor Mono Black", "description": "Negro, sin acentos de color. Licencia CC BY-NC (uso personal).",
-    "preview": null, "reference": "https://www.michieldb.nl/other/cursors/",
-    "apply": { "type": "cursor-pack", "source": "url", "url": "https://www.michieldb.nl/other/cursors/Posy's%20Cursor%20Mono%20Black.zip", "fileName": "Posys-Cursor-Mono-Black.zip" } }
+    {
+        "id":  "none",
+        "name":  "Cursores de Windows",
+        "description":  "Se mantienen los cursores actuales.",
+        "preview":  null,
+        "apply":  {
+                      "type":  "cursor-none"
+                  }
+    },
+    {
+        "id":  "bibata-modern-ice",
+        "name":  "Bibata Modern Ice",
+        "description":  "Blanco, moderno y con puntas redondeadas. Código abierto (GPL-3.0).",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Modern-Ice-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/bibata-modern-ice.png",
+        "previewLarge":  "previews/cursors/bibata-modern-ice.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "bibata-modern-classic",
+        "name":  "Bibata Modern Classic",
+        "description":  "Negro, moderno y con puntas redondeadas. Código abierto (GPL-3.0).",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Modern-Classic-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/bibata-modern-classic.png",
+        "previewLarge":  "previews/cursors/bibata-modern-classic.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "bibata-modern-amber",
+        "name":  "Bibata Modern Amber",
+        "description":  "Ámbar cálido, moderno y redondeado. Código abierto (GPL-3.0).",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Modern-Amber-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/bibata-modern-amber.png",
+        "previewLarge":  "previews/cursors/bibata-modern-amber.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "bibata-original-ice",
+        "name":  "Bibata Original Ice",
+        "description":  "Blanco con puntas afiladas (la versión clásica de Bibata).",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Original-Ice-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/bibata-original-ice.png",
+        "previewLarge":  "previews/cursors/bibata-original-ice.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "bibata-original-classic",
+        "name":  "Bibata Original Classic",
+        "description":  "Negro con puntas afiladas.",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Original-Classic-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/bibata-original-classic.png",
+        "previewLarge":  "previews/cursors/bibata-original-classic.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "bibata-original-amber",
+        "name":  "Bibata Original Amber",
+        "description":  "Ámbar con puntas afiladas.",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Original-Amber-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/bibata-original-amber.png",
+        "previewLarge":  "previews/cursors/bibata-original-amber.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "bibata-modern-ice-large",
+        "name":  "Bibata Modern Ice (grande)",
+        "description":  "Como Ice, un tamaño más grande para pantallas de alta resolución.",
+        "reference":  "https://github.com/ful1e5/Bibata_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Bibata_Cursor",
+                      "asset":  "^Bibata-Modern-Ice-Windows\\.zip$",
+                      "variant":  "Large"
+                  },
+        "preview":  "previews/cursors/bibata-modern-ice-large.png",
+        "previewLarge":  "previews/cursors/bibata-modern-ice-large.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "macos",
+        "name":  "macOS (negro)",
+        "description":  "Cursores al estilo de los Mac: flecha negra con borde blanco y rueda de colores al cargar. GPL-3.0.",
+        "reference":  "https://github.com/ful1e5/apple_cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/apple_cursor",
+                      "asset":  "^macOS-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/macos.png",
+        "previewLarge":  "previews/cursors/macos.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "macos-white",
+        "name":  "macOS (blanco)",
+        "description":  "Estilo Mac en blanco con borde negro; ideal sobre fondos oscuros. GPL-3.0.",
+        "reference":  "https://github.com/ful1e5/apple_cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/apple_cursor",
+                      "asset":  "^macOS-White-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/macos-white.png",
+        "previewLarge":  "previews/cursors/macos-white.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "fuchsia",
+        "name":  "Fuchsia",
+        "description":  "Minimalista y redondeado, en rosa fucsia. Inspirado en Google Fuchsia.",
+        "reference":  "https://github.com/ful1e5/fuchsia-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/fuchsia-cursor",
+                      "asset":  "^Fuchsia-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/fuchsia.png",
+        "previewLarge":  "previews/cursors/fuchsia.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "fuchsia-pop",
+        "name":  "Fuchsia Pop",
+        "description":  "Fuchsia en tonos melocotón suaves (estilo pop).",
+        "reference":  "https://github.com/ful1e5/fuchsia-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/fuchsia-cursor",
+                      "asset":  "^Fuchsia-Pop-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/fuchsia-pop.png",
+        "previewLarge":  "previews/cursors/fuchsia-pop.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "fuchsia-red",
+        "name":  "Fuchsia Red",
+        "description":  "Fuchsia en rojo intenso: combina con paletas rojas o cyberpunk.",
+        "reference":  "https://github.com/ful1e5/fuchsia-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/fuchsia-cursor",
+                      "asset":  "^Fuchsia-Red-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/fuchsia-red.png",
+        "previewLarge":  "previews/cursors/fuchsia-red.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "xcursor-pro-dark",
+        "name":  "XCursor Pro Dark",
+        "description":  "Moderno y anguloso en negro, con sombra suave.",
+        "reference":  "https://github.com/ful1e5/XCursor-pro",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/XCursor-pro",
+                      "asset":  "^XCursor-Pro-Dark-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/xcursor-pro-dark.png",
+        "previewLarge":  "previews/cursors/xcursor-pro-dark.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "xcursor-pro-light",
+        "name":  "XCursor Pro Light",
+        "description":  "Moderno y anguloso en blanco.",
+        "reference":  "https://github.com/ful1e5/XCursor-pro",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/XCursor-pro",
+                      "asset":  "^XCursor-Pro-Light-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/xcursor-pro-light.png",
+        "previewLarge":  "previews/cursors/xcursor-pro-light.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "xcursor-pro-red",
+        "name":  "XCursor Pro Red",
+        "description":  "Moderno y anguloso en rojo.",
+        "reference":  "https://github.com/ful1e5/XCursor-pro",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/XCursor-pro",
+                      "asset":  "^XCursor-Pro-Red-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/xcursor-pro-red.png",
+        "previewLarge":  "previews/cursors/xcursor-pro-red.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "google-dot-black",
+        "name":  "Google Dot Black",
+        "description":  "Redondo y amable, con un punto en la punta. Negro.",
+        "reference":  "https://github.com/ful1e5/Google_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Google_Cursor",
+                      "asset":  "^GoogleDot-Black-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/google-dot-black.png",
+        "previewLarge":  "previews/cursors/google-dot-black.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "google-dot-blue",
+        "name":  "Google Dot Blue",
+        "description":  "Redondo con punto, en azul.",
+        "reference":  "https://github.com/ful1e5/Google_Cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/Google_Cursor",
+                      "asset":  "^GoogleDot-Blue-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/google-dot-blue.png",
+        "previewLarge":  "previews/cursors/google-dot-blue.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "banana",
+        "name":  "Banana",
+        "description":  "Divertido: cursores amarillos con forma de plátano.",
+        "reference":  "https://github.com/ful1e5/banana-cursor",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "github",
+                      "repo":  "ful1e5/banana-cursor",
+                      "asset":  "^Banana-Windows\\.zip$",
+                      "variant":  "Regular"
+                  },
+        "preview":  "previews/cursors/banana.png",
+        "previewLarge":  "previews/cursors/banana.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "posy-black",
+        "name":  "Posy\u0027s Cursor Black",
+        "description":  "Negro y muy nítido con escalado alto. Licencia CC BY-NC (uso personal).",
+        "reference":  "https://www.michieldb.nl/other/cursors/",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "url",
+                      "url":  "https://www.michieldb.nl/other/cursors/Posy\u0027s%20Cursor%20Black.zip",
+                      "fileName":  "Posys-Cursor-Black.zip"
+                  },
+        "preview":  "previews/cursors/posy-black.png",
+        "previewLarge":  "previews/cursors/posy-black.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "posy-default",
+        "name":  "Posy\u0027s Cursor",
+        "description":  "Blanco y muy nítido con escalado alto. Licencia CC BY-NC (uso personal).",
+        "reference":  "https://www.michieldb.nl/other/cursors/",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "url",
+                      "url":  "https://www.michieldb.nl/other/cursors/Posy\u0027s%20Cursor.zip",
+                      "fileName":  "Posys-Cursor.zip"
+                  },
+        "preview":  "previews/cursors/posy-default.png",
+        "previewLarge":  "previews/cursors/posy-default.png",
+        "previewApprox":  false
+    },
+    {
+        "id":  "posy-mono-black",
+        "name":  "Posy\u0027s Cursor Mono Black",
+        "description":  "Negro, sin acentos de color. Licencia CC BY-NC (uso personal).",
+        "reference":  "https://www.michieldb.nl/other/cursors/",
+        "apply":  {
+                      "type":  "cursor-pack",
+                      "source":  "url",
+                      "url":  "https://www.michieldb.nl/other/cursors/Posy\u0027s%20Cursor%20Mono%20Black.zip",
+                      "fileName":  "Posys-Cursor-Mono-Black.zip"
+                  },
+        "preview":  "previews/cursors/posy-mono-black.png",
+        "previewLarge":  "previews/cursors/posy-mono-black.png",
+        "previewApprox":  false
+    }
 ]

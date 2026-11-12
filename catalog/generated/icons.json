@@ -3,20 +3,21 @@
         "id":  "none",
         "name":  "Iconos de Windows",
         "description":  "Se mantienen los iconos originales.",
-        "preview":  null,
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk-remove",
                       "mod":  "icon-resource-redirect",
                       "modName":  "Resource Redirect"
-                  }
+                  },
+        "preview":  "previews/icons/_windows.png",
+        "previewLarge":  "previews/icons/_windows.png"
     },
     {
         "id":  "All White Icons",
         "name":  "All White Icons",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/all-white-icons.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -26,14 +27,15 @@
                       "settings":  {
                                        "iconTheme":  "All White Icons|themes/icons/niivu/All%20White%20Icons.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/all-white-icons.png"
     },
     {
         "id":  "Antu alt",
         "name":  "Antu alt",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/antu-alt.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -43,14 +45,14 @@
                                        "iconTheme":  "Antu alt|themes/icons/niivu/antu%20alt.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/antu-alt.png"
     },
     {
         "id":  "Antu",
         "name":  "Antu",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/antu.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -60,14 +62,14 @@
                                        "iconTheme":  "Antu|themes/icons/niivu/antu.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/antu.png"
     },
     {
         "id":  "Kuyen Alt",
         "name":  "Kuyen Alt",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/kuyen-alt.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -77,14 +79,14 @@
                                        "iconTheme":  "Kuyen Alt|themes/icons/niivu/kuyen%20alt.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/kuyen-alt.png"
     },
     {
         "id":  "Kuyen",
         "name":  "Kuyen",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/kuyen.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -94,14 +96,14 @@
                                        "iconTheme":  "Kuyen|themes/icons/niivu/kuyen.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FAntu-Kuyen%2520Preview%2520NIIVU.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/kuyen.png"
     },
     {
         "id":  "ARC Symbolic",
         "name":  "ARC Symbolic",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/arc-symbolic.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -111,14 +113,14 @@
                                        "iconTheme":  "ARC Symbolic|themes/icons/niivu/ARC%20Symbolic.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/arc-symbolic.png"
     },
     {
         "id":  "ARC",
         "name":  "ARC",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/arc.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -128,14 +130,14 @@
                                        "iconTheme":  "ARC|themes/icons/niivu/ARC.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/arc.png"
     },
     {
         "id":  "Arc Neutral Brown",
         "name":  "Arc Neutral Brown",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/arc-neutral-brown.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -145,14 +147,14 @@
                                        "iconTheme":  "Arc Neutral Brown|themes/icons/niivu/arc-neutral%20brown.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/arc-neutral-brown.png"
     },
     {
         "id":  "Arc Neutral Grey",
         "name":  "Arc Neutral Grey",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/arc-neutral-grey.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -162,13 +164,13 @@
                                        "iconTheme":  "Arc Neutral Grey|themes/icons/niivu/arc-neutral%20grey.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FARC%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/arc-neutral-grey.png"
     },
     {
         "id":  "BananaOneUI",
         "name":  "BananaOneUI",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/bananaoneui.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -178,13 +180,14 @@
                       "settings":  {
                                        "iconTheme":  "BananaOneUI|themes/icons/niivu/BANAANA%20OneUI.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/bananaoneui.png"
     },
     {
         "id":  "Big Sur DarkMode",
         "name":  "Big Sur DarkMode",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/big-sur-darkmode.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -194,13 +197,14 @@
                       "settings":  {
                                        "iconTheme":  "Big Sur DarkMode|themes/icons/niivu/Big%20Sur%20DarkMode.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/big-sur-darkmode.png"
     },
     {
         "id":  "Big Sur LightMode",
         "name":  "Big Sur LightMode",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/big-sur-lightmode.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -210,14 +214,15 @@
                       "settings":  {
                                        "iconTheme":  "Big Sur LightMode|themes/icons/niivu/Big%20Sur%20LightMode.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/big-sur-lightmode.png"
     },
     {
         "id":  "Blanked DarkMode",
         "name":  "Blanked DarkMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fblanked%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/blanked-darkmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -227,14 +232,14 @@
                                        "iconTheme":  "Blanked DarkMode|themes/icons/niivu/blanked%20dark%20mode.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fblanked%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/blanked-darkmode.png"
     },
     {
         "id":  "Blanked LightMode",
         "name":  "Blanked LightMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fblanked%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/blanked-lightmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -244,13 +249,13 @@
                                        "iconTheme":  "Blanked LightMode|themes/icons/niivu/blanked%20light%20mode.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fblanked%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/blanked-lightmode.png"
     },
     {
         "id":  "Bonny",
         "name":  "Bonny",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/bonny.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -260,14 +265,15 @@
                       "settings":  {
                                        "iconTheme":  "Bonny|themes/icons/niivu/bonny%20by%20niivu.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/bonny.png"
     },
     {
         "id":  "Bouquet",
         "name":  "Bouquet",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fbouquet%2520taskbar%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/bouquet.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -277,13 +283,13 @@
                                        "iconTheme":  "Bouquet|themes/icons/niivu/bouquet.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fbouquet%2520taskbar%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/bouquet.png"
     },
     {
         "id":  "Buuf",
         "name":  "Buuf",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/buuf.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -293,14 +299,15 @@
                       "settings":  {
                                        "iconTheme":  "Buuf|themes/icons/niivu/buuf.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/buuf.png"
     },
     {
         "id":  "CakeOS 2.0",
         "name":  "CakeOS 2.0",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/cakeos-2-0.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -310,14 +317,14 @@
                                        "iconTheme":  "CakeOS 2.0|themes/icons/niivu/cakeOS%202.0.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/cakeos-2-0.png"
     },
     {
         "id":  "CakeOS Blue",
         "name":  "CakeOS Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/cakeos-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -327,14 +334,14 @@
                                        "iconTheme":  "CakeOS Blue|themes/icons/niivu/Cake%20OS%20Blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/cakeos-blue.png"
     },
     {
         "id":  "CakeOS Green",
         "name":  "CakeOS Green",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/cakeos-green.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -344,14 +351,14 @@
                                        "iconTheme":  "CakeOS Green|themes/icons/niivu/Cake%20OS%20Green.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/cakeos-green.png"
     },
     {
         "id":  "CakeOS Orange",
         "name":  "CakeOS Orange",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/cakeos-orange.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -361,14 +368,14 @@
                                        "iconTheme":  "CakeOS Orange|themes/icons/niivu/Cake%20OS%20Orange.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/cakeos-orange.png"
     },
     {
         "id":  "CakeOS Purple",
         "name":  "CakeOS Purple",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/cakeos-purple.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -378,14 +385,14 @@
                                        "iconTheme":  "CakeOS Purple|themes/icons/niivu/Cake%20OS%20Purple.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/cakeos-purple.png"
     },
     {
         "id":  "CakeOS Red",
         "name":  "CakeOS Red",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/cakeos-red.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -395,13 +402,13 @@
                                        "iconTheme":  "CakeOS Red|themes/icons/niivu/Cake%20OS%20Red.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FcakeOS%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/cakeos-red.png"
     },
     {
         "id":  "Candy Original",
         "name":  "Candy Original",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/candy-original.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -411,13 +418,14 @@
                       "settings":  {
                                        "iconTheme":  "Candy Original|themes/icons/niivu/candy%20original%20folders.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/candy-original.png"
     },
     {
         "id":  "Candy Outlined",
         "name":  "Candy Outlined",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/candy-outlined.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -427,14 +435,15 @@
                       "settings":  {
                                        "iconTheme":  "Candy Outlined|themes/icons/niivu/candy%20outlined%20folders.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/candy-outlined.png"
     },
     {
         "id":  "Catppuccin",
         "name":  "Catppuccin",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -444,14 +453,14 @@
                                        "iconTheme":  "Catppuccin|themes/icons/niivu/Catppuccin.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin.png"
     },
     {
         "id":  "Catppuccin Blue",
         "name":  "Catppuccin Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -461,14 +470,14 @@
                                        "iconTheme":  "Catppuccin Blue|themes/icons/niivu/Catppuccin%20blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-blue.png"
     },
     {
         "id":  "Catppuccin Flamingo",
         "name":  "Catppuccin Flamingo",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-flamingo.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -478,14 +487,14 @@
                                        "iconTheme":  "Catppuccin Flamingo|themes/icons/niivu/Catppuccin%20flamingo.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-flamingo.png"
     },
     {
         "id":  "Catppuccin Green",
         "name":  "Catppuccin Green",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-green.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -495,14 +504,14 @@
                                        "iconTheme":  "Catppuccin Green|themes/icons/niivu/Catppuccin%20green.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-green.png"
     },
     {
         "id":  "Catppuccin Latte",
         "name":  "Catppuccin Latte",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-latte.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -512,14 +521,14 @@
                                        "iconTheme":  "Catppuccin Latte|themes/icons/niivu/Catppuccin%20Latte.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-latte.png"
     },
     {
         "id":  "Catppuccin Lavender",
         "name":  "Catppuccin Lavender",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-lavender.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -529,14 +538,14 @@
                                        "iconTheme":  "Catppuccin Lavender|themes/icons/niivu/Catppuccin%20lavender.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-lavender.png"
     },
     {
         "id":  "Catppuccin Maroon",
         "name":  "Catppuccin Maroon",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-maroon.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -546,14 +555,14 @@
                                        "iconTheme":  "Catppuccin Maroon|themes/icons/niivu/Catppuccin%20maroon.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-maroon.png"
     },
     {
         "id":  "Catppuccin Mauve",
         "name":  "Catppuccin Mauve",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-mauve.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -563,14 +572,14 @@
                                        "iconTheme":  "Catppuccin Mauve|themes/icons/niivu/Catppuccin%20mauve.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-mauve.png"
     },
     {
         "id":  "Catppuccin Mocha",
         "name":  "Catppuccin Mocha",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-mocha.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -580,14 +589,14 @@
                                        "iconTheme":  "Catppuccin Mocha|themes/icons/niivu/Catppuccin%20Mocha.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-mocha.png"
     },
     {
         "id":  "Catppuccin Peach",
         "name":  "Catppuccin Peach",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-peach.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -597,14 +606,14 @@
                                        "iconTheme":  "Catppuccin Peach|themes/icons/niivu/Catppuccin%20peach.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-peach.png"
     },
     {
         "id":  "Catppuccin Pink",
         "name":  "Catppuccin Pink",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-pink.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -614,14 +623,14 @@
                                        "iconTheme":  "Catppuccin Pink|themes/icons/niivu/Catppuccin%20pink.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-pink.png"
     },
     {
         "id":  "Catppuccin Red",
         "name":  "Catppuccin Red",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-red.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -631,14 +640,14 @@
                                        "iconTheme":  "Catppuccin Red|themes/icons/niivu/Catppuccin%20red.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-red.png"
     },
     {
         "id":  "Catppuccin Sky",
         "name":  "Catppuccin Sky",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-sky.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -648,14 +657,14 @@
                                        "iconTheme":  "Catppuccin Sky|themes/icons/niivu/Catppuccin%20sky.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-sky.png"
     },
     {
         "id":  "Catppuccin Teal",
         "name":  "Catppuccin Teal",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-teal.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -665,14 +674,14 @@
                                        "iconTheme":  "Catppuccin Teal|themes/icons/niivu/Catppuccin%20teal.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-teal.png"
     },
     {
         "id":  "Catppuccin Yellow",
         "name":  "Catppuccin Yellow",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/catppuccin-yellow.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -682,14 +691,14 @@
                                        "iconTheme":  "Catppuccin Yellow|themes/icons/niivu/Catppuccin%20yellow.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FCatppuccin.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/catppuccin-yellow.png"
     },
     {
         "id":  "Deepin Blue DarkMode",
         "name":  "Deepin Blue DarkMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-blue-darkmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -699,14 +708,14 @@
                                        "iconTheme":  "Deepin Blue DarkMode|themes/icons/niivu/Deepin%20Blue%20-%20for%20dark%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-blue-darkmode.png"
     },
     {
         "id":  "Deepin Blue LightMode",
         "name":  "Deepin Blue LightMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-blue-lightmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -716,14 +725,14 @@
                                        "iconTheme":  "Deepin Blue LightMode|themes/icons/niivu/Deepin%20Blue%20-%20for%20light%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-blue-lightmode.png"
     },
     {
         "id":  "Deepin Brown DarkMode",
         "name":  "Deepin Brown DarkMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-brown-darkmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -733,14 +742,14 @@
                                        "iconTheme":  "Deepin Brown DarkMode|themes/icons/niivu/Deepin%20Brown%20-%20for%20dark%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-brown-darkmode.png"
     },
     {
         "id":  "Deepin Brown LightMode",
         "name":  "Deepin Brown LightMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-brown-lightmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -750,14 +759,14 @@
                                        "iconTheme":  "Deepin Brown LightMode|themes/icons/niivu/Deepin%20Brown%20-%20for%20light%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-brown-lightmode.png"
     },
     {
         "id":  "Deepin Green DarkMode",
         "name":  "Deepin Green DarkMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-green-darkmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -767,14 +776,14 @@
                                        "iconTheme":  "Deepin Green DarkMode|themes/icons/niivu/Deepin%20Green%20-%20for%20dark%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-green-darkmode.png"
     },
     {
         "id":  "Deepin Green LightMode",
         "name":  "Deepin Green LightMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-green-lightmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -784,14 +793,14 @@
                                        "iconTheme":  "Deepin Green LightMode|themes/icons/niivu/Deepin%20Green%20-%20for%20light%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-green-lightmode.png"
     },
     {
         "id":  "Deepin Slate DarkMode",
         "name":  "Deepin Slate DarkMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-slate-darkmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -801,14 +810,14 @@
                                        "iconTheme":  "Deepin Slate DarkMode|themes/icons/niivu/Deepin%20Slate%20-%20for%20dark%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-slate-darkmode.png"
     },
     {
         "id":  "Deepin Slate LightMode",
         "name":  "Deepin Slate LightMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/deepin-slate-lightmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -818,13 +827,13 @@
                                        "iconTheme":  "Deepin Slate LightMode|themes/icons/niivu/Deepin%20Slate%20-%20for%20light%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FDEEPIN%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/deepin-slate-lightmode.png"
     },
     {
         "id":  "Deepo",
         "name":  "Deepo",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/deepo.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -834,13 +843,14 @@
                       "settings":  {
                                        "iconTheme":  "Deepo|themes/icons/niivu/Deepo%20Icon%20pack.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/deepo.png"
     },
     {
         "id":  "Tango",
         "name":  "Tango",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/tango.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -850,13 +860,14 @@
                       "settings":  {
                                        "iconTheme":  "Tango|themes/icons/niivu/Tango.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/tango.png"
     },
     {
         "id":  "Tangerine",
         "name":  "Tangerine",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/tangerine.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -866,13 +877,14 @@
                       "settings":  {
                                        "iconTheme":  "Tangerine|themes/icons/niivu/Tangerine.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/tangerine.png"
     },
     {
         "id":  "Gnome",
         "name":  "Gnome",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/gnome.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -882,13 +894,14 @@
                       "settings":  {
                                        "iconTheme":  "Gnome|themes/icons/niivu/Gnome.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/gnome.png"
     },
     {
         "id":  "Cheser",
         "name":  "Cheser",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/cheser.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -898,13 +911,14 @@
                       "settings":  {
                                        "iconTheme":  "Cheser|themes/icons/niivu/Cheser.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/cheser.png"
     },
     {
         "id":  "Gnome Brave",
         "name":  "Gnome Brave",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/gnome-brave.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -914,13 +928,14 @@
                       "settings":  {
                                        "iconTheme":  "Gnome Brave|themes/icons/niivu/Gnome%20Brave.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/gnome-brave.png"
     },
     {
         "id":  "Gnome Human",
         "name":  "Gnome Human",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/gnome-human.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -930,13 +945,14 @@
                       "settings":  {
                                        "iconTheme":  "Gnome Human|themes/icons/niivu/Gnome%20Human.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/gnome-human.png"
     },
     {
         "id":  "Gnome Noble",
         "name":  "Gnome Noble",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/gnome-noble.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -946,13 +962,14 @@
                       "settings":  {
                                        "iconTheme":  "Gnome Noble|themes/icons/niivu/Gnome%20Noble.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/gnome-noble.png"
     },
     {
         "id":  "Gnome Wine",
         "name":  "Gnome Wine",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/gnome-wine.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -962,13 +979,14 @@
                       "settings":  {
                                        "iconTheme":  "Gnome Wine|themes/icons/niivu/Gnome%20Wine.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/gnome-wine.png"
     },
     {
         "id":  "Gnome Wise",
         "name":  "Gnome Wise",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/gnome-wise.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -978,13 +996,14 @@
                       "settings":  {
                                        "iconTheme":  "Gnome Wise|themes/icons/niivu/Gnome%20Wise.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/gnome-wise.png"
     },
     {
         "id":  "Elementary",
         "name":  "Elementary",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/elementary.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -994,13 +1013,14 @@
                       "settings":  {
                                        "iconTheme":  "Elementary|themes/icons/niivu/Elementary.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/elementary.png"
     },
     {
         "id":  "Elementary New",
         "name":  "Elementary New",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/elementary-new.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1010,13 +1030,14 @@
                       "settings":  {
                                        "iconTheme":  "Elementary New|themes/icons/niivu/Elementary%20NEW.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/elementary-new.png"
     },
     {
         "id":  "Humanity",
         "name":  "Humanity",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/humanity.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1026,13 +1047,14 @@
                       "settings":  {
                                        "iconTheme":  "Humanity|themes/icons/niivu/Humanity.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/humanity.png"
     },
     {
         "id":  "Everblush",
         "name":  "Everblush",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/everblush.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1042,13 +1064,14 @@
                       "settings":  {
                                        "iconTheme":  "Everblush|themes/icons/niivu/Everblush.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/everblush.png"
     },
     {
         "id":  "Everforest",
         "name":  "Everforest",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/everforest.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1058,14 +1081,15 @@
                       "settings":  {
                                        "iconTheme":  "Everforest|themes/icons/niivu/everforest.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/everforest.png"
     },
     {
         "id":  "Everforest Blank",
         "name":  "Everforest Blank",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fblanked%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/everforest-blank.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1075,14 +1099,14 @@
                                        "iconTheme":  "Everforest Blank|themes/icons/niivu/everforest%20blank.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fblanked%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/everforest-blank.png"
     },
     {
         "id":  "Eyecandy",
         "name":  "Eyecandy",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FEyecandy.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/eyecandy.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1092,14 +1116,14 @@
                                        "iconTheme":  "Eyecandy|themes/icons/niivu/Eyecandy.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FEyecandy.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/eyecandy.png"
     },
     {
         "id":  "Faba",
         "name":  "Faba",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Ffaba%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/faba.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1109,14 +1133,14 @@
                                        "iconTheme":  "Faba|themes/icons/niivu/FABA.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Ffaba%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/faba.png"
     },
     {
         "id":  "Faba Symbolic",
         "name":  "Faba Symbolic",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Ffaba%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/faba-symbolic.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1126,13 +1150,13 @@
                                        "iconTheme":  "Faba Symbolic|themes/icons/niivu/FABA%20Symbolic.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Ffaba%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/faba-symbolic.png"
     },
     {
         "id":  "Slate",
         "name":  "Slate",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/slate.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1142,13 +1166,14 @@
                       "settings":  {
                                        "iconTheme":  "Slate|themes/icons/niivu/SLATE.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/slate.png"
     },
     {
         "id":  "Slate Symbolic",
         "name":  "Slate Symbolic",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/slate-symbolic.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1158,14 +1183,15 @@
                       "settings":  {
                                        "iconTheme":  "Slate Symbolic|themes/icons/niivu/SLATE%20Symbolic.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/slate-symbolic.png"
     },
     {
         "id":  "Fetch",
         "name":  "Fetch",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Ffetch%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/fetch.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1175,14 +1201,14 @@
                                        "iconTheme":  "Fetch|themes/icons/niivu/Fetch.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Ffetch%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/fetch.png"
     },
     {
         "id":  "Fluent",
         "name":  "Fluent",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FFluent%2520Keys%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/fluent.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1192,14 +1218,14 @@
                                        "iconTheme":  "Fluent|themes/icons/niivu/Fluent.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FFluent%2520Keys%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/fluent.png"
     },
     {
         "id":  "Fluent Keys Night",
         "name":  "Fluent Keys Night",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FFluent%2520Keys%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/fluent-keys-night.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1209,14 +1235,14 @@
                                        "iconTheme":  "Fluent Keys Night|themes/icons/niivu/Fluent%20Keys%20Night.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FFluent%2520Keys%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/fluent-keys-night.png"
     },
     {
         "id":  "Fluent Keys Day",
         "name":  "Fluent Keys Day",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FFluent%2520Keys%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/fluent-keys-day.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1226,13 +1252,13 @@
                                        "iconTheme":  "Fluent Keys Day|themes/icons/niivu/Fluent%20Keys%20Day.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FFluent%2520Keys%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/fluent-keys-day.png"
     },
     {
         "id":  "Flurry",
         "name":  "Flurry",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/flurry.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1242,14 +1268,15 @@
                       "settings":  {
                                        "iconTheme":  "Flurry|themes/icons/niivu/FLURRY.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/flurry.png"
     },
     {
         "id":  "Gruvbox",
         "name":  "Gruvbox",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/gruvbox.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1259,14 +1286,14 @@
                                        "iconTheme":  "Gruvbox|themes/icons/niivu/Gruvbox.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/gruvbox.png"
     },
     {
         "id":  "Gruvbox Plus Olive",
         "name":  "Gruvbox Plus Olive",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/gruvbox-plus-olive.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1276,14 +1303,14 @@
                                        "iconTheme":  "Gruvbox Plus Olive|themes/icons/niivu/gruvbox%20plus%20-%20Olive.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/gruvbox-plus-olive.png"
     },
     {
         "id":  "Gruvbox Numix",
         "name":  "Gruvbox Numix",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/gruvbox-numix.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1293,13 +1320,13 @@
                                        "iconTheme":  "Gruvbox Numix|themes/icons/niivu/Gruvbox%20numix.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/gruvbox-numix.png"
     },
     {
         "id":  "Haiku BeOS",
         "name":  "Haiku BeOS",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/haiku-beos.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1309,14 +1336,15 @@
                       "settings":  {
                                        "iconTheme":  "Haiku BeOS|themes/icons/niivu/Haiku%20BeOS.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/haiku-beos.png"
     },
     {
         "id":  "Janguru Blue",
         "name":  "Janguru Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/janguru-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1326,14 +1354,14 @@
                                        "iconTheme":  "Janguru Blue|themes/icons/niivu/janguru%20blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/janguru-blue.png"
     },
     {
         "id":  "Janguru BlueGrey",
         "name":  "Janguru BlueGrey",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/janguru-bluegrey.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1343,14 +1371,14 @@
                                        "iconTheme":  "Janguru BlueGrey|themes/icons/niivu/janguru%20bluegrey.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/janguru-bluegrey.png"
     },
     {
         "id":  "Janguru Brown",
         "name":  "Janguru Brown",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/janguru-brown.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1360,14 +1388,14 @@
                                        "iconTheme":  "Janguru Brown|themes/icons/niivu/janguru%20brown.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/janguru-brown.png"
     },
     {
         "id":  "Janguru Green",
         "name":  "Janguru Green",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/janguru-green.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1377,14 +1405,14 @@
                                        "iconTheme":  "Janguru Green|themes/icons/niivu/janguru%20green.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/janguru-green.png"
     },
     {
         "id":  "Janguru Grey",
         "name":  "Janguru Grey",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/janguru-grey.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1394,14 +1422,14 @@
                                        "iconTheme":  "Janguru Grey|themes/icons/niivu/janguru%20grey.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/janguru-grey.png"
     },
     {
         "id":  "Janguru Orange",
         "name":  "Janguru Orange",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/janguru-orange.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1411,13 +1439,13 @@
                                        "iconTheme":  "Janguru Orange|themes/icons/niivu/janguru%20orange.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fjanguru%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/janguru-orange.png"
     },
     {
         "id":  "koZ",
         "name":  "koZ",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/koz.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1427,14 +1455,15 @@
                       "settings":  {
                                        "iconTheme":  "koZ|themes/icons/niivu/koZ.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/koz.png"
     },
     {
         "id":  "Kripton Flatery",
         "name":  "Kripton Flatery",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FKripton%2520Flatery.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/kripton-flatery.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1444,14 +1473,14 @@
                                        "iconTheme":  "Kripton Flatery|themes/icons/niivu/Kripton%20Flatery.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FKripton%2520Flatery.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/kripton-flatery.png"
     },
     {
         "id":  "Linuxfx 11 AIO",
         "name":  "Linuxfx 11 AIO",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLinuxfx%252011.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/linuxfx-11-aio.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1461,14 +1490,14 @@
                                        "iconTheme":  "Linuxfx 11 AIO|themes/icons/niivu/Linuxfx-11-AIO.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLinuxfx%252011.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/linuxfx-11-aio.png"
     },
     {
         "id":  "Linuxfx 11 Lite",
         "name":  "Linuxfx 11 Lite",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLinuxfx%252011.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/linuxfx-11-lite.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1478,14 +1507,14 @@
                                        "iconTheme":  "Linuxfx 11 Lite|themes/icons/niivu/Linuxfx-11-lite.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLinuxfx%252011.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/linuxfx-11-lite.png"
     },
     {
         "id":  "Lol",
         "name":  "Lol",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLoL.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/lol.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1495,14 +1524,14 @@
                                        "iconTheme":  "Lol|themes/icons/niivu/lol.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLoL.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/lol.png"
     },
     {
         "id":  "Lumicons Folders",
         "name":  "Lumicons Folders",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLumicons%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/lumicons-folders.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1512,14 +1541,14 @@
                                        "iconTheme":  "Lumicons Folders|themes/icons/niivu/Lumicons%20Folders.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLumicons%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/lumicons-folders.png"
     },
     {
         "id":  "Lumicons Symbols",
         "name":  "Lumicons Symbols",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLumicons%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/lumicons-symbols.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1529,13 +1558,13 @@
                                        "iconTheme":  "Lumicons Symbols|themes/icons/niivu/Lumicons%20Symbols.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FLumicons%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/lumicons-symbols.png"
     },
     {
         "id":  "macOSx",
         "name":  "macOSx",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/macosx.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1545,14 +1574,15 @@
                       "settings":  {
                                        "iconTheme":  "macOSx|themes/icons/niivu/mac%20osx.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/macosx.png"
     },
     {
         "id":  "macOS Regular",
         "name":  "macOS Regular",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/macos-regular.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1562,14 +1592,14 @@
                                        "iconTheme":  "macOS Regular|themes/icons/niivu/macOS%20Regular.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/macos-regular.png"
     },
     {
         "id":  "macOS Blue",
         "name":  "macOS Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/macos-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1579,14 +1609,14 @@
                                        "iconTheme":  "macOS Blue|themes/icons/niivu/macOS%20blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/macos-blue.png"
     },
     {
         "id":  "macOS Yellow",
         "name":  "macOS Yellow",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/macos-yellow.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1596,14 +1626,14 @@
                                        "iconTheme":  "macOS Yellow|themes/icons/niivu/macOS%20Yellow%20Folders.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/macos-yellow.png"
     },
     {
         "id":  "macOS DarkMode",
         "name":  "macOS DarkMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/macos-darkmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1613,14 +1643,14 @@
                                        "iconTheme":  "macOS DarkMode|themes/icons/niivu/macOS%20Dark%20Mode.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/macos-darkmode.png"
     },
     {
         "id":  "macOS LightMode",
         "name":  "macOS LightMode",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/macos-lightmode.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1630,13 +1660,13 @@
                                        "iconTheme":  "macOS LightMode|themes/icons/niivu/macOS%20Light%20Mode.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FmacOS%2520Regular.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/macos-lightmode.png"
     },
     {
         "id":  "macPac DarkMode",
         "name":  "macPac DarkMode",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/macpac-darkmode.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1646,13 +1676,14 @@
                       "settings":  {
                                        "iconTheme":  "macPac DarkMode|themes/icons/niivu/macpac%20darkmode.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/macpac-darkmode.png"
     },
     {
         "id":  "macPac LightMode",
         "name":  "macPac LightMode",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/macpac-lightmode.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -1662,14 +1693,15 @@
                       "settings":  {
                                        "iconTheme":  "macPac LightMode|themes/icons/niivu/macpac%20lightmode.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/macpac-lightmode.png"
     },
     {
         "id":  "Mechanical",
         "name":  "Mechanical",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FMechanical.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/mechanical.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1679,14 +1711,14 @@
                                        "iconTheme":  "Mechanical|themes/icons/niivu/mechanical.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FMechanical.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/mechanical.png"
     },
     {
         "id":  "Minium2",
         "name":  "Minium2",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FMINIUM2.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/minium2.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1696,14 +1728,14 @@
                                        "iconTheme":  "Minium2|themes/icons/niivu/MINIUM2.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FMINIUM2.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/minium2.png"
     },
     {
         "id":  "Nord Papirus",
         "name":  "Nord Papirus",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FNord%2520dock%2520by%2520niivu.jpg\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/nord-papirus.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1713,14 +1745,14 @@
                                        "iconTheme":  "Nord Papirus|themes/icons/niivu/Nord%20Papirus.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FNord%2520dock%2520by%2520niivu.jpg\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/nord-papirus.png"
     },
     {
         "id":  "Nord Papirus NovaGalactic",
         "name":  "Nord Papirus NovaGalactic",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FNord%2520dock%2520by%2520niivu.jpg\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/nord-papirus-novagalactic.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1730,14 +1762,14 @@
                                        "iconTheme":  "Nord Papirus NovaGalactic|themes/icons/niivu/Nord-Papirus-Nova-galactic.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FNord%2520dock%2520by%2520niivu.jpg\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/nord-papirus-novagalactic.png"
     },
     {
         "id":  "Numix",
         "name":  "Numix",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/numix.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1747,14 +1779,14 @@
                                        "iconTheme":  "Numix|themes/icons/niivu/numix.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/numix.png"
     },
     {
         "id":  "Numix Blue",
         "name":  "Numix Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/numix-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1764,14 +1796,14 @@
                                        "iconTheme":  "Numix Blue|themes/icons/niivu/numix-remix-blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/numix-blue.png"
     },
     {
         "id":  "Numix Green",
         "name":  "Numix Green",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/numix-green.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1781,14 +1813,14 @@
                                        "iconTheme":  "Numix Green|themes/icons/niivu/numix-remix-green.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/numix-green.png"
     },
     {
         "id":  "Numix macOS",
         "name":  "Numix macOS",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/numix-macos.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1798,14 +1830,14 @@
                                        "iconTheme":  "Numix macOS|themes/icons/niivu/numix-remix-macos.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/numix-macos.png"
     },
     {
         "id":  "Numix Slate",
         "name":  "Numix Slate",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/numix-slate.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1815,14 +1847,14 @@
                                        "iconTheme":  "Numix Slate|themes/icons/niivu/numix-remix-slate.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/numix-slate.png"
     },
     {
         "id":  "Numix Windows",
         "name":  "Numix Windows",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/numix-windows.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1832,14 +1864,14 @@
                                        "iconTheme":  "Numix Windows|themes/icons/niivu/numix-remix-windows.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FGruvbox%2520numix.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/numix-windows.png"
     },
     {
         "id":  "NUX",
         "name":  "NUX",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fnuxicons%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/nux.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1849,14 +1881,14 @@
                                        "iconTheme":  "NUX|themes/icons/niivu/NUX.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fnuxicons%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/nux.png"
     },
     {
         "id":  "One Dark Pro",
         "name":  "One Dark Pro",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FOne%2520Dark%2520Pro.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/one-dark-pro.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1866,14 +1898,14 @@
                                        "iconTheme":  "One Dark Pro|themes/icons/niivu/One%20Dark%20Pro.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FOne%2520Dark%2520Pro.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/one-dark-pro.png"
     },
     {
         "id":  "One Dark Pro Alt",
         "name":  "One Dark Pro Alt",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FOne%2520Dark%2520Pro.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/one-dark-pro-alt.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1883,14 +1915,14 @@
                                        "iconTheme":  "One Dark Pro Alt|themes/icons/niivu/One%20Dark%20Pro%20alt.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FOne%2520Dark%2520Pro.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/one-dark-pro-alt.png"
     },
     {
         "id":  "One UI4",
         "name":  "One UI4",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FOne%2520Dark%2520Pro.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/one-ui4.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1900,14 +1932,14 @@
                                        "iconTheme":  "One UI4|themes/icons/niivu/OneUI4.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FOne%2520Dark%2520Pro.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/one-ui4.png"
     },
     {
         "id":  "OS X Minimalism",
         "name":  "OS X Minimalism",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fos%2520x%2520minimalism%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/os-x-minimalism.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1917,14 +1949,14 @@
                                        "iconTheme":  "OS X Minimalism|themes/icons/niivu/OS%20X%20Minimalism.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fos%2520x%2520minimalism%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/os-x-minimalism.png"
     },
     {
         "id":  "OS X Minimalism Symbolic",
         "name":  "OS X Minimalism Symbolic",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fos%2520x%2520minimalism%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/os-x-minimalism-symbolic.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1934,14 +1966,14 @@
                                        "iconTheme":  "OS X Minimalism Symbolic|themes/icons/niivu/OS%20X%20Minimalism%20Symbolic.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fos%2520x%2520minimalism%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/os-x-minimalism-symbolic.png"
     },
     {
         "id":  "Paper",
         "name":  "Paper",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPaper.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/paper.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1951,14 +1983,14 @@
                                        "iconTheme":  "Paper|themes/icons/niivu/Paper.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPaper.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/paper.png"
     },
     {
         "id":  "Papirus Black",
         "name":  "Papirus Black",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-black.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1968,14 +2000,14 @@
                                        "iconTheme":  "Papirus Black|themes/icons/niivu/Papirus%20Black.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-black.png"
     },
     {
         "id":  "Papirus BlueGrey",
         "name":  "Papirus BlueGrey",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-bluegrey.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -1985,14 +2017,14 @@
                                        "iconTheme":  "Papirus BlueGrey|themes/icons/niivu/Papirus%20Blue%20Grey.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-bluegrey.png"
     },
     {
         "id":  "Papirus Blue",
         "name":  "Papirus Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2002,14 +2034,14 @@
                                        "iconTheme":  "Papirus Blue|themes/icons/niivu/Papirus%20Blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-blue.png"
     },
     {
         "id":  "Papirus Brown",
         "name":  "Papirus Brown",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-brown.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2019,14 +2051,14 @@
                                        "iconTheme":  "Papirus Brown|themes/icons/niivu/Papirus%20Brown.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-brown.png"
     },
     {
         "id":  "Papirus Deep Orange",
         "name":  "Papirus Deep Orange",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-deep-orange.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2036,14 +2068,14 @@
                                        "iconTheme":  "Papirus Deep Orange|themes/icons/niivu/Papirus%20Deep%20Orange.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-deep-orange.png"
     },
     {
         "id":  "Papirus Dracula",
         "name":  "Papirus Dracula",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-dracula.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2053,14 +2085,14 @@
                                        "iconTheme":  "Papirus Dracula|themes/icons/niivu/Papirus%20Dracula.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-dracula.png"
     },
     {
         "id":  "Papirus Grey",
         "name":  "Papirus Grey",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-grey.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2070,14 +2102,14 @@
                                        "iconTheme":  "Papirus Grey|themes/icons/niivu/Papirus%20Grey.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-grey.png"
     },
     {
         "id":  "Papirus Magenta",
         "name":  "Papirus Magenta",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-magenta.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2087,14 +2119,14 @@
                                        "iconTheme":  "Papirus Magenta|themes/icons/niivu/Papirus%20Magenta.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-magenta.png"
     },
     {
         "id":  "Papirus Pink",
         "name":  "Papirus Pink",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-pink.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2104,14 +2136,14 @@
                                        "iconTheme":  "Papirus Pink|themes/icons/niivu/Papirus%20Pink.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-pink.png"
     },
     {
         "id":  "Papirus Red",
         "name":  "Papirus Red",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-red.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2121,14 +2153,14 @@
                                        "iconTheme":  "Papirus Red|themes/icons/niivu/Papirus%20Red.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-red.png"
     },
     {
         "id":  "Papirus Solarized",
         "name":  "Papirus Solarized",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-solarized.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2138,14 +2170,14 @@
                                        "iconTheme":  "Papirus Solarized|themes/icons/niivu/Papirus%20Solarized.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-solarized.png"
     },
     {
         "id":  "Papirus Teal",
         "name":  "Papirus Teal",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-teal.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2155,14 +2187,14 @@
                                        "iconTheme":  "Papirus Teal|themes/icons/niivu/Papirus%20Teal.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-teal.png"
     },
     {
         "id":  "Papirus Violet",
         "name":  "Papirus Violet",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/papirus-violet.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2172,13 +2204,13 @@
                                        "iconTheme":  "Papirus Violet|themes/icons/niivu/Papirus%20Violet.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/papirus-violet.png"
     },
     {
         "id":  "Tokyo Night",
         "name":  "Tokyo Night",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/tokyo-night.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2188,14 +2220,15 @@
                       "settings":  {
                                        "iconTheme":  "Tokyo Night|themes/icons/niivu/Tokyo%20Night%20blank.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/tokyo-night.png"
     },
     {
         "id":  "Tokyo Night Papirus",
         "name":  "Tokyo Night Papirus",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/tokyo-night-papirus.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2205,14 +2238,14 @@
                                        "iconTheme":  "Tokyo Night Papirus|themes/icons/niivu/Tokyo%20Night%20Papirus.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/tokyo-night-papirus.png"
     },
     {
         "id":  "Tokyo Night SE Papirus",
         "name":  "Tokyo Night SE Papirus",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/tokyo-night-se-papirus.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2222,13 +2255,13 @@
                                        "iconTheme":  "Tokyo Night SE Papirus|themes/icons/niivu/Tokyo%20Night%20SE%20Papirus.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPapirus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/tokyo-night-se-papirus.png"
     },
     {
         "id":  "Pink Folders",
         "name":  "Pink Folders",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/pink-folders.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2238,13 +2271,14 @@
                       "settings":  {
                                        "iconTheme":  "Pink Folders|themes/icons/niivu/pink%20folders.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/pink-folders.png"
     },
     {
         "id":  "Post",
         "name":  "Post",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/post.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2254,14 +2288,15 @@
                       "settings":  {
                                        "iconTheme":  "Post|themes/icons/niivu/post.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/post.png"
     },
     {
         "id":  "Pure Dark",
         "name":  "Pure Dark",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPure.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/pure-dark.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2271,14 +2306,14 @@
                                        "iconTheme":  "Pure Dark|themes/icons/niivu/Pure%20for%20dark%20or%20dark%20side%20panel%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPure.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/pure-dark.png"
     },
     {
         "id":  "Pure Light",
         "name":  "Pure Light",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPure.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/pure-light.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2288,14 +2323,14 @@
                                        "iconTheme":  "Pure Light|themes/icons/niivu/Pure%20for%20light%20themes.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FPure.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/pure-light.png"
     },
     {
         "id":  "Quixotic Day",
         "name":  "Quixotic Day",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FQuixotic.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/quixotic-day.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2305,14 +2340,14 @@
                                        "iconTheme":  "Quixotic Day|themes/icons/niivu/Quixotic-SE%20Day%20AIO.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FQuixotic.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/quixotic-day.png"
     },
     {
         "id":  "Quixotic Dark",
         "name":  "Quixotic Dark",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FQuixotic.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/quixotic-dark.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2322,14 +2357,14 @@
                                        "iconTheme":  "Quixotic Dark|themes/icons/niivu/Quixotic-SE%20Dark%20AIO.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FQuixotic.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/quixotic-dark.png"
     },
     {
         "id":  "Quixotic Night",
         "name":  "Quixotic Night",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FQuixotic.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/quixotic-night.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2339,13 +2374,13 @@
                                        "iconTheme":  "Quixotic Night|themes/icons/niivu/Quixotic-SE%20Night%20AIO.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FQuixotic.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/quixotic-night.png"
     },
     {
         "id":  "Rose Pine",
         "name":  "Rose Pine",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/rose-pine.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2355,13 +2390,14 @@
                       "settings":  {
                                        "iconTheme":  "Rose Pine|themes/icons/niivu/Rose%20Pine.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/rose-pine.png"
     },
     {
         "id":  "Solarized Day AIO",
         "name":  "Solarized Day AIO",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/solarized-day-aio.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2371,13 +2407,14 @@
                       "settings":  {
                                        "iconTheme":  "Solarized Day AIO|themes/icons/niivu/solarized%20Day%20AIO.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/solarized-day-aio.png"
     },
     {
         "id":  "Solarized Night AIO",
         "name":  "Solarized Night AIO",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/solarized-night-aio.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2387,14 +2424,15 @@
                       "settings":  {
                                        "iconTheme":  "Solarized Night AIO|themes/icons/niivu/solarized%20Night%20AIO.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/solarized-night-aio.png"
     },
     {
         "id":  "Solus",
         "name":  "Solus",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsolus%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/solus.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2404,13 +2442,13 @@
                                        "iconTheme":  "Solus|themes/icons/niivu/Solus.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsolus%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/solus.png"
     },
     {
         "id":  "Somatic Rebirth",
         "name":  "Somatic Rebirth",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/somatic-rebirth.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2420,13 +2458,14 @@
                       "settings":  {
                                        "iconTheme":  "Somatic Rebirth|themes/icons/niivu/Somatic%20Rebirth.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/somatic-rebirth.png"
     },
     {
         "id":  "Spaceshrooms Blue",
         "name":  "Spaceshrooms Blue",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/spaceshrooms-blue.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2436,13 +2475,14 @@
                       "settings":  {
                                        "iconTheme":  "Spaceshrooms Blue|themes/icons/niivu/space-shrooms-blue.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/spaceshrooms-blue.png"
     },
     {
         "id":  "Spaceshrooms Green",
         "name":  "Spaceshrooms Green",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/spaceshrooms-green.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2452,13 +2492,14 @@
                       "settings":  {
                                        "iconTheme":  "Spaceshrooms Green|themes/icons/niivu/space-shrooms-green.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/spaceshrooms-green.png"
     },
     {
         "id":  "Spaceshrooms Yellow",
         "name":  "Spaceshrooms Yellow",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/spaceshrooms-yellow.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2468,14 +2509,15 @@
                       "settings":  {
                                        "iconTheme":  "Spaceshrooms Yellow|themes/icons/niivu/space-shrooms-yellow.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/spaceshrooms-yellow.png"
     },
     {
         "id":  "Super Remix Blue",
         "name":  "Super Remix Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSuper%2520REMIX%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/super-remix-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2485,14 +2527,14 @@
                                        "iconTheme":  "Super Remix Blue|themes/icons/niivu/Super%20Remix%20Blue.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSuper%2520REMIX%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/super-remix-blue.png"
     },
     {
         "id":  "Super Remix Green",
         "name":  "Super Remix Green",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSuper%2520REMIX%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/super-remix-green.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2502,14 +2544,14 @@
                                        "iconTheme":  "Super Remix Green|themes/icons/niivu/Super%20Remix%20Green.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSuper%2520REMIX%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/super-remix-green.png"
     },
     {
         "id":  "Super Remix Slate",
         "name":  "Super Remix Slate",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSuper%2520REMIX%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/super-remix-slate.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2519,14 +2561,14 @@
                                        "iconTheme":  "Super Remix Slate|themes/icons/niivu/Super%20Remix%20Slate.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSuper%2520REMIX%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/super-remix-slate.png"
     },
     {
         "id":  "Sweet Awesomeness",
         "name":  "Sweet Awesomeness",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSweet%2520Paranoia%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweet-awesomeness.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2536,14 +2578,14 @@
                                        "iconTheme":  "Sweet Awesomeness|themes/icons/niivu/Sweet%20Awesomeness.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSweet%2520Paranoia%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweet-awesomeness.png"
     },
     {
         "id":  "Sweetness Blue",
         "name":  "Sweetness Blue",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweetness-blue.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2553,14 +2595,14 @@
                                        "iconTheme":  "Sweetness Blue|themes/icons/niivu/Sweetness%20Blue%20folders.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweetness-blue.png"
     },
     {
         "id":  "Sweetness Neutral",
         "name":  "Sweetness Neutral",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweetness-neutral.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2570,14 +2612,14 @@
                                        "iconTheme":  "Sweetness Neutral|themes/icons/niivu/Sweetness%20Neutral.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweetness-neutral.png"
     },
     {
         "id":  "Sweetness Original",
         "name":  "Sweetness Original",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweetness-original.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2587,14 +2629,14 @@
                                        "iconTheme":  "Sweetness Original|themes/icons/niivu/Sweetness%20Original.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweetness-original.png"
     },
     {
         "id":  "Sweetness Pink",
         "name":  "Sweetness Pink",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweetness-pink.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2604,14 +2646,14 @@
                                        "iconTheme":  "Sweetness Pink|themes/icons/niivu/Sweetness%20Pink%20folders.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweetness-pink.png"
     },
     {
         "id":  "Sweetness Purple",
         "name":  "Sweetness Purple",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweetness-purple.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2621,14 +2663,14 @@
                                        "iconTheme":  "Sweetness Purple|themes/icons/niivu/Sweetness%20Purple%20folders.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2Fsweetness%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweetness-purple.png"
     },
     {
         "id":  "Sweet Rainbow",
         "name":  "Sweet Rainbow",
         "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
-        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSweet%2520Paranoia%2520by%2520niivu.png\u0026w=480\u0026output=jpg\u0026q=82",
-        "previewApprox":  true,
+        "preview":  "previews/icons/sweet-rainbow.png",
+        "previewApprox":  false,
         "reference":  null,
         "apply":  {
                       "type":  "windhawk",
@@ -2638,13 +2680,13 @@
                                        "iconTheme":  "Sweet Rainbow|themes/icons/niivu/Sweet-Rainbow.zip"
                                    }
                   },
-        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Fniivu%2Fresource-redirect-icon-themes%40main%2FPreviews%2FSweet%2520Paranoia%2520by%2520niivu.png\u0026w=1280\u0026output=jpg\u0026q=82"
+        "previewLarge":  "previews/icons/sweet-rainbow.png"
     },
     {
         "id":  "UOS",
         "name":  "UOS",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/uos.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2654,13 +2696,14 @@
                       "settings":  {
                                        "iconTheme":  "UOS|themes/icons/niivu/Uos%20Icon%20pack.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/uos.png"
     },
     {
         "id":  "Windows 11 New (default)",
         "name":  "Windows 11 New (default)",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/windows-11-new-default.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2670,13 +2713,14 @@
                       "settings":  {
                                        "iconTheme":  "Windows 11 New (default)|themes/icons/niivu/Windows%2011%20New%20%28default%29.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/windows-11-new-default.png"
     },
     {
         "id":  "Windows 11 New Folders Blue",
         "name":  "Windows 11 New Folders Blue",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/windows-11-new-folders-blue.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2686,13 +2730,14 @@
                       "settings":  {
                                        "iconTheme":  "Windows 11 New Folders Blue|themes/icons/niivu/Windows%2011%20New%20Folders%20Blue.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/windows-11-new-folders-blue.png"
     },
     {
         "id":  "Windows 11 New Folders Green",
         "name":  "Windows 11 New Folders Green",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/windows-11-new-folders-green.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2702,13 +2747,14 @@
                       "settings":  {
                                        "iconTheme":  "Windows 11 New Folders Green|themes/icons/niivu/Windows%2011%20New%20Folders%20Green.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/windows-11-new-folders-green.png"
     },
     {
         "id":  "Windows 11 New Folders Purple",
         "name":  "Windows 11 New Folders Purple",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/windows-11-new-folders-purple.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2718,13 +2764,14 @@
                       "settings":  {
                                        "iconTheme":  "Windows 11 New Folders Purple|themes/icons/niivu/Windows%2011%20New%20Folders%20Purple.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/windows-11-new-folders-purple.png"
     },
     {
         "id":  "Windows 11 New Folders Slate",
         "name":  "Windows 11 New Folders Slate",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/windows-11-new-folders-slate.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2734,13 +2781,14 @@
                       "settings":  {
                                        "iconTheme":  "Windows 11 New Folders Slate|themes/icons/niivu/Windows%2011%20New%20Folders%20Slate.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/windows-11-new-folders-slate.png"
     },
     {
         "id":  "Windows 11 New Folders Yellow",
         "name":  "Windows 11 New Folders Yellow",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: niivu).",
+        "preview":  "previews/icons/windows-11-new-folders-yellow.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2750,13 +2798,14 @@
                       "settings":  {
                                        "iconTheme":  "Windows 11 New Folders Yellow|themes/icons/niivu/Windows%2011%20New%20Folders%20Yellow.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/windows-11-new-folders-yellow.png"
     },
     {
         "id":  "PaneVista",
         "name":  "PaneVista",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: SoftwareType). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: SoftwareType).",
+        "preview":  "previews/icons/panevista.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2766,13 +2815,14 @@
                       "settings":  {
                                        "iconTheme":  "PaneVista|themes/icons/SoftwareType/PaneVista.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/panevista.png"
     },
     {
         "id":  "Pane7",
         "name":  "Pane7",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: ImSwordQueen). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: ImSwordQueen).",
+        "preview":  "previews/icons/pane7.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2782,13 +2832,14 @@
                       "settings":  {
                                        "iconTheme":  "Pane7|themes/icons/ImSwordQueen/Pane7.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/pane7.png"
     },
     {
         "id":  "Pane8.1",
         "name":  "Pane8.1",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: NicSonic). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: NicSonic).",
+        "preview":  "previews/icons/pane8-1.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2798,13 +2849,14 @@
                       "settings":  {
                                        "iconTheme":  "Pane8.1|themes/icons/NicSonic/Pane8.1.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/pane8-1.png"
     },
     {
         "id":  "Minecraft Axolotle",
         "name":  "Minecraft Axolotle",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-axolotle.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2814,13 +2866,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Axolotle|themes/icons/Wasiabbas4pk/Minecraft%20Axolotle.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-axolotle.png"
     },
     {
         "id":  "Minecraft Fox",
         "name":  "Minecraft Fox",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-fox.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2830,13 +2883,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Fox|themes/icons/Wasiabbas4pk/Minecraft%20Fox.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-fox.png"
     },
     {
         "id":  "Minecraft TNT",
         "name":  "Minecraft TNT",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-tnt.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2846,13 +2900,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft TNT|themes/icons/Wasiabbas4pk/Minecraft%20TNT.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-tnt.png"
     },
     {
         "id":  "Minecraft Panda",
         "name":  "Minecraft Panda",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-panda.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2862,13 +2917,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Panda|themes/icons/Wasiabbas4pk/Minecraft%20Panda.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-panda.png"
     },
     {
         "id":  "Minecraft Creeper",
         "name":  "Minecraft Creeper",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-creeper.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2878,13 +2934,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Creeper|themes/icons/Wasiabbas4pk/Minecraft%20Creeper.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-creeper.png"
     },
     {
         "id":  "Minecraft Ender Dragon",
         "name":  "Minecraft Ender Dragon",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-ender-dragon.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2894,13 +2951,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Ender Dragon|themes/icons/Wasiabbas4pk/Minecraft%20Ender%20Dragon.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-ender-dragon.png"
     },
     {
         "id":  "Minecraft Shulker (Blue)",
         "name":  "Minecraft Shulker (Blue)",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-shulker-blue.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2910,13 +2968,14 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Shulker (Blue)|themes/icons/Wasiabbas4pk/Minecraft%20Shulker%28Blue%29.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-shulker-blue.png"
     },
     {
         "id":  "Minecraft Shulker (Black)",
         "name":  "Minecraft Shulker (Black)",
-        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer). Sin captura: pulsa «Ver ejemplos».",
-        "preview":  null,
+        "description":  "Pack de iconos para carpetas, unidades y programas (autor: WasiXGamer).",
+        "preview":  "previews/icons/minecraft-shulker-black.png",
         "previewApprox":  false,
         "reference":  null,
         "apply":  {
@@ -2926,6 +2985,7 @@
                       "settings":  {
                                        "iconTheme":  "Minecraft Shulker (Black)|themes/icons/Wasiabbas4pk/Minecraft%20Shulker%28Black%29.zip"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/icons/minecraft-shulker-black.png"
     }
 ]

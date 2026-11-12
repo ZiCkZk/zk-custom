@@ -98,3 +98,9 @@ Personalizacion/                   (carpeta del proyecto ZK-Custom)
 ## Colores de la interfaz
 
 La ventana de ZK-Custom usa los colores de la paleta que elijas y cambia al momento. Si aún no has elegido ninguna, toma el color de acento y el modo claro/oscuro de Windows.
+
+## Vistas previas y pruebas
+
+- **Todas las opciones tienen vista previa.** Los 175 packs de iconos muestran sus iconos reales, extraídos del propio pack con `catalog\Build-IconPreviews.ps1`. Los cursores muestran sus punteros reales sobre fondo oscuro y claro (`catalog\Build-CursorPreviews.ps1`), y los dibujados por el mod se recrean con sus colores y brillo. Las opciones por defecto se muestran como «Como viene en Windows».
+- **Probar 20 s:** aplica solo lo elegido en la sección actual, cuenta atrás y lo deshace solo. Pulsa **Me lo quedo** para conservarlo. Sirve para los pocos temas de Windhawk que no publican captura.
+- **Cambios por sección:** elegir algo en una sección solo marca esa sección como pendiente, y al aplicar solo se reenvían a Windhawk los mods que cambiaron. Cambiar la paleta solo vuelve a marcar las secciones donde activaste «Usar los colores de mi paleta».

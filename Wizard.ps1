@@ -337,6 +337,30 @@ function Render-Mock($m, $p) {
             $y = $H - 35 - $lines.Count * 11
             foreach ($l in $lines) { Txt $dc $l ($W - 20) $y 17 '#FFFFFF' -align 'Right'; $y += 22 }
         }
+        'unknown' {
+            # Tema sin captura oficial: silueta del elemento + aviso para probarlo de verdad
+            switch ($m.region) {
+                'taskbar' { $dc.DrawRoundedRectangle((B $p.base 0.9), (Pn $p.primary 1.5), (Rc 30 150 340 40), 10, 10)
+                            foreach ($i in 0..5) { $dc.DrawRoundedRectangle((B @($p.primary, $p.secondary, $p.highlight)[$i % 3]), $null, (Rc (120 + $i * 28) 160 20 20), 5, 5) } }
+                'notif'   { $dc.DrawRoundedRectangle((B $p.base 0.9), (Pn $p.primary 1.5), (Rc 230 20 150 185), 10, 10)
+                            foreach ($i in 0..2) { $dc.DrawRoundedRectangle((B $p.surface), $null, (Rc 240 (32 + $i * 56) 130 46), 6, 6) } }
+                default   { $dc.DrawRoundedRectangle((B $p.base 0.92), (Pn $p.primary 1.5), (Rc 40 20 320 170), 10, 10)
+                            $dc.DrawRectangle((B $p.surface), $null, (Rc 41 21 90 168))
+                            foreach ($i in 0..3) { $dc.DrawRoundedRectangle((B $p.surface), $null, (Rc 145 (40 + $i * 36) 200 28), 5, 5) } }
+            }
+            $dc.DrawRoundedRectangle((B '#000000' 0.6), $null, (Rc 60 82 280 52), 8, 8)
+            Txt $dc "$($m.text)" 200 88 14 '#FFFFFF' -weight 'SemiBold' -align 'Center'
+            Txt $dc 'Sin captura oficial · pulsa «Probar 20 s»' 200 110 11 '#DCE6F5' -align 'Center'
+        }
+        'default' {
+            # Opción «como viene en Windows»
+            $wbg = New-Object Windows.Media.LinearGradientBrush ((Get-Col '#1F3A68')), ((Get-Col '#2B6CB0')), 35.0
+            $dc.DrawRectangle($wbg, $null, (Rc 0 0 $W $H))
+            $s = 20; $g = 4; $x0 = 200 - $s - $g / 2; $y0 = 78 - $s - $g / 2
+            foreach ($q in @(@(0, 0), @(1, 0), @(0, 1), @(1, 1))) { $dc.DrawRectangle((B '#FFFFFF' 0.92), $null, (Rc ($x0 + $q[0] * ($s + $g)) ($y0 + $q[1] * ($s + $g)) $s $s)) }
+            Txt $dc 'Como viene en Windows' 200 128 18 '#FFFFFF' -weight 'SemiBold' -align 'Center'
+            Txt $dc "$($m.text)" 200 156 13 '#DCE6F5' -align 'Center'
+        }
         'anim' {
             # Fotograma representativo de cada fondo animado, con los colores de la paleta
             $dc.DrawRectangle((B $p.base), $null, (Rc 0 0 $W $H))
@@ -424,6 +448,8 @@ function New-CardItem($step, $it, $p) {
     }
     if ($it.apply.type -eq 'palette') { $pl = $it.apply.palette; $sw = @($pl.base, $pl.surface, $pl.primary, $pl.secondary, $pl.highlight, $pl.text) }
     if (-not $prev -and $m -and $m.kind -notin 'glass', 'trail') { $prev = Render-Mock $m $p }
+    if (-not $prev -and -not $sw -and $it.id -eq 'none' -and $m.kind -ne 'glass') { $prev = Render-Mock @{ kind = 'default'; text = "Sin cambios en $($step.Title.ToLower())" } $p; $m = $null }
+    if (-not $prev -and -not $m -and -not $sw -and $step.Region) { $prev = Render-Mock @{ kind = 'unknown'; region = $step.Region; text = $it.name } $p }
     $trailBrush = $null; $dash = '0 1 0 400'
     if ($m.kind -eq 'trail') {
         $o = Get-Opts $step
@@ -495,7 +521,7 @@ $OptSpecs = @{
     )
     corners = @( @{ K = 'custom'; L = 'Radio exacto (-1 = el de la opción)'; T = 'slider'; D = -1; Min = -1; Max = 24; U = ' px'; Adv = $true } )
     menus = @(
-        @{ K = 'usePalette'; L = 'Teñir con mi paleta';       T = 'toggle'; D = $true }
+        @{ K = 'usePalette'; L = 'Teñir con mi paleta';       T = 'toggle'; D = $false }
         @{ K = 'tint';       L = 'Intensidad del tinte';      T = 'slider'; D = 35; Min = 0; Max = 100; U = '%' }
         @{ K = 'rounded';    L = 'Esquinas redondeadas';      T = 'toggle'; D = $true }
     )
@@ -617,6 +643,7 @@ function Set-OptsFromItem($step, $item) {
 # ======================================================================================
 
 function Set-WindhawkEntry($mod, $name, $settings, [bool]$enabled = $true) {
+    if ($State.StepModsCollector) { [void]$State.StepModsCollector.Add($mod) }   # qué mods toca cada sección (para «Probar 20 s»)
     $mods = @($State.Config.windhawk.mods | Where-Object { $_.id -ne $mod })
     $e = [ordered]@{ id = $mod; name = $name; enabled = $enabled }
     if ($settings -and $settings.Count) { $e.settings = $settings }
@@ -624,12 +651,31 @@ function Set-WindhawkEntry($mod, $name, $settings, [bool]$enabled = $true) {
     $State.Config.modules.Windhawk = $true
 }
 function Add-Pending($step) {
-    foreach ($m in @($step.Modules)) { if ($m) { [void]$State.Pending.Add($m) } }
-    if ($step.Restart) { $State.PendingRestart = $true }
+    # Lo pendiente se cuenta por sección: elegir algo en una no marca las demás
+    [void]$State.Pending.Add($step.Key)
     $State.Dirty = $true
 }
 
+function Get-ConfigPrint {
+    # Huella de lo que se aplica al PC (sin las elecciones del asistente), para saber si algo cambió de verdad
+    $c = [ordered]@{}; foreach ($k in $State.Config.Keys) { if ($k -notin 'wizard', 'meta') { $c[$k] = $State.Config[$k] } }
+    ConvertTo-Json $c -Depth 12 -Compress
+}
+function Get-ModsPrint {
+    $h = @{}; foreach ($m in @($State.Config.windhawk.mods)) { if ($m -and $m.id) { $h[$m.id] = ConvertTo-Json $m -Depth 8 -Compress } }
+    $h
+}
+
 function Set-Selection($step, $item, [switch]$FromUser) {
+    $before = Get-ConfigPrint
+    $State.StepModsCollector = New-Object System.Collections.Generic.HashSet[string]
+    try { Set-SelectionCore $step $item -FromUser:$FromUser }
+    finally { if (-not $State.StepMods) { $State.StepMods = @{} }; $State.StepMods[$step.Key] = @($State.StepModsCollector); $State.StepModsCollector = $null }
+    $State.Dirty = $true
+    if ((Get-ConfigPrint) -ne $before) { Add-Pending $step }   # solo si cambia algo que se aplica al PC
+}
+
+function Set-SelectionCore($step, $item, [switch]$FromUser) {
     if ($FromUser) { Set-OptsFromItem $step $item }
     $a = $item.Raw.apply; $cfg = $State.Config; $p = Get-Palette (Get-CurrentSel)
     switch ($a.type) {
@@ -660,7 +706,6 @@ function Set-Selection($step, $item, [switch]$FromUser) {
         Set-WindhawkEntry 'start-button-replacer' 'Start Button Replacer' $null $false
     }
     $cfg.wizard.selections[$step.Key] = $item.Id
-    Add-Pending $step
 }
 
 function Get-OrbFiles($item, $p) {
@@ -815,9 +860,19 @@ function Select-CustomOrb {
 function Update-DependentSteps {
     # Al cambiar la paleta, se recalculan los estilos que usan sus colores
     $State.AllItems.Remove('startbtn')
+    # Solo se recalculan las secciones que de verdad usan los colores de la paleta
     foreach ($k in 'taskbar', 'startmenu', 'notifications', 'explorer', 'settingsapp', 'trail', 'menus', 'selection', 'startbtn') {
         $it = Find-Item $k $State.Config.wizard.selections[$k]
-        if ($it) { Set-Selection $StepByKey[$k] $it }
+        if (-not $it -or $it.Id -eq 'none') { continue }
+        $o = Get-Opts $StepByKey[$k]
+        $usesPalette = switch ($k) {
+            'menus'     { [bool]$o.usePalette }
+            'trail'     { [bool]$o.usePalette }
+            'selection' { (ConvertTo-Json $it.Raw.apply -Depth 5 -Compress) -match '\{(primary|secondary|highlight)\}' }
+            'startbtn'  { [bool]$it.Raw.apply.palette }
+            default     { [bool]$o.usePalette }
+        }
+        if ($usesPalette) { Set-Selection $StepByKey[$k] $it }
     }
     foreach ($k in 'trail', 'tbsize', 'startbtn', 'menus', 'selection', 'borders', 'corners', 'clock', 'lockclock', 'effects', 'animated', 'daynight') { $State.AllItems.Remove($k) }
 }
@@ -1381,6 +1436,7 @@ $XamlText = @'
         <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
           <Button x:Name="BtnUndo" Content="Deshacer último cambio" IsEnabled="False"/>
           <Button x:Name="BtnSave" Content="Guardar en config.json"/>
+          <Button x:Name="BtnTry" Content="Probar 20 s" ToolTip="Aplica solo lo elegido en esta sección, espera 20 segundos y lo deshace solo"/>
           <Button x:Name="BtnApply" Content="Aplicar a mi PC" Style="{StaticResource Primary}" Padding="20,8"/>
         </StackPanel>
         <TextBlock x:Name="Status" VerticalAlignment="Center" Foreground="#9AA5CE" TextTrimming="CharacterEllipsis"/>
@@ -1437,7 +1493,7 @@ function Set-Res($el, $prop, [string]$key) { $el.SetResourceReference($prop, $ke
 function UiB([string]$key) { $Window.Resources[$key] }
 $UI = @{}
 foreach ($n in 'BtnCatalog','WhStatus','StepList','Preview','PreviewLabel','StepTitle','StepHelp','SearchRow','Search','Count','Items','TweaksPanel','TweaksList','Summary',
-               'TabOpts','TabLog','OptsPane','ModeBar','ModeBasic','ModeAdv','OptsList','LogPane','Log','BtnUndo','BtnSave','BtnApply','Status') { $UI[$n] = $Window.FindName($n) }
+               'TabOpts','TabLog','OptsPane','ModeBar','ModeBasic','ModeAdv','OptsList','LogPane','Log','BtnUndo','BtnSave','BtnApply','BtnTry','Status') { $UI[$n] = $Window.FindName($n) }
 
 function Set-Status($text) { $UI.Status.Text = $text }
 function Show-Tab([string]$t) {
@@ -1497,7 +1553,7 @@ function Update-StepList {
     $sel = $UI.StepList.SelectedIndex; $last = ''
     $UI.StepList.ItemsSource = @($Steps | ForEach-Object {
         $g = $_.Group; $show = ($g -and $g -ne $last); $last = $g
-        $pend = @($_.Modules | Where-Object { $_ -and $State.Pending.Contains($_) }).Count -gt 0 -and ($State.Config.wizard.selections.Contains($_.Key) -or $_.Kind -eq 'tweaks')
+        $pend = $State.Pending.Contains($_.Key)
         [pscustomobject]@{ Title = $_.Title; Group = $g.ToUpper(); GroupVis = $(if ($show) { 'Visible' } else { 'Collapsed' })
                            Choice = $(if ($_.Key -eq 'summary') { '' } else { Get-SelectionName $_ }); PendVis = $(if ($pend) { 'Visible' } else { 'Collapsed' }) }
     })
@@ -1720,7 +1776,7 @@ function Update-Summary {
         $n = if ($m.settings) { @($m.settings.Keys).Count } else { 0 }
         $lines += ('  - {0} [{1}] {2} ajustes' -f $m.id, $(if ($m.enabled) { 'activo' } else { 'desactivado' }), $n)
     }
-    $lines += '', $(if ($State.Pending.Count) { "Pendiente de aplicar: $(@($State.Pending) -join ', ')" } else { 'Todo aplicado.' })
+    $lines += '', $(if ($State.Pending.Count) { "Pendiente de aplicar: $((@($State.Pending) | ForEach-Object { $StepByKey[$_].Title }) -join ', ')" } else { 'Todo aplicado.' })
     $lines += $(if ($State.Dirty) { 'Hay cambios sin guardar en config.json.' } else { 'config.json está al día.' })
     $UI.Summary.Text = $lines -join "`r`n"
 }
@@ -1743,20 +1799,41 @@ $Timer.Add_Tick({
         $Timer.Stop()
         $code = $State.Proc.ExitCode; $State.Proc = $null
         $failed = $UI.Log.Text -match '\[XX\]'
-        if (-not $State.Undoing -and $code -eq 0) { $State.Pending.Clear(); $State.PendingRestart = $false }
+        $ok = ($code -eq 0 -and -not $failed)
+        if ($State.TryPhase -eq 'applying') {
+            # «Probar 20 s»: aplicado; empieza la cuenta atrás
+            if ($ok) { $State.TryPhase = 'counting'; $State.TrySeconds = 20; $UI.BtnTry.Content = 'Me lo quedo'; $TryTimer.Start() }
+            else { $State.TryPhase = $null }
+        } elseif ($State.TryPhase -eq 'reverting') {
+            Add-Pending $StepByKey[$State.TryStep]
+            foreach ($m in @($State.StepMods[$State.TryStep])) { $State.AppliedMods.Remove($m) }
+            $State.TryPhase = $null; $UI.BtnTry.Content = 'Probar 20 s'
+            $State.Undoing = $false
+            Set-Status 'Prueba terminada: tu PC volvió a como estaba. Si te gustó, pulsa "Aplicar a mi PC".'
+            foreach ($b in 'BtnApply', 'BtnCatalog', 'BtnTry') { $UI[$b].IsEnabled = $true }
+            $UI.BtnUndo.IsEnabled = $false; Update-StepList; return
+        } elseif (-not $State.Undoing -and $code -eq 0) { $State.Pending.Clear(); if ($State.ApplyingMods) { $State.AppliedMods = $State.ApplyingMods } }
+        if ($State.Undoing) { $State.AppliedMods = @{} }   # tras deshacer, la próxima vez se reenvía todo
         $State.Undoing = $false
-        Set-Status $(if ($code -ne 0 -or $failed) { 'Terminado con errores: revisa el Registro (líneas [XX]).' } else { 'Listo. Si algo no te gusta, pulsa "Deshacer último cambio".' })
-        foreach ($b in 'BtnApply', 'BtnCatalog') { $UI[$b].IsEnabled = $true }
+        Set-Status $(if ($code -ne 0 -or $failed) { 'Terminado con errores: revisa el Registro (líneas [XX]).' } elseif ($State.TryPhase -eq 'counting') { "Probando «$(Get-SelectionName $StepByKey[$State.TryStep])»: se deshace en 20 s. Pulsa ""Me lo quedo"" para conservarlo." } else { 'Listo. Si algo no te gusta, pulsa "Deshacer último cambio".' })
+        foreach ($b in 'BtnApply', 'BtnCatalog', 'BtnTry') { $UI[$b].IsEnabled = $true }
         $UI.BtnUndo.IsEnabled = [bool]$State.LastBackup
         Update-WindhawkStatus; Update-StepList
     }
 })
 
-function Start-Run([string[]]$Modules, [bool]$Restart, [string]$Label) {
+function Start-Run([string[]]$Modules, [bool]$Restart, [string]$Label, $OnlyMods = $null) {
     if ($State.Proc) { return }
     if (-not $Modules) { Set-Status 'No hay cambios pendientes.'; return }
     $tmp = Join-Path $CacheDir 'wizard-config.json'
+    # Solo se envían a Windhawk los mods que cambiaron desde la última vez que aplicaste
+    $now = Get-ModsPrint
+    $changed = @($now.Keys | Where-Object { $now[$_] -ne $State.AppliedMods[$_] })
+    if ($null -ne $OnlyMods) { $changed = @($OnlyMods) }   # «Probar 20 s»: solo los mods de esa sección
+    $State.Config.windhawk.applyOnly = $changed
     Write-Json $State.Config $tmp
+    $State.Config.windhawk.Remove('applyOnly')
+    $State.ApplyingMods = $now
     $bd = Join-Path $Root ("backups\" + (Get-Date -Format 'yyyyMMdd-HHmmss') + "-$Label")
     $a = @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', "`"$Root\Install.ps1`"", '-ConfigPath', "`"$tmp`"", '-BackupDir', "`"$bd`"", '-Only', ($Modules -join ','))
     if ($State.RestorePointDone) { $a += '-SkipRestorePoint' } else { $State.RestorePointDone = $true }
@@ -1826,10 +1903,40 @@ $UI.Items.AddHandler([Windows.Controls.Primitives.ButtonBase]::ClickEvent, [Wind
     $e.Handled = $true
 })
 $UI.BtnApply.Add_Click({
-    $mods = @($State.Pending)
-    Start-Run $mods ([bool]$State.PendingRestart) 'aplicar'
+    # Módulos de las secciones con cambios; de Windhawk, solo los mods que han cambiado
+    $steps = @($State.Pending | ForEach-Object { $StepByKey[$_] })
+    $mods = @($steps | ForEach-Object { $_.Modules } | Where-Object { $_ } | Select-Object -Unique)
+    $restart = [bool](@($steps | Where-Object { $_.Restart }).Count)
+    Start-Run $mods $restart 'aplicar'
 })
-$UI.BtnUndo.Add_Click({ Start-Undo })
+$UI.BtnUndo.Add_Click({ if ($State.TryPhase -eq 'counting') { $TryTimer.Stop(); $State.TryPhase = 'reverting' }; Start-Undo })
+
+# ---------------- Probar 20 s ----------------
+$TryTimer = New-Object Windows.Threading.DispatcherTimer
+$TryTimer.Interval = [TimeSpan]::FromSeconds(1)
+$TryTimer.Add_Tick({
+    $State.TrySeconds--
+    if ($State.TrySeconds -gt 0) {
+        Set-Status "Probando «$(Get-SelectionName $StepByKey[$State.TryStep])»: se deshace en $($State.TrySeconds) s. Pulsa ""Me lo quedo"" para conservarlo."
+    } else { $TryTimer.Stop(); $State.TryPhase = 'reverting'; Start-Undo }
+})
+$UI.BtnTry.Add_Click({
+    if ($State.TryPhase -eq 'counting') {
+        # Me lo quedo: se conserva lo probado
+        $TryTimer.Stop(); $State.TryPhase = $null; $UI.BtnTry.Content = 'Probar 20 s'
+        [void]$State.Pending.Remove($State.TryStep)
+        $now = Get-ModsPrint; foreach ($m in @($State.StepMods[$State.TryStep])) { $State.AppliedMods[$m] = $now[$m] }
+        Update-StepList; Set-Status 'Te lo quedas: aplicado a tu PC.'; return
+    }
+    if ($State.Proc) { return }
+    $step = $Steps[$State.Index]
+    if (-not $step.Modules -or $step.Kind -in 'summary', 'themes') { Set-Status 'Elige una sección concreta (barra, iconos, cursores...) para probarla.'; return }
+    if (-not $State.Pending.Contains($step.Key)) { Set-Status 'Elige primero una opción distinta de la que ya tienes aplicada.'; return }
+    $State.TryStep = $step.Key; $State.TryPhase = 'applying'
+    $only = if ($State.StepMods -and $State.StepMods.ContainsKey($step.Key)) { @($State.StepMods[$step.Key]) } else { @() }
+    $UI.BtnTry.IsEnabled = $false
+    Start-Run @($step.Modules) ([bool]$step.Restart) "prueba-$($step.Key)" $only
+})
 $UI.BtnSave.Add_Click({
     $cfgPath = Join-Path $Root 'config.json'
     if (Test-Path $cfgPath) { Copy-Item $cfgPath (Join-Path $CacheDir 'config.anterior.json') -Force }
@@ -1867,6 +1974,7 @@ $Downloader = Start-Downloader
 foreach ($s in $Steps) { if ($s.Catalog -and $s.Key -ne 'themes') { foreach ($it in (Get-StepItems $s)) { if ($it.Preview -is [string]) { [void](Resolve-Img $it.Raw.preview) } } } }
 
 $State.Dirty = $false; $State.Pending.Clear()
+$State.AppliedMods = Get-ModsPrint   # lo que ya estaba en config.json se considera aplicado
 Update-UiTheme
 Update-WindhawkStatus
 Update-StepList

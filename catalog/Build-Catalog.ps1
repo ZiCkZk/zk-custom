@@ -36,7 +36,7 @@ function Get-ModOptions {
         if (-not $inSetting) { continue }
         if ($l -match '^\s+\$options:\s*$') { $inOptions = $true; continue }
         if ($inOptions -and $l -match '^\s+- (.+?): (.+)$') {
-            $key = $Matches[1].Trim().Trim('"').Trim("'"); $label = $Matches[2].Trim().Trim("'").Trim('"')
+            $key = $Matches[1].Trim().Trim('"').Trim("'"); $label = $Matches[2].Trim().Trim("'").Trim('"'); if ($label -match '^[>|]-?$') { $label = $key }   # etiqueta multilinea de YAML
             $opts.Add([pscustomobject]@{ Key = $key; Label = $label }); continue
         }
         if ($inOptions -and $l -notmatch '^\s+- ') { $inOptions = $false }
@@ -47,6 +47,7 @@ function Get-ModOptions {
 function Get-Thumb($url, [int]$w) {
     # Miniatura ligera via wsrv.nl (redimensiona la imagen publica al vuelo)
     if (-not $url) { return $null }
+    if ($url -notmatch '^https?://') { return $url }   # vistas locales generadas (previews\...)
     'https://wsrv.nl/?url=' + [uri]::EscapeDataString(($url -replace '^https://', '')) + "&w=$w&output=jpg&q=82"
 }
 
@@ -105,6 +106,9 @@ function Build-IconCatalog {
             if ($hit) { $prev = "$cdn/niivu/resource-redirect-icon-themes@main/" + (Get-EscapedPath $hit); $exact = ($w -eq $words[0]); break }
         }
         if ($prev -and -not ($exact -and $words.Count -eq 1)) { $approx = $true }
+        # Vista exacta generada por Build-IconPreviews.ps1 (iconos reales del pack)
+        $slug = ($display -replace '[^\w\-]+', '-').Trim('-').ToLower()
+        if (Test-Path (Join-Path $PSScriptRoot "previews\icons\$slug.png")) { $prev = "previews/icons/$slug.png"; $approx = $false }
         $desc = "Pack de iconos para carpetas, unidades y programas$(if ($author) { " (autor: $author)" })."
         if (-not $prev) { $desc += (U ' Sin captura: pulsa «Ver ejemplos».') }
         $items += New-Entry $display $display $desc $prev $approx ([ordered]@{ type = 'windhawk'; mod = 'icon-resource-redirect'; modName = $mod.Name; settings = [ordered]@{ iconTheme = $o.Key } })
@@ -118,6 +122,8 @@ function Build-CursorModCatalog {
     $mod = Get-ModOptions -ModId 'mouse-cursor-themes' -SettingKey 'theme'
     foreach ($o in $mod.Options) {
         if (-not $o.Key -or $o.Key -eq 'custom') { continue }
+        $lp = if (Test-Path (Join-Path $PSScriptRoot "previews\cursors\wh-$($o.Key).png")) { "previews/cursors/wh-$($o.Key).png" } else { $null }
+        if ($lp) { New-Entry "wh-$($o.Key)" "$($o.Label) (dibujado)" 'Cursor vectorial dibujado por el mod Mouse Cursor Themes. Vista recreada con sus colores, contorno y brillo.' $lp $false ([ordered]@{ type = 'windhawk'; mod = 'mouse-cursor-themes'; modName = $mod.Name; settings = [ordered]@{ theme = $o.Key } }) 'https://windhawk.net/mods/mouse-cursor-themes'; continue }
         New-Entry "wh-$($o.Key)" "$($o.Label) (dibujado)" (U 'Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.') $null $false ([ordered]@{ type = 'windhawk'; mod = 'mouse-cursor-themes'; modName = $mod.Name; settings = [ordered]@{ theme = $o.Key } }) 'https://windhawk.net/mods/mouse-cursor-themes'
     }
 }

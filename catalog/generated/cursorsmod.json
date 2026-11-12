@@ -2,8 +2,8 @@
     {
         "id":  "wh-classic_white",
         "name":  "Classic White (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-classic_white.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -13,13 +13,14 @@
                       "settings":  {
                                        "theme":  "classic_white"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-classic_white.png"
     },
     {
         "id":  "wh-classic_black",
         "name":  "Classic Black (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-classic_black.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -29,13 +30,14 @@
                       "settings":  {
                                        "theme":  "classic_black"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-classic_black.png"
     },
     {
         "id":  "wh-neon_blue",
         "name":  "Neon Blue (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-neon_blue.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -45,13 +47,14 @@
                       "settings":  {
                                        "theme":  "neon_blue"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-neon_blue.png"
     },
     {
         "id":  "wh-neon_pink",
         "name":  "Neon Pink (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-neon_pink.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -61,13 +64,14 @@
                       "settings":  {
                                        "theme":  "neon_pink"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-neon_pink.png"
     },
     {
         "id":  "wh-neon_green",
         "name":  "Neon Green (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-neon_green.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -77,13 +81,14 @@
                       "settings":  {
                                        "theme":  "neon_green"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-neon_green.png"
     },
     {
         "id":  "wh-sunset",
         "name":  "Sunset (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-sunset.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -93,13 +98,14 @@
                       "settings":  {
                                        "theme":  "sunset"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-sunset.png"
     },
     {
         "id":  "wh-ocean",
         "name":  "Ocean (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-ocean.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -109,13 +115,14 @@
                       "settings":  {
                                        "theme":  "ocean"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-ocean.png"
     },
     {
         "id":  "wh-gold",
         "name":  "Gold (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-gold.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -125,13 +132,14 @@
                       "settings":  {
                                        "theme":  "gold"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-gold.png"
     },
     {
         "id":  "wh-rainbow",
         "name":  "Rainbow (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-rainbow.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -141,13 +149,14 @@
                       "settings":  {
                                        "theme":  "rainbow"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-rainbow.png"
     },
     {
         "id":  "wh-crimson",
         "name":  "Crimson (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-crimson.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -157,13 +166,14 @@
                       "settings":  {
                                        "theme":  "crimson"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-crimson.png"
     },
     {
         "id":  "wh-silver",
         "name":  "Silver (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-silver.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -173,13 +183,14 @@
                       "settings":  {
                                        "theme":  "silver"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-silver.png"
     },
     {
         "id":  "wh-forest",
         "name":  "Forest (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-forest.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -189,13 +200,14 @@
                       "settings":  {
                                        "theme":  "forest"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-forest.png"
     },
     {
         "id":  "wh-lava",
         "name":  "Lava (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-lava.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -205,13 +217,14 @@
                       "settings":  {
                                        "theme":  "lava"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-lava.png"
     },
     {
         "id":  "wh-lavender",
         "name":  "Lavender (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-lavender.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -221,13 +234,14 @@
                       "settings":  {
                                        "theme":  "lavender"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-lavender.png"
     },
     {
         "id":  "wh-aurora",
         "name":  "Aurora (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-aurora.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -237,13 +251,14 @@
                       "settings":  {
                                        "theme":  "aurora"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-aurora.png"
     },
     {
         "id":  "wh-ice",
         "name":  "Ice (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-ice.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -253,13 +268,14 @@
                       "settings":  {
                                        "theme":  "ice"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-ice.png"
     },
     {
         "id":  "wh-candy",
         "name":  "Candy (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-candy.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -269,13 +285,14 @@
                       "settings":  {
                                        "theme":  "candy"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-candy.png"
     },
     {
         "id":  "wh-midnight",
         "name":  "Midnight (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-midnight.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -285,13 +302,14 @@
                       "settings":  {
                                        "theme":  "midnight"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-midnight.png"
     },
     {
         "id":  "wh-ghost",
         "name":  "Ghost (outline only) (dibujado)",
-        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Sin captura: es una forma generada, nítida a cualquier tamaño.",
-        "preview":  null,
+        "description":  "Cursor vectorial dibujado por el mod Mouse Cursor Themes, con brillo configurable. Vista recreada con sus colores, contorno y brillo. Vista recreada con sus colores, contorno y brillo.",
+        "preview":  "previews/cursors/wh-ghost.png",
         "previewApprox":  false,
         "reference":  "https://windhawk.net/mods/mouse-cursor-themes",
         "apply":  {
@@ -301,6 +319,7 @@
                       "settings":  {
                                        "theme":  "ghost"
                                    }
-                  }
+                  },
+        "previewLarge":  "previews/cursors/wh-ghost.png"
     }
 ]
