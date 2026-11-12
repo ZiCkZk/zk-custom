@@ -1,0 +1,287 @@
+[
+    {
+        "id":  "none",
+        "name":  "Sin estilo",
+        "description":  "Se deja el Explorador como viene en Windows.",
+        "preview":  null,
+        "previewApprox":  false,
+        "reference":  null,
+        "apply":  {
+                      "type":  "windhawk-remove",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler"
+                  }
+    },
+    {
+        "id":  "Translucent Explorer11",
+        "name":  "Translucent Explorer11",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FTranslucent%2520Explorer11%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/Translucent Explorer11",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "Translucent Explorer11"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FTranslucent%2520Explorer11%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "MicaBar",
+        "name":  "Mica Bar",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMicaBar%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/MicaBar",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "MicaBar"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMicaBar%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "NoCommandBar",
+        "name":  "No Command Bar",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FNoCommandBar%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/NoCommandBar",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "NoCommandBar"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FNoCommandBar%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Minimal Explorer11",
+        "name":  "Minimal Explorer11",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMinimal%2520Explorer11%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/Minimal Explorer11",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "Minimal Explorer11"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMinimal%2520Explorer11%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Tabless",
+        "name":  "Tabless",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FTabless%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/Tabless",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "Tabless"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FTabless%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Matter",
+        "name":  "Matter",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMatter%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/Matter",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "Matter"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMatter%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "WindowGlass",
+        "name":  "Window Glass",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FWindowGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/WindowGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "WindowGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FWindowGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "AddressSearchOnly",
+        "name":  "Address Search Only",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FAddressSearchOnly%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/AddressSearchOnly",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "AddressSearchOnly"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FAddressSearchOnly%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "TintedGlass",
+        "name":  "Tinted Glass",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FTintedGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/TintedGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "TintedGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FTintedGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "LiquidGlass",
+        "name":  "Liquid Glass",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FLiquidGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/LiquidGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "LiquidGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FLiquidGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "MicaTabless",
+        "name":  "Mica Tabless",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMicaTabless%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/MicaTabless",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "MicaTabless"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FMicaTabless%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OS26 Liquid Glass",
+        "name":  "OS26 Liquid Glass",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FOS26%2520Liquid%2520Glass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/OS26 Liquid Glass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "OS26 Liquid Glass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FOS26%2520Liquid%2520Glass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OS26 Liquid Glass_variant_Compact",
+        "name":  "OS26 Liquid Glass (Compact)",
+        "description":  "Tema de la comunidad para el Explorador. Es una variante: la captura es la del tema original.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FOS26%2520Liquid%2520Glass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  true,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/OS26 Liquid Glass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "OS26 Liquid Glass_variant_Compact"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FOS26%2520Liquid%2520Glass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "ZEUSosX_044",
+        "name":  "ZEUSos X 044",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FZEUSosX_044%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/ZEUSosX_044",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "ZEUSosX_044"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FZEUSosX_044%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Compact Explorer11",
+        "name":  "Compact Explorer11",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FCompact%2520Explorer11%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/Compact Explorer11",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "Compact Explorer11"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FCompact%2520Explorer11%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Float",
+        "name":  "Float",
+        "description":  "Tema de la comunidad para el Explorador.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FFloat%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-file-explorer-styling-guide/tree/main/Themes/Float",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-file-explorer-styler",
+                      "modName":  "Windows 11 File Explorer Styler",
+                      "settings":  {
+                                       "theme":  "Float"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-file-explorer-styling-guide%40main%2FThemes%2FFloat%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    }
+]

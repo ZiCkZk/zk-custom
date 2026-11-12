@@ -1,0 +1,861 @@
+[
+    {
+        "id":  "orb-glass-azul",
+        "name":  "Esfera de cristal · Azul",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-azul.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-azul.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-azul-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-azul-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-verde",
+        "name":  "Esfera de cristal · Verde",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-verde.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-verde.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-verde-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-verde-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-rojo",
+        "name":  "Esfera de cristal · Rojo",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-rojo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-rojo.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-rojo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-rojo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-morado",
+        "name":  "Esfera de cristal · Morado",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-morado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-morado.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-morado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-morado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-dorado",
+        "name":  "Esfera de cristal · Dorado",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-dorado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-dorado.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-dorado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-dorado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-rosa",
+        "name":  "Esfera de cristal · Rosa",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-rosa.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-rosa.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-rosa-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-rosa-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-negro",
+        "name":  "Esfera de cristal · Negro",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-negro.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-negro.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-negro-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-negro-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-cian",
+        "name":  "Esfera de cristal · Cian",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba.",
+        "preview":  "previews/orbs/orb-glass-cian.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-glass-cian.png",
+                                    "hover":  "catalog/previews/orbs/orb-glass-cian-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-glass-cian-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-neon-cian",
+        "name":  "Anillo neón · Cian",
+        "description":  "Anillo luminoso con el logo dentro. Muy cyberpunk.",
+        "preview":  "previews/orbs/orb-neon-cian.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "neon",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-neon-cian.png",
+                                    "hover":  "catalog/previews/orbs/orb-neon-cian-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-neon-cian-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-neon-rosa",
+        "name":  "Anillo neón · Rosa",
+        "description":  "Anillo luminoso con el logo dentro. Muy cyberpunk.",
+        "preview":  "previews/orbs/orb-neon-rosa.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "neon",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-neon-rosa.png",
+                                    "hover":  "catalog/previews/orbs/orb-neon-rosa-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-neon-rosa-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-neon-verde",
+        "name":  "Anillo neón · Verde",
+        "description":  "Anillo luminoso con el logo dentro. Muy cyberpunk.",
+        "preview":  "previews/orbs/orb-neon-verde.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "neon",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-neon-verde.png",
+                                    "hover":  "catalog/previews/orbs/orb-neon-verde-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-neon-verde-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-neon-dorado",
+        "name":  "Anillo neón · Dorado",
+        "description":  "Anillo luminoso con el logo dentro. Muy cyberpunk.",
+        "preview":  "previews/orbs/orb-neon-dorado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "neon",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-neon-dorado.png",
+                                    "hover":  "catalog/previews/orbs/orb-neon-dorado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-neon-dorado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-flat-azul",
+        "name":  "Círculo plano · Azul",
+        "description":  "Círculo de color liso, moderno y limpio.",
+        "preview":  "previews/orbs/orb-flat-azul.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "flat",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-flat-azul.png",
+                                    "hover":  "catalog/previews/orbs/orb-flat-azul-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-flat-azul-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-flat-morado",
+        "name":  "Círculo plano · Morado",
+        "description":  "Círculo de color liso, moderno y limpio.",
+        "preview":  "previews/orbs/orb-flat-morado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "flat",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-flat-morado.png",
+                                    "hover":  "catalog/previews/orbs/orb-flat-morado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-flat-morado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-flat-negro",
+        "name":  "Círculo plano · Negro",
+        "description":  "Círculo de color liso, moderno y limpio.",
+        "preview":  "previews/orbs/orb-flat-negro.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "flat",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-flat-negro.png",
+                                    "hover":  "catalog/previews/orbs/orb-flat-negro-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-flat-negro-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-squircle-azul",
+        "name":  "Cuadrado redondeado · Azul",
+        "description":  "Degradado en forma de icono de app.",
+        "preview":  "previews/orbs/orb-squircle-azul.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "squircle",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-squircle-azul.png",
+                                    "hover":  "catalog/previews/orbs/orb-squircle-azul-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-squircle-azul-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-squircle-rosa",
+        "name":  "Cuadrado redondeado · Rosa",
+        "description":  "Degradado en forma de icono de app.",
+        "preview":  "previews/orbs/orb-squircle-rosa.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "squircle",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-squircle-rosa.png",
+                                    "hover":  "catalog/previews/orbs/orb-squircle-rosa-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-squircle-rosa-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-squircle-verde",
+        "name":  "Cuadrado redondeado · Verde",
+        "description":  "Degradado en forma de icono de app.",
+        "preview":  "previews/orbs/orb-squircle-verde.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "squircle",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-squircle-verde.png",
+                                    "hover":  "catalog/previews/orbs/orb-squircle-verde-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-squircle-verde-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-outline-cian",
+        "name":  "Solo contorno · Cian",
+        "description":  "Logo dibujado con una línea, minimalista.",
+        "preview":  "previews/orbs/orb-outline-cian.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "outline",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-outline-cian.png",
+                                    "hover":  "catalog/previews/orbs/orb-outline-cian-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-outline-cian-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-outline-dorado",
+        "name":  "Solo contorno · Dorado",
+        "description":  "Logo dibujado con una línea, minimalista.",
+        "preview":  "previews/orbs/orb-outline-dorado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "outline",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-outline-dorado.png",
+                                    "hover":  "catalog/previews/orbs/orb-outline-dorado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-outline-dorado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-planet-morado",
+        "name":  "Planeta · Morado",
+        "description":  "Esfera con anillo, como Saturno.",
+        "preview":  "previews/orbs/orb-planet-morado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "planet",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-planet-morado.png",
+                                    "hover":  "catalog/previews/orbs/orb-planet-morado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-planet-morado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-planet-dorado",
+        "name":  "Planeta · Dorado",
+        "description":  "Esfera con anillo, como Saturno.",
+        "preview":  "previews/orbs/orb-planet-dorado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "planet",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-planet-dorado.png",
+                                    "hover":  "catalog/previews/orbs/orb-planet-dorado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-planet-dorado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pixelheart-rojo",
+        "name":  "Corazón pixel · Rojo",
+        "description":  "Corazón de vida en pixel art, como en los juegos retro. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pixelheart-rojo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pixelheart",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pixelheart-rojo.png",
+                                    "hover":  "catalog/previews/orbs/orb-pixelheart-rojo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pixelheart-rojo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pixelheart-rosa",
+        "name":  "Corazón pixel · Rosa",
+        "description":  "Corazón de vida en pixel art, como en los juegos retro. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pixelheart-rosa.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pixelheart",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pixelheart-rosa.png",
+                                    "hover":  "catalog/previews/orbs/orb-pixelheart-rosa-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pixelheart-rosa-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pixelheart-azul",
+        "name":  "Corazón pixel · Azul",
+        "description":  "Corazón de vida en pixel art, como en los juegos retro. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pixelheart-azul.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pixelheart",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pixelheart-azul.png",
+                                    "hover":  "catalog/previews/orbs/orb-pixelheart-azul-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pixelheart-azul-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pixelsword-acero",
+        "name":  "Espada pixel · Acero",
+        "description":  "Espada de aventura en pixel art. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pixelsword-acero.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pixelsword",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pixelsword-acero.png",
+                                    "hover":  "catalog/previews/orbs/orb-pixelsword-acero-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pixelsword-acero-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pixelsword-oro",
+        "name":  "Espada pixel · Oro",
+        "description":  "Espada de aventura en pixel art. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pixelsword-oro.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pixelsword",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pixelsword-oro.png",
+                                    "hover":  "catalog/previews/orbs/orb-pixelsword-oro-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pixelsword-oro-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-coin-oro",
+        "name":  "Moneda · Oro",
+        "description":  "Moneda dorada brillante con estrella. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-coin-oro.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "coin",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-coin-oro.png",
+                                    "hover":  "catalog/previews/orbs/orb-coin-oro-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-coin-oro-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-coin-plata",
+        "name":  "Moneda · Plata",
+        "description":  "Moneda dorada brillante con estrella. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-coin-plata.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "coin",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-coin-plata.png",
+                                    "hover":  "catalog/previews/orbs/orb-coin-plata-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-coin-plata-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-powerstar-amarilla",
+        "name":  "Estrella de poder · Amarilla",
+        "description":  "Estrella brillante de power-up. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-powerstar-amarilla.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "powerstar",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-powerstar-amarilla.png",
+                                    "hover":  "catalog/previews/orbs/orb-powerstar-amarilla-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-powerstar-amarilla-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-powerstar-arcoiris",
+        "name":  "Estrella de poder · Morada",
+        "description":  "Estrella brillante de power-up. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-powerstar-arcoiris.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "powerstar",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-powerstar-arcoiris.png",
+                                    "hover":  "catalog/previews/orbs/orb-powerstar-arcoiris-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-powerstar-arcoiris-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-gamepad-negro",
+        "name":  "Mando · Negro",
+        "description":  "Mando de consola con cruceta y botones de colores. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-gamepad-negro.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "gamepad",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-gamepad-negro.png",
+                                    "hover":  "catalog/previews/orbs/orb-gamepad-negro-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-gamepad-negro-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-gamepad-blanco",
+        "name":  "Mando · Blanco",
+        "description":  "Mando de consola con cruceta y botones de colores. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-gamepad-blanco.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "gamepad",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-gamepad-blanco.png",
+                                    "hover":  "catalog/previews/orbs/orb-gamepad-blanco-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-gamepad-blanco-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-gamepad-morado",
+        "name":  "Mando · Morado",
+        "description":  "Mando de consola con cruceta y botones de colores. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-gamepad-morado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "gamepad",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-gamepad-morado.png",
+                                    "hover":  "catalog/previews/orbs/orb-gamepad-morado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-gamepad-morado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-joystick-rojo",
+        "name":  "Joystick arcade · Rojo",
+        "description":  "Palanca de máquina recreativa. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-joystick-rojo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "joystick",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-joystick-rojo.png",
+                                    "hover":  "catalog/previews/orbs/orb-joystick-rojo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-joystick-rojo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-joystick-verde",
+        "name":  "Joystick arcade · Verde",
+        "description":  "Palanca de máquina recreativa. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-joystick-verde.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "joystick",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-joystick-verde.png",
+                                    "hover":  "catalog/previews/orbs/orb-joystick-verde-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-joystick-verde-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-potion-vida",
+        "name":  "Poción · Vida (roja)",
+        "description":  "Frasco de poción con burbujas. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-potion-vida.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "potion",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-potion-vida.png",
+                                    "hover":  "catalog/previews/orbs/orb-potion-vida-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-potion-vida-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-potion-mana",
+        "name":  "Poción · Maná (azul)",
+        "description":  "Frasco de poción con burbujas. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-potion-mana.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "potion",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-potion-mana.png",
+                                    "hover":  "catalog/previews/orbs/orb-potion-mana-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-potion-mana-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-potion-veneno",
+        "name":  "Poción · Veneno (verde)",
+        "description":  "Frasco de poción con burbujas. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-potion-veneno.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "potion",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-potion-veneno.png",
+                                    "hover":  "catalog/previews/orbs/orb-potion-veneno-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-potion-veneno-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-shield-azul",
+        "name":  "Escudo · Azul",
+        "description":  "Escudo de caballero con cruz. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-shield-azul.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "shield",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-shield-azul.png",
+                                    "hover":  "catalog/previews/orbs/orb-shield-azul-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-shield-azul-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-shield-rojo",
+        "name":  "Escudo · Rojo",
+        "description":  "Escudo de caballero con cruz. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-shield-rojo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "shield",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-shield-rojo.png",
+                                    "hover":  "catalog/previews/orbs/orb-shield-rojo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-shield-rojo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-d20-morado",
+        "name":  "Dado de rol · Morado",
+        "description":  "Dado de 20 caras para partidas de rol. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-d20-morado.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "d20",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-d20-morado.png",
+                                    "hover":  "catalog/previews/orbs/orb-d20-morado-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-d20-morado-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-d20-rojo",
+        "name":  "Dado de rol · Rojo",
+        "description":  "Dado de 20 caras para partidas de rol. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-d20-rojo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "d20",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-d20-rojo.png",
+                                    "hover":  "catalog/previews/orbs/orb-d20-rojo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-d20-rojo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-shuriken-acero",
+        "name":  "Shuriken · Acero",
+        "description":  "Estrella ninja de cuatro puntas. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-shuriken-acero.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "shuriken",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-shuriken-acero.png",
+                                    "hover":  "catalog/previews/orbs/orb-shuriken-acero-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-shuriken-acero-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-shuriken-neon",
+        "name":  "Shuriken · Neón",
+        "description":  "Estrella ninja de cuatro puntas. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-shuriken-neon.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "shuriken",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-shuriken-neon.png",
+                                    "hover":  "catalog/previews/orbs/orb-shuriken-neon-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-shuriken-neon-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-bolt-amarillo",
+        "name":  "Rayo · Amarillo",
+        "description":  "Rayo de superhéroe dentro de un círculo. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-bolt-amarillo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "bolt",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-bolt-amarillo.png",
+                                    "hover":  "catalog/previews/orbs/orb-bolt-amarillo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-bolt-amarillo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-bolt-azul",
+        "name":  "Rayo · Azul",
+        "description":  "Rayo de superhéroe dentro de un círculo. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-bolt-azul.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "bolt",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-bolt-azul.png",
+                                    "hover":  "catalog/previews/orbs/orb-bolt-azul-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-bolt-azul-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pow-amarillo",
+        "name":  "POW! · Amarillo",
+        "description":  "Viñeta de golpe de cómic. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pow-amarillo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pow",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pow-amarillo.png",
+                                    "hover":  "catalog/previews/orbs/orb-pow-amarillo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pow-amarillo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-pow-rojo",
+        "name":  "POW! · Rojo",
+        "description":  "Viñeta de golpe de cómic. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-pow-rojo.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "pow",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-pow-rojo.png",
+                                    "hover":  "catalog/previews/orbs/orb-pow-rojo-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-pow-rojo-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-boom-naranja",
+        "name":  "BOOM! · Naranja",
+        "description":  "Explosión de cómic. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-boom-naranja.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "boom",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-boom-naranja.png",
+                                    "hover":  "catalog/previews/orbs/orb-boom-naranja-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-boom-naranja-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-wow-celeste",
+        "name":  "WOW! · Celeste",
+        "description":  "Exclamación de cómic. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-wow-celeste.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "wow",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-wow-celeste.png",
+                                    "hover":  "catalog/previews/orbs/orb-wow-celeste-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-wow-celeste-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-wow-rosa",
+        "name":  "WOW! · Rosa",
+        "description":  "Exclamación de cómic. Estilo juego/cómic.",
+        "category":  "Gamer y cómic",
+        "preview":  "previews/orbs/orb-wow-rosa.png",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "wow",
+                      "files":  {
+                                    "normal":  "catalog/previews/orbs/orb-wow-rosa.png",
+                                    "hover":  "catalog/previews/orbs/orb-wow-rosa-hover.png",
+                                    "pressed":  "catalog/previews/orbs/orb-wow-rosa-pressed.png"
+                                }
+                  }
+    },
+    {
+        "id":  "orb-glass-paleta",
+        "name":  "Esfera de cristal · mi paleta",
+        "description":  "Orb brillante tipo Windows 7, con reflejo arriba. Con los colores de tu paleta.",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "glass",
+                      "palette":  true
+                  }
+    },
+    {
+        "id":  "orb-neon-paleta",
+        "name":  "Anillo neón · mi paleta",
+        "description":  "Anillo luminoso con el logo dentro. Muy cyberpunk. Con los colores de tu paleta.",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "neon",
+                      "palette":  true
+                  }
+    },
+    {
+        "id":  "orb-squircle-paleta",
+        "name":  "Cuadrado redondeado · mi paleta",
+        "description":  "Degradado en forma de icono de app. Con los colores de tu paleta.",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "squircle",
+                      "palette":  true
+                  }
+    },
+    {
+        "id":  "orb-planet-paleta",
+        "name":  "Planeta · mi paleta",
+        "description":  "Esfera con anillo, como Saturno. Con los colores de tu paleta.",
+        "apply":  {
+                      "type":  "orb",
+                      "style":  "planet",
+                      "palette":  true
+                  }
+    },
+    {
+        "id":  "orb-custom",
+        "name":  "Mi propio orb",
+        "description":  "Usa una imagen tuya (PNG, JPG o GIF animado). Elígela en Ajustes con «Subir mi orb...».",
+        "apply":  {
+                      "type":  "orb",
+                      "custom":  true
+                  }
+    }
+]

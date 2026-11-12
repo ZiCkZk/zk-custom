@@ -1,0 +1,22 @@
+[
+  { "id": "none", "name": "Logo de Windows", "description": "El botón Inicio de siempre.", "mock": { "kind": "startbtn", "color": "#4CC2FF" },
+    "apply": { "type": "windhawk-remove", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer" } },
+  { "id": "accent", "name": "Color de acento", "description": "El logo toma el color principal de tu paleta (el acento de Windows).", "mock": { "kind": "startbtn", "color": "accent" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "accent" } } },
+  { "id": "red", "name": "Rojo", "description": "Logo de Inicio en rojo.", "mock": { "kind": "startbtn", "color": "#E5484D" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "red" } } },
+  { "id": "orange", "name": "Naranja", "description": "Logo de Inicio en naranja.", "mock": { "kind": "startbtn", "color": "#F76B15" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "orange" } } },
+  { "id": "yellow", "name": "Amarillo", "description": "Logo de Inicio en amarillo.", "mock": { "kind": "startbtn", "color": "#FFD60A" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "yellow" } } },
+  { "id": "green", "name": "Verde", "description": "Logo de Inicio en verde.", "mock": { "kind": "startbtn", "color": "#30A46C" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "green" } } },
+  { "id": "teal", "name": "Turquesa", "description": "Logo de Inicio en turquesa.", "mock": { "kind": "startbtn", "color": "#12A594" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "teal" } } },
+  { "id": "blue", "name": "Azul", "description": "Logo de Inicio en azul intenso.", "mock": { "kind": "startbtn", "color": "#0090FF" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "blue" } } },
+  { "id": "purple", "name": "Morado", "description": "Logo de Inicio en morado.", "mock": { "kind": "startbtn", "color": "#8E4EC6" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "purple" } } },
+  { "id": "pink", "name": "Rosa", "description": "Logo de Inicio en rosa.", "mock": { "kind": "startbtn", "color": "#E93D82" },
+    "apply": { "type": "windhawk", "mod": "taskbar-start-button-colorizer", "modName": "Start button colorizer", "settings": { "color": "pink" } } }
+]

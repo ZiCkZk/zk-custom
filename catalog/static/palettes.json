@@ -1,0 +1,902 @@
+[
+    {
+        "id":  "tokyo-night",
+        "name":  "Tokyo Night",
+        "description":  "Azul tinta con acentos azul y lavanda. Suave para muchas horas.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#1A1B26",
+                                      "surface":  "#24283B",
+                                      "primary":  "#7AA2F7",
+                                      "secondary":  "#BB9AF7",
+                                      "highlight":  "#7DCFFF",
+                                      "text":  "#C0CAF5",
+                                      "muted":  "#565F89",
+                                      "ansi":  {
+                                                   "black":  "#15161E",
+                                                   "red":  "#F7768E",
+                                                   "green":  "#9ECE6A",
+                                                   "yellow":  "#E0AF68",
+                                                   "blue":  "#7AA2F7",
+                                                   "purple":  "#BB9AF7",
+                                                   "cyan":  "#7DCFFF",
+                                                   "white":  "#A9B1D6",
+                                                   "brightBlack":  "#565F89",
+                                                   "brightRed":  "#F7768E",
+                                                   "brightGreen":  "#9ECE6A",
+                                                   "brightYellow":  "#E0AF68",
+                                                   "brightBlue":  "#7AA2F7",
+                                                   "brightPurple":  "#BB9AF7",
+                                                   "brightCyan":  "#7DCFFF",
+                                                   "brightWhite":  "#C0CAF5"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "synthwave",
+        "name":  "Synthwave",
+        "description":  "Neón magenta y cian sobre violeta noche. El cyberpunk clásico de los 80.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#0A0514",
+                                      "surface":  "#1C0F33",
+                                      "primary":  "#FF2E97",
+                                      "secondary":  "#00F0FF",
+                                      "highlight":  "#F9F871",
+                                      "text":  "#E6E1F5",
+                                      "muted":  "#6B5B95",
+                                      "ansi":  {
+                                                   "black":  "#1C0F33",
+                                                   "red":  "#FE4450",
+                                                   "green":  "#72F1B8",
+                                                   "yellow":  "#FEDE5D",
+                                                   "blue":  "#00F0FF",
+                                                   "purple":  "#FF7EDB",
+                                                   "cyan":  "#03EDF9",
+                                                   "white":  "#E6E1F5",
+                                                   "brightBlack":  "#6B5B95",
+                                                   "brightRed":  "#FE4450",
+                                                   "brightGreen":  "#72F1B8",
+                                                   "brightYellow":  "#FEDE5D",
+                                                   "brightBlue":  "#00F0FF",
+                                                   "brightPurple":  "#FF7EDB",
+                                                   "brightCyan":  "#03EDF9",
+                                                   "brightWhite":  "#E6E1F5"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "night-city",
+        "name":  "Night City",
+        "description":  "Amarillo neón, cian y rojo sobre negro: estética cyberpunk de ciudad nocturna.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#0B0C10",
+                                      "surface":  "#1A1C23",
+                                      "primary":  "#FCEE0A",
+                                      "secondary":  "#00F0FF",
+                                      "highlight":  "#FF003C",
+                                      "text":  "#E8E8E8",
+                                      "muted":  "#5A5F6B",
+                                      "ansi":  {
+                                                   "black":  "#0B0C10",
+                                                   "red":  "#FF003C",
+                                                   "green":  "#00FF9F",
+                                                   "yellow":  "#FCEE0A",
+                                                   "blue":  "#00B8FF",
+                                                   "purple":  "#D600FF",
+                                                   "cyan":  "#00F0FF",
+                                                   "white":  "#E8E8E8",
+                                                   "brightBlack":  "#5A5F6B",
+                                                   "brightRed":  "#FF003C",
+                                                   "brightGreen":  "#00FF9F",
+                                                   "brightYellow":  "#FCEE0A",
+                                                   "brightBlue":  "#00B8FF",
+                                                   "brightPurple":  "#D600FF",
+                                                   "brightCyan":  "#00F0FF",
+                                                   "brightWhite":  "#E8E8E8"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "matrix",
+        "name":  "Matrix",
+        "description":  "Verde fósforo sobre negro, como una terminal de los 90.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#000A00",
+                                      "surface":  "#0D1A0D",
+                                      "primary":  "#00FF41",
+                                      "secondary":  "#008F11",
+                                      "highlight":  "#39FF14",
+                                      "text":  "#B6FFB6",
+                                      "muted":  "#2E5E2E",
+                                      "ansi":  {
+                                                   "black":  "#001100",
+                                                   "red":  "#FF3B3B",
+                                                   "green":  "#00FF41",
+                                                   "yellow":  "#C6FF00",
+                                                   "blue":  "#00B36B",
+                                                   "purple":  "#66FF99",
+                                                   "cyan":  "#00FFAA",
+                                                   "white":  "#B6FFB6",
+                                                   "brightBlack":  "#2E5E2E",
+                                                   "brightRed":  "#FF3B3B",
+                                                   "brightGreen":  "#00FF41",
+                                                   "brightYellow":  "#C6FF00",
+                                                   "brightBlue":  "#00B36B",
+                                                   "brightPurple":  "#66FF99",
+                                                   "brightCyan":  "#00FFAA",
+                                                   "brightWhite":  "#B6FFB6"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "blood-moon",
+        "name":  "Luna de sangre",
+        "description":  "Rojo carmesí y naranja brasa sobre casi negro. Intenso y dramático.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#10080A",
+                                      "surface":  "#1E1014",
+                                      "primary":  "#E53950",
+                                      "secondary":  "#FF8A3D",
+                                      "highlight":  "#F5C2C7",
+                                      "text":  "#F0E0E2",
+                                      "muted":  "#6E4A50",
+                                      "ansi":  {
+                                                   "black":  "#1E1014",
+                                                   "red":  "#E53950",
+                                                   "green":  "#8FBF6A",
+                                                   "yellow":  "#FFB454",
+                                                   "blue":  "#C2565B",
+                                                   "purple":  "#D9738C",
+                                                   "cyan":  "#E88A8A",
+                                                   "white":  "#F0E0E2",
+                                                   "brightBlack":  "#6E4A50",
+                                                   "brightRed":  "#E53950",
+                                                   "brightGreen":  "#8FBF6A",
+                                                   "brightYellow":  "#FFB454",
+                                                   "brightBlue":  "#C2565B",
+                                                   "brightPurple":  "#D9738C",
+                                                   "brightCyan":  "#E88A8A",
+                                                   "brightWhite":  "#F0E0E2"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "gruvbox",
+        "name":  "Gruvbox",
+        "description":  "Naranja, mostaza y verde salvia sobre marrón: cálido y retro.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#282828",
+                                      "surface":  "#3C3836",
+                                      "primary":  "#FE8019",
+                                      "secondary":  "#FABD2F",
+                                      "highlight":  "#8EC07C",
+                                      "text":  "#EBDBB2",
+                                      "muted":  "#928374",
+                                      "ansi":  {
+                                                   "black":  "#282828",
+                                                   "red":  "#FB4934",
+                                                   "green":  "#B8BB26",
+                                                   "yellow":  "#FABD2F",
+                                                   "blue":  "#83A598",
+                                                   "purple":  "#D3869B",
+                                                   "cyan":  "#8EC07C",
+                                                   "white":  "#EBDBB2",
+                                                   "brightBlack":  "#928374",
+                                                   "brightRed":  "#FB4934",
+                                                   "brightGreen":  "#B8BB26",
+                                                   "brightYellow":  "#FABD2F",
+                                                   "brightBlue":  "#83A598",
+                                                   "brightPurple":  "#D3869B",
+                                                   "brightCyan":  "#8EC07C",
+                                                   "brightWhite":  "#EBDBB2"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "sunset",
+        "name":  "Atardecer",
+        "description":  "Coral, ámbar y violeta: un cielo al anochecer.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#1D1426",
+                                      "surface":  "#2B1D38",
+                                      "primary":  "#FF7849",
+                                      "secondary":  "#FFB347",
+                                      "highlight":  "#C77DFF",
+                                      "text":  "#F7E8DE",
+                                      "muted":  "#77608A",
+                                      "ansi":  {
+                                                   "black":  "#2B1D38",
+                                                   "red":  "#FF5470",
+                                                   "green":  "#9BE564",
+                                                   "yellow":  "#FFB347",
+                                                   "blue":  "#7AA5FF",
+                                                   "purple":  "#C77DFF",
+                                                   "cyan":  "#6FE3E1",
+                                                   "white":  "#F7E8DE",
+                                                   "brightBlack":  "#77608A",
+                                                   "brightRed":  "#FF5470",
+                                                   "brightGreen":  "#9BE564",
+                                                   "brightYellow":  "#FFB347",
+                                                   "brightBlue":  "#7AA5FF",
+                                                   "brightPurple":  "#C77DFF",
+                                                   "brightCyan":  "#6FE3E1",
+                                                   "brightWhite":  "#F7E8DE"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "monokai-pro",
+        "name":  "Monokai Pro",
+        "description":  "Amarillo, rosa y lima sobre gris cálido. Muy contrastado.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#2D2A2E",
+                                      "surface":  "#403E41",
+                                      "primary":  "#FFD866",
+                                      "secondary":  "#FF6188",
+                                      "highlight":  "#A9DC76",
+                                      "text":  "#FCFCFA",
+                                      "muted":  "#727072",
+                                      "ansi":  {
+                                                   "black":  "#2D2A2E",
+                                                   "red":  "#FF6188",
+                                                   "green":  "#A9DC76",
+                                                   "yellow":  "#FFD866",
+                                                   "blue":  "#FC9867",
+                                                   "purple":  "#AB9DF2",
+                                                   "cyan":  "#78DCE8",
+                                                   "white":  "#FCFCFA",
+                                                   "brightBlack":  "#727072",
+                                                   "brightRed":  "#FF6188",
+                                                   "brightGreen":  "#A9DC76",
+                                                   "brightYellow":  "#FFD866",
+                                                   "brightBlue":  "#FC9867",
+                                                   "brightPurple":  "#AB9DF2",
+                                                   "brightCyan":  "#78DCE8",
+                                                   "brightWhite":  "#FCFCFA"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "ayu-mirage",
+        "name":  "Ayu Mirage",
+        "description":  "Dorado y melocotón sobre azul pizarra.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#1F2430",
+                                      "surface":  "#242936",
+                                      "primary":  "#FFCC66",
+                                      "secondary":  "#F29E74",
+                                      "highlight":  "#5CCFE6",
+                                      "text":  "#CCCAC2",
+                                      "muted":  "#707A8C",
+                                      "ansi":  {
+                                                   "black":  "#242936",
+                                                   "red":  "#F28779",
+                                                   "green":  "#D5FF80",
+                                                   "yellow":  "#FFCC66",
+                                                   "blue":  "#73D0FF",
+                                                   "purple":  "#DFBFFF",
+                                                   "cyan":  "#95E6CB",
+                                                   "white":  "#CCCAC2",
+                                                   "brightBlack":  "#707A8C",
+                                                   "brightRed":  "#F28779",
+                                                   "brightGreen":  "#D5FF80",
+                                                   "brightYellow":  "#FFCC66",
+                                                   "brightBlue":  "#73D0FF",
+                                                   "brightPurple":  "#DFBFFF",
+                                                   "brightCyan":  "#95E6CB",
+                                                   "brightWhite":  "#CCCAC2"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "black-gold",
+        "name":  "Negro y oro",
+        "description":  "Oro viejo sobre negro puro (ideal para pantallas OLED). Elegante.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#000000",
+                                      "surface":  "#121212",
+                                      "primary":  "#D4AF37",
+                                      "secondary":  "#F5D76E",
+                                      "highlight":  "#FFFFFF",
+                                      "text":  "#EDE6D6",
+                                      "muted":  "#5C5442",
+                                      "ansi":  {
+                                                   "black":  "#121212",
+                                                   "red":  "#E5534B",
+                                                   "green":  "#9FC66B",
+                                                   "yellow":  "#D4AF37",
+                                                   "blue":  "#6CA0DC",
+                                                   "purple":  "#B48EAD",
+                                                   "cyan":  "#7FC8C2",
+                                                   "white":  "#EDE6D6",
+                                                   "brightBlack":  "#5C5442",
+                                                   "brightRed":  "#E5534B",
+                                                   "brightGreen":  "#9FC66B",
+                                                   "brightYellow":  "#D4AF37",
+                                                   "brightBlue":  "#6CA0DC",
+                                                   "brightPurple":  "#B48EAD",
+                                                   "brightCyan":  "#7FC8C2",
+                                                   "brightWhite":  "#EDE6D6"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "everforest",
+        "name":  "Everforest",
+        "description":  "Verde musgo y arena sobre gris verdoso. Relajante, de bosque.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#2D353B",
+                                      "surface":  "#343F44",
+                                      "primary":  "#A7C080",
+                                      "secondary":  "#DBBC7F",
+                                      "highlight":  "#83C092",
+                                      "text":  "#D3C6AA",
+                                      "muted":  "#859292",
+                                      "ansi":  {
+                                                   "black":  "#475258",
+                                                   "red":  "#E67E80",
+                                                   "green":  "#A7C080",
+                                                   "yellow":  "#DBBC7F",
+                                                   "blue":  "#7FBBB3",
+                                                   "purple":  "#D699B6",
+                                                   "cyan":  "#83C092",
+                                                   "white":  "#D3C6AA",
+                                                   "brightBlack":  "#859292",
+                                                   "brightRed":  "#E67E80",
+                                                   "brightGreen":  "#A7C080",
+                                                   "brightYellow":  "#DBBC7F",
+                                                   "brightBlue":  "#7FBBB3",
+                                                   "brightPurple":  "#D699B6",
+                                                   "brightCyan":  "#83C092",
+                                                   "brightWhite":  "#D3C6AA"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "reef",
+        "name":  "Arrecife",
+        "description":  "Turquesa y celeste con un toque mandarina sobre azul profundo.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#0B1E26",
+                                      "surface":  "#12303B",
+                                      "primary":  "#2EC4B6",
+                                      "secondary":  "#48CAE4",
+                                      "highlight":  "#FFBF69",
+                                      "text":  "#D9F3F2",
+                                      "muted":  "#4E7480",
+                                      "ansi":  {
+                                                   "black":  "#12303B",
+                                                   "red":  "#FF6B6B",
+                                                   "green":  "#2EC4B6",
+                                                   "yellow":  "#FFBF69",
+                                                   "blue":  "#48CAE4",
+                                                   "purple":  "#B892FF",
+                                                   "cyan":  "#5EEAD4",
+                                                   "white":  "#D9F3F2",
+                                                   "brightBlack":  "#4E7480",
+                                                   "brightRed":  "#FF6B6B",
+                                                   "brightGreen":  "#2EC4B6",
+                                                   "brightYellow":  "#FFBF69",
+                                                   "brightBlue":  "#48CAE4",
+                                                   "brightPurple":  "#B892FF",
+                                                   "brightCyan":  "#5EEAD4",
+                                                   "brightWhite":  "#D9F3F2"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "kanagawa",
+        "name":  "Kanagawa",
+        "description":  "Inspirada en la gran ola: oro apagado, glicina y azul tinta.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#1F1F28",
+                                      "surface":  "#2A2A37",
+                                      "primary":  "#E6C384",
+                                      "secondary":  "#957FB8",
+                                      "highlight":  "#7FB4CA",
+                                      "text":  "#DCD7BA",
+                                      "muted":  "#727169",
+                                      "ansi":  {
+                                                   "black":  "#16161D",
+                                                   "red":  "#C34043",
+                                                   "green":  "#76946A",
+                                                   "yellow":  "#C0A36E",
+                                                   "blue":  "#7E9CD8",
+                                                   "purple":  "#957FB8",
+                                                   "cyan":  "#6A9589",
+                                                   "white":  "#C8C093",
+                                                   "brightBlack":  "#727169",
+                                                   "brightRed":  "#C34043",
+                                                   "brightGreen":  "#76946A",
+                                                   "brightYellow":  "#C0A36E",
+                                                   "brightBlue":  "#7E9CD8",
+                                                   "brightPurple":  "#957FB8",
+                                                   "brightCyan":  "#6A9589",
+                                                   "brightWhite":  "#DCD7BA"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "sakura",
+        "name":  "Sakura",
+        "description":  "Rosa cerezo y menta sobre ciruela. Suave y alegre.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#1F1A24",
+                                      "surface":  "#2D2433",
+                                      "primary":  "#FF8FB1",
+                                      "secondary":  "#FFC4D6",
+                                      "highlight":  "#B5E8E0",
+                                      "text":  "#F5E6EE",
+                                      "muted":  "#7A6680",
+                                      "ansi":  {
+                                                   "black":  "#2D2433",
+                                                   "red":  "#FF6B8B",
+                                                   "green":  "#A8E6A3",
+                                                   "yellow":  "#FFD6A5",
+                                                   "blue":  "#9BB8FF",
+                                                   "purple":  "#FF8FB1",
+                                                   "cyan":  "#B5E8E0",
+                                                   "white":  "#F5E6EE",
+                                                   "brightBlack":  "#7A6680",
+                                                   "brightRed":  "#FF6B8B",
+                                                   "brightGreen":  "#A8E6A3",
+                                                   "brightYellow":  "#FFD6A5",
+                                                   "brightBlue":  "#9BB8FF",
+                                                   "brightPurple":  "#FF8FB1",
+                                                   "brightCyan":  "#B5E8E0",
+                                                   "brightWhite":  "#F5E6EE"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "dracula",
+        "name":  "Dracula",
+        "description":  "Violeta y rosa vivos sobre gris azulado.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#282A36",
+                                      "surface":  "#44475A",
+                                      "primary":  "#BD93F9",
+                                      "secondary":  "#FF79C6",
+                                      "highlight":  "#8BE9FD",
+                                      "text":  "#F8F8F2",
+                                      "muted":  "#6272A4",
+                                      "ansi":  {
+                                                   "black":  "#21222C",
+                                                   "red":  "#FF5555",
+                                                   "green":  "#50FA7B",
+                                                   "yellow":  "#F1FA8C",
+                                                   "blue":  "#BD93F9",
+                                                   "purple":  "#FF79C6",
+                                                   "cyan":  "#8BE9FD",
+                                                   "white":  "#F8F8F2",
+                                                   "brightBlack":  "#6272A4",
+                                                   "brightRed":  "#FF5555",
+                                                   "brightGreen":  "#50FA7B",
+                                                   "brightYellow":  "#F1FA8C",
+                                                   "brightBlue":  "#BD93F9",
+                                                   "brightPurple":  "#FF79C6",
+                                                   "brightCyan":  "#8BE9FD",
+                                                   "brightWhite":  "#F8F8F2"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "catppuccin-mocha",
+        "name":  "Catppuccin Mocha",
+        "description":  "Pasteles sobre oscuro: malva, azul y turquesa.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#1E1E2E",
+                                      "surface":  "#313244",
+                                      "primary":  "#CBA6F7",
+                                      "secondary":  "#89B4FA",
+                                      "highlight":  "#94E2D5",
+                                      "text":  "#CDD6F4",
+                                      "muted":  "#6C7086",
+                                      "ansi":  {
+                                                   "black":  "#45475A",
+                                                   "red":  "#F38BA8",
+                                                   "green":  "#A6E3A1",
+                                                   "yellow":  "#F9E2AF",
+                                                   "blue":  "#89B4FA",
+                                                   "purple":  "#F5C2E7",
+                                                   "cyan":  "#94E2D5",
+                                                   "white":  "#BAC2DE",
+                                                   "brightBlack":  "#6C7086",
+                                                   "brightRed":  "#F38BA8",
+                                                   "brightGreen":  "#A6E3A1",
+                                                   "brightYellow":  "#F9E2AF",
+                                                   "brightBlue":  "#89B4FA",
+                                                   "brightPurple":  "#F5C2E7",
+                                                   "brightCyan":  "#94E2D5",
+                                                   "brightWhite":  "#CDD6F4"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "rose-pine",
+        "name":  "Rosé Pine",
+        "description":  "Lavanda, rosa empolvado y espuma sobre ciruela oscuro.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#191724",
+                                      "surface":  "#1F1D2E",
+                                      "primary":  "#C4A7E7",
+                                      "secondary":  "#EBBCBA",
+                                      "highlight":  "#9CCFD8",
+                                      "text":  "#E0DEF4",
+                                      "muted":  "#6E6A86",
+                                      "ansi":  {
+                                                   "black":  "#26233A",
+                                                   "red":  "#EB6F92",
+                                                   "green":  "#31748F",
+                                                   "yellow":  "#F6C177",
+                                                   "blue":  "#9CCFD8",
+                                                   "purple":  "#C4A7E7",
+                                                   "cyan":  "#EBBCBA",
+                                                   "white":  "#E0DEF4",
+                                                   "brightBlack":  "#6E6A86",
+                                                   "brightRed":  "#EB6F92",
+                                                   "brightGreen":  "#31748F",
+                                                   "brightYellow":  "#F6C177",
+                                                   "brightBlue":  "#9CCFD8",
+                                                   "brightPurple":  "#C4A7E7",
+                                                   "brightCyan":  "#EBBCBA",
+                                                   "brightWhite":  "#E0DEF4"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "one-dark",
+        "name":  "One Dark",
+        "description":  "Azul cielo y orquídea sobre gris carbón, como el editor Atom.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#282C34",
+                                      "surface":  "#3E4451",
+                                      "primary":  "#61AFEF",
+                                      "secondary":  "#C678DD",
+                                      "highlight":  "#98C379",
+                                      "text":  "#ABB2BF",
+                                      "muted":  "#5C6370",
+                                      "ansi":  {
+                                                   "black":  "#282C34",
+                                                   "red":  "#E06C75",
+                                                   "green":  "#98C379",
+                                                   "yellow":  "#E5C07B",
+                                                   "blue":  "#61AFEF",
+                                                   "purple":  "#C678DD",
+                                                   "cyan":  "#56B6C2",
+                                                   "white":  "#ABB2BF",
+                                                   "brightBlack":  "#5C6370",
+                                                   "brightRed":  "#E06C75",
+                                                   "brightGreen":  "#98C379",
+                                                   "brightYellow":  "#E5C07B",
+                                                   "brightBlue":  "#61AFEF",
+                                                   "brightPurple":  "#C678DD",
+                                                   "brightCyan":  "#56B6C2",
+                                                   "brightWhite":  "#ABB2BF"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "nord",
+        "name":  "Nord",
+        "description":  "Azules grises nórdicos, sobrio y frío.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#2E3440",
+                                      "surface":  "#3B4252",
+                                      "primary":  "#88C0D0",
+                                      "secondary":  "#81A1C1",
+                                      "highlight":  "#8FBCBB",
+                                      "text":  "#D8DEE9",
+                                      "muted":  "#4C566A",
+                                      "ansi":  {
+                                                   "black":  "#3B4252",
+                                                   "red":  "#BF616A",
+                                                   "green":  "#A3BE8C",
+                                                   "yellow":  "#EBCB8B",
+                                                   "blue":  "#81A1C1",
+                                                   "purple":  "#B48EAD",
+                                                   "cyan":  "#88C0D0",
+                                                   "white":  "#E5E9F0",
+                                                   "brightBlack":  "#4C566A",
+                                                   "brightRed":  "#BF616A",
+                                                   "brightGreen":  "#A3BE8C",
+                                                   "brightYellow":  "#EBCB8B",
+                                                   "brightBlue":  "#81A1C1",
+                                                   "brightPurple":  "#B48EAD",
+                                                   "brightCyan":  "#88C0D0",
+                                                   "brightWhite":  "#D8DEE9"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "solarized-dark",
+        "name":  "Solarized Oscuro",
+        "description":  "Azul petróleo con acentos azul y ocre. Clásico de programadores.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#002B36",
+                                      "surface":  "#073642",
+                                      "primary":  "#268BD2",
+                                      "secondary":  "#B58900",
+                                      "highlight":  "#2AA198",
+                                      "text":  "#93A1A1",
+                                      "muted":  "#586E75",
+                                      "ansi":  {
+                                                   "black":  "#073642",
+                                                   "red":  "#DC322F",
+                                                   "green":  "#859900",
+                                                   "yellow":  "#B58900",
+                                                   "blue":  "#268BD2",
+                                                   "purple":  "#D33682",
+                                                   "cyan":  "#2AA198",
+                                                   "white":  "#EEE8D5",
+                                                   "brightBlack":  "#586E75",
+                                                   "brightRed":  "#DC322F",
+                                                   "brightGreen":  "#859900",
+                                                   "brightYellow":  "#B58900",
+                                                   "brightBlue":  "#268BD2",
+                                                   "brightPurple":  "#D33682",
+                                                   "brightCyan":  "#2AA198",
+                                                   "brightWhite":  "#93A1A1"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "graphite",
+        "name":  "Grafito",
+        "description":  "Grises neutros sin color: minimalista y serio.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "dark",
+                      "palette":  {
+                                      "base":  "#161616",
+                                      "surface":  "#262626",
+                                      "primary":  "#A8A8A8",
+                                      "secondary":  "#6F6F6F",
+                                      "highlight":  "#F4F4F4",
+                                      "text":  "#E0E0E0",
+                                      "muted":  "#525252",
+                                      "ansi":  {
+                                                   "black":  "#262626",
+                                                   "red":  "#FA4D56",
+                                                   "green":  "#42BE65",
+                                                   "yellow":  "#F1C21B",
+                                                   "blue":  "#78A9FF",
+                                                   "purple":  "#BE95FF",
+                                                   "cyan":  "#3DDBD9",
+                                                   "white":  "#E0E0E0",
+                                                   "brightBlack":  "#525252",
+                                                   "brightRed":  "#FA4D56",
+                                                   "brightGreen":  "#42BE65",
+                                                   "brightYellow":  "#F1C21B",
+                                                   "brightBlue":  "#78A9FF",
+                                                   "brightPurple":  "#BE95FF",
+                                                   "brightCyan":  "#3DDBD9",
+                                                   "brightWhite":  "#E0E0E0"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "catppuccin-latte",
+        "name":  "Catppuccin Latte (claro)",
+        "description":  "Modo claro: fondo crema con morado y azul.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "light",
+                      "palette":  {
+                                      "base":  "#EFF1F5",
+                                      "surface":  "#E6E9EF",
+                                      "primary":  "#8839EF",
+                                      "secondary":  "#1E66F5",
+                                      "highlight":  "#179299",
+                                      "text":  "#4C4F69",
+                                      "muted":  "#9CA0B0",
+                                      "ansi":  {
+                                                   "black":  "#5C5F77",
+                                                   "red":  "#D20F39",
+                                                   "green":  "#40A02B",
+                                                   "yellow":  "#DF8E1D",
+                                                   "blue":  "#1E66F5",
+                                                   "purple":  "#8839EF",
+                                                   "cyan":  "#179299",
+                                                   "white":  "#ACB0BE",
+                                                   "brightBlack":  "#9CA0B0",
+                                                   "brightRed":  "#D20F39",
+                                                   "brightGreen":  "#40A02B",
+                                                   "brightYellow":  "#DF8E1D",
+                                                   "brightBlue":  "#1E66F5",
+                                                   "brightPurple":  "#8839EF",
+                                                   "brightCyan":  "#179299",
+                                                   "brightWhite":  "#4C4F69"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "rose-pine-dawn",
+        "name":  "Rosé Pine Dawn (claro)",
+        "description":  "Modo claro: papel cálido con lavanda y rosa.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "light",
+                      "palette":  {
+                                      "base":  "#FAF4ED",
+                                      "surface":  "#FFFAF3",
+                                      "primary":  "#907AA9",
+                                      "secondary":  "#D7827E",
+                                      "highlight":  "#56949F",
+                                      "text":  "#575279",
+                                      "muted":  "#9893A5",
+                                      "ansi":  {
+                                                   "black":  "#F2E9E1",
+                                                   "red":  "#B4637A",
+                                                   "green":  "#286983",
+                                                   "yellow":  "#EA9D34",
+                                                   "blue":  "#56949F",
+                                                   "purple":  "#907AA9",
+                                                   "cyan":  "#D7827E",
+                                                   "white":  "#575279",
+                                                   "brightBlack":  "#9893A5",
+                                                   "brightRed":  "#B4637A",
+                                                   "brightGreen":  "#286983",
+                                                   "brightYellow":  "#EA9D34",
+                                                   "brightBlue":  "#56949F",
+                                                   "brightPurple":  "#907AA9",
+                                                   "brightCyan":  "#D7827E",
+                                                   "brightWhite":  "#575279"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "solarized-light",
+        "name":  "Solarized Claro",
+        "description":  "Modo claro: crema con azul y naranja quemado.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "light",
+                      "palette":  {
+                                      "base":  "#FDF6E3",
+                                      "surface":  "#EEE8D5",
+                                      "primary":  "#268BD2",
+                                      "secondary":  "#CB4B16",
+                                      "highlight":  "#2AA198",
+                                      "text":  "#586E75",
+                                      "muted":  "#93A1A1",
+                                      "ansi":  {
+                                                   "black":  "#073642",
+                                                   "red":  "#DC322F",
+                                                   "green":  "#859900",
+                                                   "yellow":  "#B58900",
+                                                   "blue":  "#268BD2",
+                                                   "purple":  "#D33682",
+                                                   "cyan":  "#2AA198",
+                                                   "white":  "#EEE8D5",
+                                                   "brightBlack":  "#93A1A1",
+                                                   "brightRed":  "#DC322F",
+                                                   "brightGreen":  "#859900",
+                                                   "brightYellow":  "#B58900",
+                                                   "brightBlue":  "#268BD2",
+                                                   "brightPurple":  "#D33682",
+                                                   "brightCyan":  "#2AA198",
+                                                   "brightWhite":  "#586E75"
+                                               }
+                                  }
+                  }
+    },
+    {
+        "id":  "snow",
+        "name":  "Nieve (claro)",
+        "description":  "Modo claro: blanco nórdico con azul acero.",
+        "apply":  {
+                      "type":  "palette",
+                      "mode":  "light",
+                      "palette":  {
+                                      "base":  "#ECEFF4",
+                                      "surface":  "#E5E9F0",
+                                      "primary":  "#5E81AC",
+                                      "secondary":  "#88C0D0",
+                                      "highlight":  "#BF616A",
+                                      "text":  "#2E3440",
+                                      "muted":  "#7B88A1",
+                                      "ansi":  {
+                                                   "black":  "#3B4252",
+                                                   "red":  "#BF616A",
+                                                   "green":  "#A3BE8C",
+                                                   "yellow":  "#D08770",
+                                                   "blue":  "#5E81AC",
+                                                   "purple":  "#B48EAD",
+                                                   "cyan":  "#88C0D0",
+                                                   "white":  "#E5E9F0",
+                                                   "brightBlack":  "#7B88A1",
+                                                   "brightRed":  "#BF616A",
+                                                   "brightGreen":  "#A3BE8C",
+                                                   "brightYellow":  "#D08770",
+                                                   "brightBlue":  "#5E81AC",
+                                                   "brightPurple":  "#B48EAD",
+                                                   "brightCyan":  "#88C0D0",
+                                                   "brightWhite":  "#2E3440"
+                                               }
+                                  }
+                  }
+    }
+]

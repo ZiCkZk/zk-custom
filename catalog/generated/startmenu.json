@@ -1,0 +1,576 @@
+[
+    {
+        "id":  "none",
+        "name":  "Sin estilo",
+        "description":  "Se deja el menú Inicio como viene en Windows.",
+        "preview":  null,
+        "previewApprox":  false,
+        "reference":  null,
+        "apply":  {
+                      "type":  "windhawk-remove",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler"
+                  }
+    },
+    {
+        "id":  "TranslucentStartMenu",
+        "name":  "Translucent Start Menu",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FTranslucentStartMenu%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/TranslucentStartMenu",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "TranslucentStartMenu"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FTranslucentStartMenu%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "NoRecommendedSection",
+        "name":  "No Recommended Section",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FNoRecommendedSection%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/NoRecommendedSection",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "NoRecommendedSection"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FNoRecommendedSection%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "SideBySide",
+        "name":  "Side By Side",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSideBySide%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/SideBySide",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "SideBySide"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSideBySide%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "SideBySide2",
+        "name":  "Side By Side2",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSideBySide2%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/SideBySide2",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "SideBySide2"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSideBySide2%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "SideBySideMinimal",
+        "name":  "Side By Side Minimal",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSideBySideMinimal%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/SideBySideMinimal",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "SideBySideMinimal"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSideBySideMinimal%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Down Aero",
+        "name":  "Down Aero",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FDown%2520Aero%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Down Aero",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Down Aero"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FDown%2520Aero%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Windows10",
+        "name":  "Windows10",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows10%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Windows10",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Windows10"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows10%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Windows10_variant_Minimal",
+        "name":  "Windows10 (Minimal)",
+        "description":  "Tema de la comunidad para el menú Inicio. Es una variante: la captura es la del tema original.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows10%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  true,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Windows10",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Windows10_variant_Minimal"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows10%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Windows11_Metro10",
+        "name":  "Windows11 Metro10",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows11_Metro10%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Windows11_Metro10",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Windows11_Metro10"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows11_Metro10%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Fluent2Inspired",
+        "name":  "Fluent2Inspired",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFluent2Inspired%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluent2Inspired",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Fluent2Inspired"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFluent2Inspired%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "RosePine",
+        "name":  "Rose Pine",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FRosePine%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/RosePine",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "RosePine"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FRosePine%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Windows11_Metro10Minimal",
+        "name":  "Windows11 Metro10Minimal",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows11_Metro10Minimal%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Windows11_Metro10Minimal",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Windows11_Metro10Minimal"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows11_Metro10Minimal%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Everblush",
+        "name":  "Everblush",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FEverblush%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Everblush",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Everblush"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FEverblush%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "SunValley",
+        "name":  "Sun Valley",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSunValley%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/SunValley",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "SunValley"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FSunValley%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "21996",
+        "name":  "Sun Valley (Legacy)",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2F21996%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/21996",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "21996"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2F21996%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "UniMenu",
+        "name":  "Uni Menu",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FUniMenu%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/UniMenu",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "UniMenu"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FUniMenu%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "LegacyFluent",
+        "name":  "Legacy Fluent",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLegacyFluent%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/LegacyFluent",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "LegacyFluent"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLegacyFluent%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OnlySearch",
+        "name":  "Only Search",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOnlySearch%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/OnlySearch",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "OnlySearch"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOnlySearch%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OnlySearch_variant_Minimal",
+        "name":  "Only Search (Minimal)",
+        "description":  "Tema de la comunidad para el menú Inicio. Es una variante: la captura es la del tema original.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOnlySearch%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  true,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/OnlySearch",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "OnlySearch_variant_Minimal"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOnlySearch%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "WindowGlass",
+        "name":  "Window Glass",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindowGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/WindowGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "WindowGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindowGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Fluid",
+        "name":  "Fluid",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFluid%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Fluid"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFluid%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Oversimplified\u0026Accentuated",
+        "name":  "Oversimplified\u0026Accentuated",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOversimplified%2526Accentuated%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Oversimplified\u0026Accentuated",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Oversimplified\u0026Accentuated"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOversimplified%2526Accentuated%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "LiquidGlass2",
+        "name":  "Liquid Glass",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLiquidGlass2%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/LiquidGlass2",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "LiquidGlass2"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLiquidGlass2%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "LiquidGlass",
+        "name":  "Liquid Glass (Legacy)",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLiquidGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/LiquidGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "LiquidGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLiquidGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Windows10X",
+        "name":  "Windows10X",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows10X%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Windows10X",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Windows10X"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FWindows10X%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "TintedGlass",
+        "name":  "Tinted Glass",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FTintedGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/TintedGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "TintedGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FTintedGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "LayerMicaUI",
+        "name":  "Layer Mica UI",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLayerMicaUI%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/LayerMicaUI",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "LayerMicaUI"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FLayerMicaUI%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Borderless",
+        "name":  "Borderless",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FBorderless%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Borderless",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Borderless"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FBorderless%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Command Center",
+        "name":  "Command Center",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FCommand%2520Center%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Command Center",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "Command Center"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FCommand%2520Center%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "FullScreen",
+        "name":  "Full Screen",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFullScreen%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/FullScreen",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "FullScreen"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFullScreen%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "FrostyGlass",
+        "name":  "Frosty Glass",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFrostyGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/FrostyGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "FrostyGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFrostyGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "FlyoutStartMenu",
+        "name":  "Flyout Start Menu",
+        "description":  "Tema de la comunidad para el menú Inicio.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFlyoutStartMenu%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/FlyoutStartMenu",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "FlyoutStartMenu"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FFlyoutStartMenu%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OS26 Tahoe App Launcher_variant_DarkCenter",
+        "name":  "\u003e-",
+        "description":  "Tema de la comunidad para el menú Inicio. Es una variante: la captura es la del tema original.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOS26%2520Tahoe%2520App%2520Launcher%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  true,
+        "reference":  "https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/OS26 Tahoe App Launcher",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-start-menu-styler",
+                      "modName":  "Windows 11 Start Menu Styler",
+                      "settings":  {
+                                       "theme":  "OS26 Tahoe App Launcher_variant_DarkCenter"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-start-menu-styling-guide%40main%2FThemes%2FOS26%2520Tahoe%2520App%2520Launcher%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    }
+]

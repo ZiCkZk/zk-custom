@@ -1,0 +1,23 @@
+[
+  { "id": "none", "name": "Como Windows (8 px)", "description": "Las esquinas redondeadas de serie de Windows 11.",
+    "mock": { "kind": "corner", "radius": 8 },
+    "apply": { "type": "windhawk-remove", "mod": "custom-corner-radius", "modName": "Custom Corner Radius" } },
+  { "id": "square", "name": "Rectas (0 px)", "description": "Esquinas en ángulo recto, al estilo de Windows 10. Look técnico y afilado.",
+    "mock": { "kind": "corner", "radius": 0 },
+    "apply": { "type": "windhawk", "mod": "custom-corner-radius", "modName": "Custom Corner Radius", "settings": { "radius": 0, "smallRadius": 0 } } },
+  { "id": "subtle", "name": "Sutiles (4 px)", "description": "Apenas redondeadas: moderno pero sobrio.",
+    "mock": { "kind": "corner", "radius": 4 },
+    "apply": { "type": "windhawk", "mod": "custom-corner-radius", "modName": "Custom Corner Radius", "settings": { "radius": 4, "smallRadius": 2 } } },
+  { "id": "soft", "name": "Suaves (12 px)", "description": "Algo más redondeadas que Windows: aspecto amable, tipo macOS.",
+    "mock": { "kind": "corner", "radius": 12 },
+    "apply": { "type": "windhawk", "mod": "custom-corner-radius", "modName": "Custom Corner Radius", "settings": { "radius": 12, "smallRadius": 6 } } },
+  { "id": "round", "name": "Redondas (16 px)", "description": "Muy redondeadas, estilo burbuja.",
+    "mock": { "kind": "corner", "radius": 16 },
+    "apply": { "type": "windhawk", "mod": "custom-corner-radius", "modName": "Custom Corner Radius", "settings": { "radius": 16, "smallRadius": 8 } } },
+  { "id": "pill", "name": "Extra redondas (20 px)", "description": "El máximo recomendado; más puede dar fallos visuales con escalado alto.",
+    "mock": { "kind": "corner", "radius": 20 },
+    "apply": { "type": "windhawk", "mod": "custom-corner-radius", "modName": "Custom Corner Radius", "settings": { "radius": 20, "smallRadius": 10 } } },
+  { "id": "soft-maximized", "name": "Suaves también al maximizar", "description": "12 px y además redondea las ventanas maximizadas y acopladas (Windows las deja rectas).",
+    "mock": { "kind": "corner", "radius": 12 },
+    "apply": { "type": "windhawk", "mod": "custom-corner-radius", "modName": "Custom Corner Radius", "settings": { "radius": 12, "smallRadius": 6, "roundMaximizedAndSnapped": "snappedAndMaximized" } } }
+]

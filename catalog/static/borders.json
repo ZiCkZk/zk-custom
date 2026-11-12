@@ -1,0 +1,16 @@
+[
+  { "id": "none", "name": "Bordes de Windows", "description": "El borde fino y gris de siempre (o el acento, si lo activas en la paleta).", "mock": { "kind": "border", "color": "#3B4261" },
+    "apply": { "type": "windhawk-multi", "mods": [
+      { "mod": "win11-accent-border", "modName": "Windows 11 Accent Window Border", "enabled": false },
+      { "mod": "invisible-borders", "modName": "Invisible Window Borders", "enabled": false } ] } },
+  { "id": "accent", "name": "Borde de color", "description": "Todas las ventanas llevan un borde con el color de acento de tu paleta, también las de programas que lo ignoran.", "mock": { "kind": "border", "color": "primary" },
+    "preview": "https://wsrv.nl/?url=i.imgur.com%2FLnPyxkb.png&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=i.imgur.com%2FLnPyxkb.png&w=1280&output=jpg&q=85",
+    "apply": { "type": "windhawk-multi", "mods": [
+      { "mod": "win11-accent-border", "modName": "Windows 11 Accent Window Border", "enabled": true },
+      { "mod": "invisible-borders", "modName": "Invisible Window Borders", "enabled": false } ] } },
+  { "id": "invisible", "name": "Sin borde", "description": "Ventanas sin línea de borde, manteniendo las esquinas redondeadas. Look más limpio.", "mock": { "kind": "border", "color": "none" },
+    "preview": "https://wsrv.nl/?url=raw.githubusercontent.com%2FBo0ii%2Fwindhawk-mods%2Fmain%2Finvisible-borders%2Fonoff.png&w=480&output=jpg&q=82", "previewLarge": "https://wsrv.nl/?url=raw.githubusercontent.com%2FBo0ii%2Fwindhawk-mods%2Fmain%2Finvisible-borders%2Fonoff.png&w=1280&output=jpg&q=85",
+    "apply": { "type": "windhawk-multi", "mods": [
+      { "mod": "invisible-borders", "modName": "Invisible Window Borders", "enabled": true },
+      { "mod": "win11-accent-border", "modName": "Windows 11 Accent Window Border", "enabled": false } ] } }
+]

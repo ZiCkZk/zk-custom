@@ -1,0 +1,166 @@
+[
+    {
+        "id":  "none",
+        "name":  "Sin estilo",
+        "description":  "Se deja la app Configuración como viene en Windows.",
+        "preview":  null,
+        "previewApprox":  false,
+        "reference":  null,
+        "apply":  {
+                      "type":  "windhawk-remove",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler"
+                  }
+    },
+    {
+        "id":  "Densy",
+        "name":  "Densy",
+        "description":  "Tema de la comunidad para la app Configuración.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FDensy%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/Densy",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "Densy"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FDensy%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "ClassicSearchBar",
+        "name":  "Classic Search Bar",
+        "description":  "Tema de la comunidad para la app Configuración.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FClassicSearchBar%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/ClassicSearchBar",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "ClassicSearchBar"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FClassicSearchBar%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "StoreFrame11",
+        "name":  "Store Frame11",
+        "description":  "Tema de la comunidad para la app Configuración.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FStoreFrame11%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/StoreFrame11",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "StoreFrame11"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FStoreFrame11%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Blue",
+        "name":  "Blue",
+        "description":  "Tema de la comunidad para la app Configuración.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FBlue%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/Blue",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "Blue"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FBlue%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Translucent_Settings11",
+        "name":  "Translucent Settings11",
+        "description":  "Tema de la comunidad para la app Configuración. Sin captura oficial: pulsa «Ver ejemplos» para buscar imágenes.",
+        "preview":  null,
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "Translucent_Settings11"
+                                   }
+                  }
+    },
+    {
+        "id":  "WindowGlass",
+        "name":  "Window Glass",
+        "description":  "Tema de la comunidad para la app Configuración.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FWindowGlass%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/WindowGlass",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "WindowGlass"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FWindowGlass%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OLED_variant_ModrinthGreen",
+        "name":  "OLED (Modrinth Green)",
+        "description":  "Tema de la comunidad para la app Configuración. Es una variante: la captura es la del tema original.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FOLED%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  true,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/OLED",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "OLED_variant_ModrinthGreen"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FOLED%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "OLED_variant_SystemAscent",
+        "name":  "OLED (System Ascent)",
+        "description":  "Tema de la comunidad para la app Configuración. Es una variante: la captura es la del tema original.",
+        "preview":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FOLED%2Fscreenshot.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewApprox":  true,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide/tree/main/Themes/OLED",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "OLED_variant_SystemAscent"
+                                   }
+                  },
+        "previewLarge":  "https://wsrv.nl/?url=cdn.jsdelivr.net%2Fgh%2Framensoftware%2Fwindows-11-settings-styling-guide%40main%2FThemes%2FOLED%2Fscreenshot.png\u0026w=1280\u0026output=jpg\u0026q=82"
+    },
+    {
+        "id":  "Translucent_Seamless",
+        "name":  "Translucent Seamless",
+        "description":  "Tema de la comunidad para la app Configuración. Sin captura oficial: pulsa «Ver ejemplos» para buscar imágenes.",
+        "preview":  null,
+        "previewApprox":  false,
+        "reference":  "https://github.com/ramensoftware/windows-11-settings-styling-guide",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "windows-11-settings-styler",
+                      "modName":  "Windows 11 Settings Styler",
+                      "settings":  {
+                                       "theme":  "Translucent_Seamless"
+                                   }
+                  }
+    }
+]

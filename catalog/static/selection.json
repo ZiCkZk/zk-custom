@@ -1,0 +1,12 @@
+[
+  { "id": "none", "name": "Selección de Windows", "description": "El rectángulo azul cuadrado de siempre al arrastrar el ratón.", "mock": { "kind": "selection", "radius": 0, "color": "#0078D7", "opacity": 0.3 },
+    "apply": { "type": "windhawk-remove", "mod": "rounded-selection-rectangle", "modName": "Rounded Selection Rectangle" } },
+  { "id": "rounded", "name": "Redondeada", "description": "Mismo color de Windows, con esquinas redondeadas y un fundido suave.", "mock": { "kind": "selection", "radius": 8, "color": "#0078D7", "opacity": 0.25 },
+    "apply": { "type": "windhawk", "mod": "rounded-selection-rectangle", "modName": "Rounded Selection Rectangle", "settings": { "CornerRadius": 8 } } },
+  { "id": "palette", "name": "Con mi paleta", "description": "Redondeada y con el color principal de tu paleta.", "mock": { "kind": "selection", "radius": 8, "color": "primary", "opacity": 0.25 },
+    "apply": { "type": "windhawk", "mod": "rounded-selection-rectangle", "modName": "Rounded Selection Rectangle", "settings": { "CornerRadius": 8, "FillColor.Source": "custom", "FillColor.Custom": "{primary}", "BorderColor.Source": "custom", "BorderColor.Custom": "{primary}" } } },
+  { "id": "neon", "name": "Neón", "description": "Borde grueso con el color de detalle de tu paleta y relleno muy suave.", "mock": { "kind": "selection", "radius": 12, "color": "highlight", "opacity": 0.12, "border": 2 },
+    "apply": { "type": "windhawk", "mod": "rounded-selection-rectangle", "modName": "Rounded Selection Rectangle", "settings": { "CornerRadius": 12, "BorderWidth": 2, "FillOpacity": 12, "FillColor.Source": "custom", "FillColor.Custom": "{highlight}", "BorderColor.Source": "custom", "BorderColor.Custom": "{highlight}" } } },
+  { "id": "pill", "name": "Píldora", "description": "Muy redondeada con tu color secundario.", "mock": { "kind": "selection", "radius": 20, "color": "secondary", "opacity": 0.3 },
+    "apply": { "type": "windhawk", "mod": "rounded-selection-rectangle", "modName": "Rounded Selection Rectangle", "settings": { "CornerRadius": 20, "FillOpacity": 30, "FillColor.Source": "custom", "FillColor.Custom": "{secondary}", "BorderColor.Source": "custom", "BorderColor.Custom": "{secondary}" } } }
+]

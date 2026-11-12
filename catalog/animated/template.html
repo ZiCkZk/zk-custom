@@ -1,0 +1,96 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ZK-Custom</title>
+<style>html,body{margin:0;height:100%;overflow:hidden;background:%BASE%}canvas{display:block;width:100vw;height:100vh}</style>
+</head><body><canvas id="c"></canvas>
+<script>
+// Fondo animado de ZK-Custom (original). Estilo: %STYLE%. Colores tomados de tu paleta.
+const P = { base: '%BASE%', surface: '%SURFACE%', a: '%PRIMARY%', b: '%SECONDARY%', c: '%HIGHLIGHT%', text: '%TEXT%' };
+const cv = document.getElementById('c'), x = cv.getContext('2d');
+let W = 0, H = 0, t0 = performance.now();
+function size() { W = cv.width = innerWidth * devicePixelRatio; H = cv.height = innerHeight * devicePixelRatio; }
+addEventListener('resize', size); size();
+const rnd = (a, b) => a + Math.random() * (b - a);
+function rgba(hex, al) { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16 & 255},${n >> 8 & 255},${n & 255},${al})`; }
+
+const styles = {
+  aurora(t) {
+    x.fillStyle = P.base; x.fillRect(0, 0, W, H);
+    [P.a, P.b, P.c].forEach((col, i) => {
+      const cx = W * (0.3 + 0.4 * Math.sin(t * 0.00012 * (i + 1) + i * 2)), cy = H * (0.35 + 0.25 * Math.cos(t * 0.0001 * (i + 2) + i));
+      const g = x.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * 0.55);
+      g.addColorStop(0, rgba(col, 0.55)); g.addColorStop(1, rgba(col, 0));
+      x.globalCompositeOperation = 'lighter'; x.fillStyle = g; x.fillRect(0, 0, W, H);
+    });
+    x.globalCompositeOperation = 'source-over';
+  },
+  constellation: (() => {
+    let pts = [];
+    return t => {
+      if (!pts.length) pts = Array.from({ length: 90 }, () => ({ x: rnd(0, W), y: rnd(0, H), vx: rnd(-0.3, 0.3), vy: rnd(-0.3, 0.3) }));
+      x.fillStyle = P.base; x.fillRect(0, 0, W, H);
+      for (const p of pts) { p.x = (p.x + p.vx + W) % W; p.y = (p.y + p.vy + H) % H; }
+      for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+        const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y), m = 180 * devicePixelRatio;
+        if (d < m) { x.strokeStyle = rgba(P.a, 0.5 * (1 - d / m)); x.lineWidth = devicePixelRatio; x.beginPath(); x.moveTo(pts[i].x, pts[i].y); x.lineTo(pts[j].x, pts[j].y); x.stroke(); }
+      }
+      for (const p of pts) { x.fillStyle = P.c; x.beginPath(); x.arc(p.x, p.y, 2.2 * devicePixelRatio, 0, 7); x.fill(); }
+    };
+  })(),
+  coderain: (() => {
+    let drops = [], fs = 18;
+    const chars = 'アイウエオカキクケコサシスセソ0123456789ABCDEF<>/{}';
+    return t => {
+      fs = 18 * devicePixelRatio; const cols = Math.ceil(W / fs);
+      if (drops.length !== cols) drops = Array.from({ length: cols }, () => rnd(-50, 0));
+      x.fillStyle = rgba(P.base, 0.12); x.fillRect(0, 0, W, H);
+      x.font = `${fs}px monospace`;
+      drops.forEach((y, i) => {
+        x.fillStyle = Math.random() > 0.97 ? P.text : P.a;
+        x.fillText(chars[Math.floor(Math.random() * chars.length)], i * fs, y * fs);
+        drops[i] = y * fs > H && Math.random() > 0.975 ? 0 : y + 0.5;
+      });
+    };
+  })(),
+  synthgrid(t) {
+    const hz = H * 0.58;
+    const sky = x.createLinearGradient(0, 0, 0, hz); sky.addColorStop(0, P.base); sky.addColorStop(1, rgba(P.b, 0.8));
+    x.fillStyle = sky; x.fillRect(0, 0, W, hz);
+    const r = H * 0.22, sx = W / 2, sy = hz - r * 0.35;
+    const sun = x.createLinearGradient(0, sy - r, 0, sy + r); sun.addColorStop(0, P.c); sun.addColorStop(1, P.a);
+    x.fillStyle = sun; x.beginPath(); x.arc(sx, sy, r, 0, 7); x.fill();
+    x.fillStyle = P.base; for (let i = 0; i < 6; i++) { const yy = sy + r * 0.1 + i * r * 0.16; x.fillRect(sx - r, yy, r * 2, (i + 1) * r * 0.025); }
+    x.fillStyle = P.base; x.fillRect(0, hz, W, H - hz);
+    x.strokeStyle = P.a; x.lineWidth = 2 * devicePixelRatio;
+    for (let i = -20; i <= 20; i++) { x.beginPath(); x.moveTo(W / 2 + i * W * 0.02, hz); x.lineTo(W / 2 + i * W * 0.2, H); x.stroke(); }
+    const off = (t * 0.00025) % 1;
+    for (let i = 0; i < 14; i++) { const k = Math.pow((i + off) / 14, 2.2); const yy = hz + k * (H - hz); x.globalAlpha = 0.3 + 0.7 * k; x.beginPath(); x.moveTo(0, yy); x.lineTo(W, yy); x.stroke(); }
+    x.globalAlpha = 1;
+  },
+  waves(t) {
+    x.fillStyle = P.base; x.fillRect(0, 0, W, H);
+    [P.a, P.b, P.c, P.surface].forEach((col, i) => {
+      x.fillStyle = rgba(col, 0.45); x.beginPath(); x.moveTo(0, H);
+      for (let px = 0; px <= W; px += 8) {
+        const y = H * (0.55 + i * 0.09) + Math.sin(px * 0.004 / devicePixelRatio + t * 0.0007 * (i + 1) + i) * H * 0.05;
+        x.lineTo(px, y);
+      }
+      x.lineTo(W, H); x.fill();
+    });
+  },
+  starfield: (() => {
+    let st = [];
+    return t => {
+      if (!st.length) st = Array.from({ length: 400 }, () => ({ x: rnd(-1, 1), y: rnd(-1, 1), z: rnd(0.05, 1) }));
+      x.fillStyle = rgba(P.base, 0.35); x.fillRect(0, 0, W, H);
+      for (const s of st) {
+        s.z -= 0.004; if (s.z <= 0.02) { s.x = rnd(-1, 1); s.y = rnd(-1, 1); s.z = 1; }
+        const px = W / 2 + s.x / s.z * W * 0.3, py = H / 2 + s.y / s.z * H * 0.3, r = (1 - s.z) * 3 * devicePixelRatio;
+        x.fillStyle = s.z < 0.3 ? P.c : P.text; x.beginPath(); x.arc(px, py, r, 0, 7); x.fill();
+      }
+    };
+  })()
+};
+const draw = styles['%STYLE%'] || styles.aurora;
+function loop(now) { draw(now - t0); requestAnimationFrame(loop); }
+requestAnimationFrame(loop);
+</script></body></html>

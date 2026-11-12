@@ -1,0 +1,18 @@
+[
+  { "id": "none", "name": "Sin fondo animado", "description": "Se usa el fondo de pantalla normal. Si había uno animado, se quita.", "mock": { "kind": "anim", "style": "none" },
+    "apply": { "type": "animated", "style": "none" } },
+  { "id": "aurora", "name": "Aurora", "description": "Luces suaves que se mueven y mezclan con los colores de tu paleta. Relajante y muy ligero.", "mock": { "kind": "anim", "style": "aurora" },
+    "apply": { "type": "animated", "style": "aurora" } },
+  { "id": "constellation", "name": "Constelación", "description": "Puntos que flotan y se unen con líneas cuando se acercan.", "mock": { "kind": "anim", "style": "constellation" },
+    "apply": { "type": "animated", "style": "constellation" } },
+  { "id": "coderain", "name": "Lluvia de código", "description": "Caracteres que caen en columnas, estilo hacker, con tu color principal.", "mock": { "kind": "anim", "style": "coderain" },
+    "apply": { "type": "animated", "style": "coderain" } },
+  { "id": "synthgrid", "name": "Horizonte synthwave", "description": "Sol retro y una rejilla de neón que avanza hacia ti.", "mock": { "kind": "anim", "style": "synthgrid" },
+    "apply": { "type": "animated", "style": "synthgrid" } },
+  { "id": "waves", "name": "Olas", "description": "Capas de olas que se mecen lentamente.", "mock": { "kind": "anim", "style": "waves" },
+    "apply": { "type": "animated", "style": "waves" } },
+  { "id": "starfield", "name": "Viaje estelar", "description": "Estrellas que vienen hacia ti, como viajar por el espacio.", "mock": { "kind": "anim", "style": "starfield" },
+    "apply": { "type": "animated", "style": "starfield" } },
+  { "id": "video", "name": "Mi vídeo o GIF", "description": "Usa un vídeo (MP4, WEBM) o un GIF de tu equipo como fondo animado. Elígelo en Ajustes.", "mock": { "kind": "anim", "style": "video" },
+    "apply": { "type": "animated", "style": "video" } }
+]

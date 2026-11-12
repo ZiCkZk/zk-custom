@@ -1,0 +1,9 @@
+﻿# Copias de seguridad y logs generados en cada ejecucion
+backups/*
+!backups/.gitkeep
+
+# Descargas, miniaturas y temporales (se regeneran solos)
+cache/
+
+# Orbs generados con tu paleta (se regeneran al elegirlos)
+assets/orbs/paleta-*

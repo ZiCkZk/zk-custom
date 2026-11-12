@@ -1,0 +1,17 @@
+[
+  { "id": "none", "name": "Ventanas normales", "description": "Las ventanas clásicas (Bloc de notas, Panel de control...) se quedan con su fondo sólido.",
+    "mock": { "kind": "glass", "opacity": 1.0, "blur": 0 },
+    "apply": { "type": "windhawk-remove", "mod": "translucent-windows", "modName": "Translucent Windows" } },
+  { "id": "acrylic-blur", "name": "Cristal desenfocado", "description": "Fondo muy translúcido y desenfocado: se ve el fondo de pantalla a través de las ventanas. El efecto más llamativo.",
+    "mock": { "kind": "glass", "opacity": 0.35, "blur": 14 },
+    "apply": { "type": "windhawk", "mod": "translucent-windows", "modName": "Translucent Windows", "settings": { "BackgroundEffects.type": "acrylicblur" } } },
+  { "id": "acrylic", "name": "Acrílico", "description": "Translúcido con textura suave, como el menú Inicio de Windows 11. Equilibrado.",
+    "mock": { "kind": "glass", "opacity": 0.55, "blur": 10 },
+    "apply": { "type": "windhawk", "mod": "translucent-windows", "modName": "Translucent Windows", "settings": { "BackgroundEffects.type": "acrylicsystem" } } },
+  { "id": "mica", "name": "Mica", "description": "Tinte sutil con el color del fondo de pantalla, como Configuración de Windows 11. Discreto y elegante.",
+    "mock": { "kind": "glass", "opacity": 0.8, "blur": 20 },
+    "apply": { "type": "windhawk", "mod": "translucent-windows", "modName": "Translucent Windows", "settings": { "BackgroundEffects.type": "mica" } } },
+  { "id": "mica-alt", "name": "Mica Alt", "description": "Como Mica pero algo más oscuro y con más color. El de las pestañas de Windows Terminal.",
+    "mock": { "kind": "glass", "opacity": 0.7, "blur": 20 },
+    "apply": { "type": "windhawk", "mod": "translucent-windows", "modName": "Translucent Windows", "settings": { "BackgroundEffects.type": "mica_tabbed" } } }
+]

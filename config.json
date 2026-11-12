@@ -1,0 +1,334 @@
+{
+    "meta":  {
+                 "name":  "Gruvbox",
+                 "version":  "2026.11.12",
+                 "minBuild":  22000
+             },
+    "palette":  {
+                    "base":  "#282828",
+                    "surface":  "#3C3836",
+                    "primary":  "#FE8019",
+                    "secondary":  "#FABD2F",
+                    "highlight":  "#8EC07C",
+                    "text":  "#EBDBB2",
+                    "muted":  "#928374",
+                    "ansi":  {
+                                 "black":  "#282828",
+                                 "red":  "#FB4934",
+                                 "green":  "#B8BB26",
+                                 "yellow":  "#FABD2F",
+                                 "blue":  "#83A598",
+                                 "purple":  "#D3869B",
+                                 "cyan":  "#8EC07C",
+                                 "white":  "#EBDBB2",
+                                 "brightBlack":  "#928374",
+                                 "brightRed":  "#FB4934",
+                                 "brightGreen":  "#B8BB26",
+                                 "brightYellow":  "#FABD2F",
+                                 "brightBlue":  "#83A598",
+                                 "brightPurple":  "#D3869B",
+                                 "brightCyan":  "#8EC07C",
+                                 "brightWhite":  "#EBDBB2"
+                             }
+                },
+    "theme":  {
+                  "darkMode":  true,
+                  "transparency":  true,
+                  "accentOnTitleBars":  true,
+                  "accentOnStartAndTaskbar":  false
+              },
+    "taskbar":  {
+                    "alignment":  "center",
+                    "hideSearch":  true,
+                    "hideTaskView":  true,
+                    "hideWidgets":  true
+                },
+    "windhawk":  {
+                     "mods":  [
+                                  {
+                                      "id":  "custom-corner-radius",
+                                      "name":  "Custom Corner Radius",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "radius":  4,
+                                                       "smallRadius":  2
+                                                   }
+                                  },
+                                  {
+                                      "id":  "win11-accent-border",
+                                      "name":  "Windows 11 Accent Window Border",
+                                      "enabled":  true
+                                  },
+                                  {
+                                      "id":  "invisible-borders",
+                                      "name":  "Invisible Window Borders",
+                                      "enabled":  false
+                                  },
+                                  {
+                                      "id":  "taskbar-start-button-colorizer",
+                                      "name":  "Start button colorizer",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "color":  "red",
+                                                       "size":  100
+                                                   }
+                                  },
+                                  {
+                                      "id":  "windows-11-file-explorer-styler",
+                                      "name":  "Windows 11 File Explorer Styler",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "theme":  "Matter"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "cursor-trail",
+                                      "name":  "Cursor Trail",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "style":  "simple_line",
+                                                       "simpleLineOptions.color.values":  "FFF200,FF7A00,FF0033",
+                                                       "simpleLineOptions.width.values":  "3,1",
+                                                       "simpleLineOptions.timeBased.tail_duration":  500
+                                                   }
+                                  },
+                                  {
+                                      "id":  "explorer-translucent-menus",
+                                      "name":  "Explorer Translucent Menus",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "backgroundEffect":  "solid",
+                                                       "tintOpacity":  35,
+                                                       "roundedCorners":  true,
+                                                       "darkTint":  "#282828",
+                                                       "lightTint":  "#3C3836"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "windows-11-taskbar-styler",
+                                      "name":  "Windows 11 Taskbar Styler",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "theme":  "xdark",
+                                                       "controlStyles[0].target":  "Taskbar.TaskbarFrame \u003e Grid#RootGrid \u003e Taskbar.TaskbarBackground \u003e Grid \u003e Rectangle#BackgroundFill",
+                                                       "controlStyles[0].styles[0]":  "RadiusX=7",
+                                                       "controlStyles[0].styles[1]":  "RadiusY=7",
+                                                       "themeResourceVariables[0]":  "SystemAccentColor=#FFFE8019",
+                                                       "themeResourceVariables[1]":  "SystemAccentColorLight1=#FFFE9742",
+                                                       "themeResourceVariables[2]":  "SystemAccentColorDark1=#FFD06914",
+                                                       "themeResourceVariables[3]":  "SystemAccentColorLight2=#FFFEAE6C",
+                                                       "themeResourceVariables[4]":  "SystemAccentColorDark2=#FFA35210",
+                                                       "themeResourceVariables[5]":  "SystemAccentColorLight3=#FFFFC595",
+                                                       "themeResourceVariables[6]":  "SystemAccentColorDark3=#FF753B0C"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "taskbar-icon-size",
+                                      "name":  "Taskbar height and icon size",
+                                      "enabled":  false
+                                  },
+                                  {
+                                      "id":  "taskbar-clock-customization",
+                                      "name":  "Taskbar Clock Customization",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "ShowSeconds":  false,
+                                                       "TimeFormat":  "HH\u0027:\u0027mm",
+                                                       "DateFormat":  "d \u0027de\u0027 MMMM",
+                                                       "WeekdayFormat":  "dddd",
+                                                       "TopLine":  "%weekday% %time%",
+                                                       "BottomLine":  "%date%",
+                                                       "TooltipLine":  "-"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "windows-11-start-menu-styler",
+                                      "name":  "Windows 11 Start Menu Styler",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "theme":  "OS26 Tahoe App Launcher_variant_DarkCenter"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "windows-11-notification-center-styler",
+                                      "name":  "Windows 11 Notification Center Styler",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "theme":  "OS26 Tahoe Glass"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "translucent-windows",
+                                      "name":  "Translucent Windows",
+                                      "enabled":  false
+                                  },
+                                  {
+                                      "id":  "icon-resource-redirect",
+                                      "name":  "Resource Redirect",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "iconTheme":  "Gnome Human|themes/icons/niivu/Gnome%20Human.zip"
+                                                   }
+                                  },
+                                  {
+                                      "id":  "rounded-selection-rectangle",
+                                      "name":  "Rounded Selection Rectangle",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "CornerRadius":  20,
+                                                       "FillOpacity":  30,
+                                                       "FillColor.Source":  "custom",
+                                                       "FillColor.Custom":  "#FABD2F",
+                                                       "BorderColor.Source":  "custom",
+                                                       "BorderColor.Custom":  "#FABD2F",
+                                                       "BorderWidth":  1
+                                                   }
+                                  },
+                                  {
+                                      "id":  "lock-screen-clock-styler",
+                                      "name":  "Lock Screen Clock Styler",
+                                      "enabled":  true,
+                                      "settings":  {
+                                                       "clockStyle":  "pixel",
+                                                       "showSeconds":  true,
+                                                       "timeFormat":  "24h",
+                                                       "glassOpacity":  45
+                                                   }
+                                  }
+                              ]
+                 },
+    "cursors":  {
+                    "source":  "github",
+                    "repo":  "ful1e5/fuchsia-cursor",
+                    "asset":  "^Fuchsia-Red-Windows\\.zip$",
+                    "variant":  "Regular"
+                },
+    "fonts":  [
+                  {
+                      "family":  "VictorMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^VictorMono\\.zip$",
+                      "filter":  "^VictorMonoNerdFont-.*\\.(ttf|otf)$"
+                  }
+              ],
+    "terminal":  {
+                     "font":  "VictorMono Nerd Font",
+                     "fontSize":  11,
+                     "opacity":  92
+                 },
+    "wallpaper":  {
+                      "file":  null,
+                      "style":  "Fill",
+                      "url":  "https://raw.githubusercontent.com/dharmx/walls/main/mountain/a_mountain_range_with_clouds_in_the_background.jpg",
+                      "size":  6210236,
+                      "name":  "Mountain range with clouds in the background"
+                  },
+    "apps":  [
+
+             ],
+    "tweaks":  {
+
+               },
+    "modules":  {
+                    "Theme":  true,
+                    "Tweaks":  false,
+                    "Apps":  false,
+                    "Taskbar":  true,
+                    "Windhawk":  true,
+                    "Cursors":  true,
+                    "Fonts":  true,
+                    "Wallpaper":  true,
+                    "Terminal":  true
+                },
+    "wizard":  {
+                   "selections":  {
+                                      "palette":  "gruvbox",
+                                      "wallpaper":  "dharmx/walls/mountain/a_mountain_range_with_clouds_in_the_background.jpg",
+                                      "taskbar":  "xdark",
+                                      "startmenu":  "OS26 Tahoe App Launcher_variant_DarkCenter",
+                                      "notifications":  "OS26 Tahoe Glass",
+                                      "explorer":  "Matter",
+                                      "effects":  "none",
+                                      "corners":  "subtle",
+                                      "menus":  "solid",
+                                      "icons":  "Gnome Human",
+                                      "cursors":  "fuchsia-red",
+                                      "trail":  "fire",
+                                      "selection":  "pill",
+                                      "clock":  "long-date",
+                                      "fonts":  "victor-mono-nf",
+                                      "startbtn":  "red",
+                                      "lockclock":  "pixel",
+                                      "themes":  "blood-moon",
+                                      "borders":  "accent",
+                                      "tbsize":  "none"
+                                  },
+                   "options":  {
+                                   "trail":  {
+
+                                             },
+                                   "taskbar":  {
+                                                   "accent":  "#FE8019",
+                                                   "radius":  7
+                                               },
+                                   "tbsize":  {
+                                                  "height":  48,
+                                                  "icon":  24
+                                              },
+                                   "startbtn":  {
+
+                                                },
+                                   "selection":  {
+                                                     "radius":  20,
+                                                     "opacity":  30,
+                                                     "border":  1
+                                                 },
+                                   "menus":  {
+
+                                             },
+                                   "corners":  {
+                                                   "custom":  -1
+                                               },
+                                   "lockclock":  {
+
+                                                 },
+                                   "startmenu":  {
+
+                                                 },
+                                   "notifications":  {
+
+                                                     },
+                                   "explorer":  {
+
+                                                },
+                                   "settingsapp":  {
+
+                                                   },
+                                   "palette":  {
+
+                                               },
+                                   "wallpaper":  {
+
+                                                 },
+                                   "effects":  {
+
+                                               },
+                                   "icons":  {
+
+                                             },
+                                   "cursors":  {
+
+                                               },
+                                   "clock":  {
+
+                                             },
+                                   "fonts":  {
+
+                                             },
+                                   "borders":  {
+
+                                               }
+                               }
+               }
+}

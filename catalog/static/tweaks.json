@@ -1,0 +1,178 @@
+[
+    {
+        "id":  "classic-context-menu",
+        "group":  "Explorador",
+        "name":  "Menú contextual completo (clásico)",
+        "description":  "Al hacer clic derecho se muestran todas las opciones directamente, sin pulsar \u0027Mostrar más opciones\u0027.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32",
+                        "name":  "",
+                        "type":  "String",
+                        "on":  "",
+                        "off":  null,
+                        "offDeletesKey":  true
+                    }
+                ]
+    },
+    {
+        "id":  "show-extensions",
+        "group":  "Explorador",
+        "name":  "Mostrar extensiones de archivo",
+        "description":  "Ves \u0027foto.jpg\u0027 en vez de \u0027foto\u0027. Más seguro: delata archivos falsos como \u0027factura.pdf.exe\u0027.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "HideFileExt",
+                        "on":  0,
+                        "off":  1
+                    }
+                ]
+    },
+    {
+        "id":  "show-hidden",
+        "group":  "Explorador",
+        "name":  "Mostrar archivos ocultos",
+        "description":  "Muestra carpetas como AppData. Los archivos protegidos del sistema siguen ocultos.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "Hidden",
+                        "on":  1,
+                        "off":  2
+                    }
+                ]
+    },
+    {
+        "id":  "compact-mode",
+        "group":  "Explorador",
+        "name":  "Modo compacto",
+        "description":  "Reduce el espacio entre elementos del Explorador para ver más archivos a la vez.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "UseCompactMode",
+                        "on":  1,
+                        "off":  0
+                    }
+                ]
+    },
+    {
+        "id":  "clock-seconds",
+        "group":  "Barra de tareas",
+        "name":  "Segundos en el reloj",
+        "description":  "El reloj de la barra muestra los segundos (función nativa de Windows).",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "ShowSecondsInSystemClock",
+                        "on":  1,
+                        "off":  0
+                    }
+                ]
+    },
+    {
+        "id":  "never-combine",
+        "group":  "Barra de tareas",
+        "name":  "No agrupar botones (mostrar nombres)",
+        "description":  "Cada ventana tiene su botón con el título, como en Windows 7/10.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "TaskbarGlomLevel",
+                        "on":  2,
+                        "off":  0
+                    }
+                ]
+    },
+    {
+        "id":  "no-recommended",
+        "group":  "Inicio y búsqueda",
+        "name":  "Menos recomendaciones en Inicio",
+        "description":  "Oculta sugerencias de apps y consejos en el menú Inicio.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "Start_IrisRecommendations",
+                        "on":  0,
+                        "off":  1
+                    },
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+                        "name":  "SubscribedContent-338388Enabled",
+                        "on":  0,
+                        "off":  1
+                    }
+                ]
+    },
+    {
+        "id":  "more-pins",
+        "group":  "Inicio y búsqueda",
+        "name":  "Más anclados en Inicio",
+        "description":  "Más espacio para tus apps ancladas y menos para recomendaciones.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "Start_Layout",
+                        "on":  1,
+                        "off":  0
+                    }
+                ]
+    },
+    {
+        "id":  "hide-desktop-icons",
+        "group":  "Escritorio",
+        "name":  "Ocultar iconos del escritorio",
+        "description":  "Escritorio limpio para lucir el fondo. Los archivos siguen ahí (clic derecho \u003e Ver \u003e Mostrar iconos).",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "HideIcons",
+                        "on":  1,
+                        "off":  0
+                    }
+                ]
+    },
+    {
+        "id":  "no-snap-flyout",
+        "group":  "Escritorio",
+        "name":  "Sin menú de diseños al pasar por \u0027Maximizar\u0027",
+        "description":  "Quita el panel de Snap Layouts que aparece al dejar el ratón sobre el botón maximizar.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+                        "name":  "EnableSnapAssistFlyout",
+                        "on":  0,
+                        "off":  1
+                    }
+                ]
+    },
+    {
+        "id":  "accent-taskbar",
+        "group":  "Colores",
+        "name":  "Color de acento en Inicio y barra de tareas",
+        "description":  "Tiñe la barra de tareas y el Inicio con el color principal de tu paleta (solo en modo oscuro).",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+                        "name":  "ColorPrevalence",
+                        "on":  1,
+                        "off":  0
+                    }
+                ]
+    },
+    {
+        "id":  "no-transparency",
+        "group":  "Colores",
+        "name":  "Desactivar transparencias",
+        "description":  "Fondos sólidos en lugar de translúcidos. Algo más de rendimiento y batería.",
+        "ops":  [
+                    {
+                        "path":  "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize",
+                        "name":  "EnableTransparency",
+                        "on":  0,
+                        "off":  1
+                    }
+                ]
+    }
+]

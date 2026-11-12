@@ -1,0 +1,17 @@
+[
+  { "id": "none", "name": "Como Windows", "description": "Altura e iconos de serie (48 px de alto, iconos de 24 px).",
+    "mock": { "kind": "tbsize", "height": 48, "icon": 24 },
+    "apply": { "type": "windhawk-remove", "mod": "taskbar-icon-size", "modName": "Taskbar height and icon size" } },
+  { "id": "compact", "name": "Compacta", "description": "Más fina y con iconos pequeños: deja más espacio a las ventanas.",
+    "mock": { "kind": "tbsize", "height": 38, "icon": 20 },
+    "apply": { "type": "windhawk", "mod": "taskbar-icon-size", "modName": "Taskbar height and icon size", "settings": { "TaskbarHeight": 38, "IconSize": 20, "TaskbarButtonWidth": 38 } } },
+  { "id": "comfy", "name": "Cómoda", "description": "Un poco más alta, con iconos algo mayores. Fácil de usar con el ratón.",
+    "mock": { "kind": "tbsize", "height": 56, "icon": 28 },
+    "apply": { "type": "windhawk", "mod": "taskbar-icon-size", "modName": "Taskbar height and icon size", "settings": { "TaskbarHeight": 56, "IconSize": 28, "TaskbarButtonWidth": 50 } } },
+  { "id": "large", "name": "Grande", "description": "Barra alta con iconos grandes, estilo dock.",
+    "mock": { "kind": "tbsize", "height": 64, "icon": 34 },
+    "apply": { "type": "windhawk", "mod": "taskbar-icon-size", "modName": "Taskbar height and icon size", "settings": { "TaskbarHeight": 64, "IconSize": 34, "TaskbarButtonWidth": 58 } } },
+  { "id": "xl", "name": "Muy grande", "description": "Iconos enormes, ideal para pantallas grandes o táctiles.",
+    "mock": { "kind": "tbsize", "height": 76, "icon": 42 },
+    "apply": { "type": "windhawk", "mod": "taskbar-icon-size", "modName": "Taskbar height and icon size", "settings": { "TaskbarHeight": 76, "IconSize": 42, "TaskbarButtonWidth": 70 } } }
+]

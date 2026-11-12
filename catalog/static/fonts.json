@@ -1,0 +1,340 @@
+[
+    {
+        "id":  "none",
+        "name":  "Sin cambios",
+        "description":  "No se instala ninguna fuente nueva.",
+        "apply":  {
+                      "type":  "font-none"
+                  }
+    },
+    {
+        "id":  "jetbrains-mono-nf",
+        "name":  "JetBrains Mono",
+        "description":  "Técnica y muy legible, con ligaduras. La favorita de muchos programadores. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#jetbrains-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "JetBrainsMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^JetBrainsMono\\.zip$",
+                      "filter":  "^JetBrainsMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/jetbrains-mono-nf.png"
+    },
+    {
+        "id":  "caskaydia-cove-nf",
+        "name":  "Cascadia Code (CaskaydiaCove)",
+        "description":  "La fuente de Windows Terminal, con iconos añadidos. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#cascadia-code",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "CaskaydiaCove Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^CascadiaCode\\.zip$",
+                      "filter":  "^CaskaydiaCoveNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/caskaydia-cove-nf.png"
+    },
+    {
+        "id":  "fira-code-nf",
+        "name":  "Fira Code",
+        "description":  "Redondeada y con ligaduras de programación (=\u003e se ve como una flecha). Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#fira-code",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "FiraCode Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^FiraCode\\.zip$",
+                      "filter":  "^FiraCodeNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/fira-code-nf.png"
+    },
+    {
+        "id":  "hack-nf",
+        "name":  "Hack",
+        "description":  "Clásica, compacta y sin adornos. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#hack",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "Hack Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^Hack\\.zip$",
+                      "filter":  "^HackNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/hack-nf.png"
+    },
+    {
+        "id":  "meslo-nf",
+        "name":  "Meslo LGS",
+        "description":  "La recomendada por Oh My Posh / Powerlevel10k. Muy equilibrada. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#meslo",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "MesloLGS Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^Meslo\\.zip$",
+                      "filter":  "^MesloLGSNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/meslo-nf.png"
+    },
+    {
+        "id":  "victor-mono-nf",
+        "name":  "Victor Mono",
+        "description":  "Estrecha, con cursivas manuscritas muy llamativas. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#victor-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "VictorMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^VictorMono\\.zip$",
+                      "filter":  "^VictorMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/victor-mono-nf.png"
+    },
+    {
+        "id":  "geist-mono-nf",
+        "name":  "Geist Mono",
+        "description":  "Moderna y geométrica (de Vercel). Limpia y elegante. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#geist-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "GeistMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^GeistMono\\.zip$",
+                      "filter":  "^GeistMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/geist-mono-nf.png"
+    },
+    {
+        "id":  "commit-mono-nf",
+        "name":  "Commit Mono",
+        "description":  "Neutra y suave, pensada para leer código sin cansarse. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#commit-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "CommitMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^CommitMono\\.zip$",
+                      "filter":  "^CommitMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/commit-mono-nf.png"
+    },
+    {
+        "id":  "0xproto-nf",
+        "name":  "0xProto",
+        "description":  "Muy diferenciada (0/O, 1/l), ideal para evitar confusiones. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#0xproto",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "0xProto Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^0xProto\\.zip$",
+                      "filter":  "^0xProtoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/0xproto-nf.png"
+    },
+    {
+        "id":  "martian-mono-nf",
+        "name":  "Martian Mono",
+        "description":  "Ancha y futurista, con aire de ciencia ficción. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#martian-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "MartianMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^MartianMono\\.zip$",
+                      "filter":  "^MartianMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/martian-mono-nf.png"
+    },
+    {
+        "id":  "mononoki-nf",
+        "name":  "Mononoki",
+        "description":  "Redondeada y amable, con personalidad. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#mononoki",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "Mononoki Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^Mononoki\\.zip$",
+                      "filter":  "^MononokiNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/mononoki-nf.png"
+    },
+    {
+        "id":  "ubuntu-mono-nf",
+        "name":  "Ubuntu Mono",
+        "description":  "La de Ubuntu: curvas suaves, algo estrecha. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#ubuntu-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "UbuntuMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^UbuntuMono\\.zip$",
+                      "filter":  "^UbuntuMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/ubuntu-mono-nf.png"
+    },
+    {
+        "id":  "source-code-pro-nf",
+        "name":  "Source Code Pro (SauceCodePro)",
+        "description":  "De Adobe: sobria, abierta y muy legible. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#source-code-pro",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "SauceCodePro Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^SourceCodePro\\.zip$",
+                      "filter":  "^SauceCodeProNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/source-code-pro-nf.png"
+    },
+    {
+        "id":  "ibm-plex-mono-nf",
+        "name":  "IBM Plex Mono (BlexMono)",
+        "description":  "Corporativa y elegante, con remates sutiles. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#ibm-plex-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "BlexMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^IBMPlexMono\\.zip$",
+                      "filter":  "^BlexMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/ibm-plex-mono-nf.png"
+    },
+    {
+        "id":  "space-mono-nf",
+        "name":  "Space Mono",
+        "description":  "Retro-futurista, geométrica y con mucho carácter. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#space-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "SpaceMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^SpaceMono\\.zip$",
+                      "filter":  "^SpaceMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/space-mono-nf.png"
+    },
+    {
+        "id":  "roboto-mono-nf",
+        "name":  "Roboto Mono",
+        "description":  "La de Android: limpia y neutra. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#roboto-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "RobotoMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^RobotoMono\\.zip$",
+                      "filter":  "^RobotoMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/roboto-mono-nf.png"
+    },
+    {
+        "id":  "inconsolata-nf",
+        "name":  "Inconsolata",
+        "description":  "Fina y compacta; cabe mucho texto en pantalla. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#inconsolata",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "Inconsolata Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^Inconsolata\\.zip$",
+                      "filter":  "^InconsolataNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/inconsolata-nf.png"
+    },
+    {
+        "id":  "comic-shanns-nf",
+        "name":  "Comic Shanns Mono",
+        "description":  "Desenfadada, inspirada en Comic Sans pero legible. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#comic-shanns",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "ComicShannsMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^ComicShannsMono\\.zip$",
+                      "filter":  "^ComicShannsMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/comic-shanns-nf.png"
+    },
+    {
+        "id":  "departure-mono-nf",
+        "name":  "Departure Mono",
+        "description":  "Pixelada, estilo terminal retro de 8 bits. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#departure-mono",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "DepartureMono Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^DepartureMono\\.zip$",
+                      "filter":  "^DepartureMonoNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/departure-mono-nf.png"
+    },
+    {
+        "id":  "3270-nf",
+        "name":  "IBM 3270",
+        "description":  "Imita las terminales verdes de los mainframes IBM. Muy retro. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#3270",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "3270 Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^3270\\.zip$",
+                      "filter":  "^3270NerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/3270-nf.png"
+    },
+    {
+        "id":  "agave-nf",
+        "name":  "Agave",
+        "description":  "Estrecha y desenfadada, con curvas suaves. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#agave",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "Agave Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^Agave\\.zip$",
+                      "filter":  "^AgaveNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/agave-nf.png"
+    },
+    {
+        "id":  "lilex-nf",
+        "name":  "Lilex",
+        "description":  "Moderna, con ligaduras y buena lectura en tamaños pequeños. Incluye iconos Nerd Font.",
+        "reference":  "https://www.programmingfonts.org/#lilex",
+        "apply":  {
+                      "type":  "font",
+                      "family":  "Lilex Nerd Font",
+                      "source":  "github",
+                      "repo":  "ryanoasis/nerd-fonts",
+                      "asset":  "^Lilex\\.zip$",
+                      "filter":  "^LilexNerdFont-.*\\.(ttf|otf)$"
+                  },
+        "preview":  "previews/fonts/lilex-nf.png"
+    }
+]

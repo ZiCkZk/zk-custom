@@ -1,0 +1,153 @@
+[
+    {
+        "id":  "none",
+        "name":  "Reloj de Windows",
+        "description":  "El reloj normal de la pantalla de bloqueo.",
+        "mock":  {
+                     "kind":  "lockclock",
+                     "style":  "none"
+                 },
+        "apply":  {
+                      "type":  "windhawk-remove",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler"
+                  }
+    },
+    {
+        "id":  "pixel",
+        "name":  "Píxel retro",
+        "description":  "Reloj de puntos tipo LED, como un despertador retro.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2FRetro%2520Pixel.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2FRetro%2520Pixel.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "pixel"
+                                   }
+                  }
+    },
+    {
+        "id":  "flip",
+        "name":  "Flip moderno",
+        "description":  "Reloj de tarjetas que giran, limpio y moderno.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fmodern%2520flip%2520clock.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fmodern%2520flip%2520clock.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "flip"
+                                   }
+                  }
+    },
+    {
+        "id":  "vintage",
+        "name":  "Flip clásico",
+        "description":  "Reloj de tarjetas al estilo de los 70.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fclassical%2520flip%2520clock.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fclassical%2520flip%2520clock.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "vintage"
+                                   }
+                  }
+    },
+    {
+        "id":  "verticalBahnschrift",
+        "name":  "Vertical píxel",
+        "description":  "Horas y minutos uno encima de otro, estilo Nothing OS.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fvertical%2520pixel.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fvertical%2520pixel.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "verticalBahnschrift"
+                                   }
+                  }
+    },
+    {
+        "id":  "verticalSegoe",
+        "name":  "Vertical moderno",
+        "description":  "Vertical con dos grosores de letra (Segoe UI).",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fvertical%2520modern.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fvertical%2520modern.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "verticalSegoe"
+                                   }
+                  }
+    },
+    {
+        "id":  "verticalImpact",
+        "name":  "Vertical póster",
+        "description":  "Vertical con letra gruesa tipo cartel.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fvertical%2520poster.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fvertical%2520poster.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "verticalImpact"
+                                   }
+                  }
+    },
+    {
+        "id":  "macos",
+        "name":  "Sonoma",
+        "description":  "Minimalista, como la pantalla de bloqueo de macOS.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fsonoma.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fsonoma.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "macos"
+                                   }
+                  }
+    },
+    {
+        "id":  "cyberpunk",
+        "name":  "Cyberpunk HUD",
+        "description":  "Panel de ciencia ficción con datos tipo terminal.",
+        "preview":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fcyberpunk%2520style.png\u0026w=480\u0026output=jpg\u0026q=82",
+        "previewLarge":  "https://wsrv.nl/?url=raw.githubusercontent.com%2Fali0zdas%2Fwindhawk-mod-lock-screen-clock-styler%2Fmain%2Fscreenshots%2Fcyberpunk%2520style.png\u0026w=1280\u0026output=jpg\u0026q=85",
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "cyberpunk"
+                                   }
+                  }
+    },
+    {
+        "id":  "aura",
+        "name":  "Aura flotante",
+        "description":  "Reloj minimalista que flota con un halo suave.",
+        "mock":  {
+                     "kind":  "lockclock",
+                     "style":  "aura"
+                 },
+        "apply":  {
+                      "type":  "windhawk",
+                      "mod":  "lock-screen-clock-styler",
+                      "modName":  "Lock Screen Clock Styler",
+                      "settings":  {
+                                       "clockStyle":  "aura"
+                                   }
+                  }
+    }
+]

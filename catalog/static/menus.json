@@ -1,0 +1,17 @@
+[
+  { "id": "none", "name": "Menús de Windows", "description": "Los menús del clic derecho como vienen de serie.", "mock": { "kind": "menu", "opacity": 1.0, "blur": false },
+    "apply": { "type": "windhawk-remove", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus" } },
+  { "id": "acrylic", "name": "Acrílico", "description": "Translúcidos con desenfoque y el tinte que elijas. El más equilibrado.", "mock": { "kind": "menu", "opacity": 0.65, "blur": true },
+    "previewLarge": "https://wsrv.nl/?url=raw.githubusercontent.com%2Falkali210%2Fmy-windhawk-mods%2Fmain%2Fexplorer-translucent-menus%2Fscreenshots%2F01-materials-light-dark.png&w=1280&output=jpg&q=85",
+    "apply": { "type": "windhawk", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus", "settings": { "backgroundEffect": "acrylic" } } },
+  { "id": "modern-acrylic", "name": "Acrílico moderno", "description": "Como el acrílico de Windows 11, más suave y luminoso.", "mock": { "kind": "menu", "opacity": 0.55, "blur": true },
+    "apply": { "type": "windhawk", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus", "settings": { "backgroundEffect": "modern-acrylic" } } },
+  { "id": "mica", "name": "Mica", "description": "Tinte sutil con el color del fondo de pantalla.", "mock": { "kind": "menu", "opacity": 0.82, "blur": true },
+    "apply": { "type": "windhawk", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus", "settings": { "backgroundEffect": "mica" } } },
+  { "id": "mica-alt", "name": "Mica Alt", "description": "Mica más oscura y con más color.", "mock": { "kind": "menu", "opacity": 0.75, "blur": true },
+    "apply": { "type": "windhawk", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus", "settings": { "backgroundEffect": "mica-alt" } } },
+  { "id": "transparent", "name": "Transparentes", "description": "Casi sin fondo: se ve lo de detrás nítido. Muy llamativo.", "mock": { "kind": "menu", "opacity": 0.3, "blur": false },
+    "apply": { "type": "windhawk", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus", "settings": { "backgroundEffect": "transparent" } } },
+  { "id": "solid", "name": "Sólidos con mi color", "description": "Fondo sólido con el color de tu paleta y esquinas redondeadas.", "mock": { "kind": "menu", "opacity": 1.0, "blur": false, "palette": true },
+    "apply": { "type": "windhawk", "mod": "explorer-translucent-menus", "modName": "Explorer Translucent Menus", "settings": { "backgroundEffect": "solid" } } }
+]

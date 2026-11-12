@@ -1,0 +1,16 @@
+[
+  { "id": "none", "name": "Desactivado", "description": "Tus colores no cambian con la hora.", "mock": { "kind": "daynight", "day": null, "night": null },
+    "apply": { "type": "daynight", "enabled": false } },
+  { "id": "tokyo", "name": "Latte de día · Tokyo Night de noche", "description": "Claro y cremoso por el día, azul tinta por la noche.", "mock": { "kind": "daynight", "day": "catppuccin-latte", "night": "tokyo-night" },
+    "apply": { "type": "daynight", "enabled": true, "day": "catppuccin-latte", "night": "tokyo-night" } },
+  { "id": "nord", "name": "Nieve de día · Nord de noche", "description": "Blanco nórdico de día y azules fríos de noche.", "mock": { "kind": "daynight", "day": "snow", "night": "nord" },
+    "apply": { "type": "daynight", "enabled": true, "day": "snow", "night": "nord" } },
+  { "id": "solarized", "name": "Solarized claro · oscuro", "description": "La pareja clásica de programadores.", "mock": { "kind": "daynight", "day": "solarized-light", "night": "solarized-dark" },
+    "apply": { "type": "daynight", "enabled": true, "day": "solarized-light", "night": "solarized-dark" } },
+  { "id": "rose", "name": "Rosé Pine Dawn · Rosé Pine", "description": "Papel cálido de día y ciruela de noche.", "mock": { "kind": "daynight", "day": "rose-pine-dawn", "night": "rose-pine" },
+    "apply": { "type": "daynight", "enabled": true, "day": "rose-pine-dawn", "night": "rose-pine" } },
+  { "id": "catppuccin", "name": "Catppuccin Latte · Mocha", "description": "Los dos sabores de Catppuccin.", "mock": { "kind": "daynight", "day": "catppuccin-latte", "night": "catppuccin-mocha" },
+    "apply": { "type": "daynight", "enabled": true, "day": "catppuccin-latte", "night": "catppuccin-mocha" } },
+  { "id": "mine", "name": "Mi paleta de noche · Nieve de día", "description": "De noche, la paleta que tengas elegida; de día, el modo claro Nieve.", "mock": { "kind": "daynight", "day": "snow", "night": "current" },
+    "apply": { "type": "daynight", "enabled": true, "day": "snow", "night": "current" } }
+]
