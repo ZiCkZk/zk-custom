@@ -1665,6 +1665,13 @@ $res = ($UiKeys.Values | ForEach-Object { "<SolidColorBrush x:Key=`"$_`" Color=`
 $XamlText = $XamlText.Replace('<Window.Resources>', "<Window.Resources>$res")
 [xml]$xaml = $XamlText
 $Window = [Windows.Markup.XamlReader]::Load((New-Object System.Xml.XmlNodeReader $xaml))
+# Icono propio en la ventana y en la barra de tareas (con su propio grupo, no el de PowerShell)
+$appIco = Join-Path $Root 'tools\launcher\zk-custom.ico'
+if (Test-Path $appIco) { try { $Window.Icon = [Windows.Media.Imaging.BitmapFrame]::Create((New-Object Uri $appIco)) } catch { } }
+try {
+    if (-not ('ZK.AppId' -as [type])) { Add-Type -Namespace ZK -Name AppId -MemberDefinition '[DllImport("shell32.dll", CharSet = CharSet.Unicode)] public static extern int SetCurrentProcessExplicitAppUserModelID(string id);' }
+    [void][ZK.AppId]::SetCurrentProcessExplicitAppUserModelID('ZiCk.ZK-Custom')
+} catch { }
 
 function Get-WindowsPalette {
     # Colores de Windows: acento del sistema y modo claro/oscuro

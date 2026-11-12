@@ -10,22 +10,10 @@ $here = $PSScriptRoot
 $root = Resolve-Path (Join-Path $here '..\..')
 $ico = Join-Path $here 'zk-custom.ico'
 
+. (Join-Path $here 'IconArt.ps1')
 function New-IconPng([int]$size) {
-    # Cuadrado redondeado con degradado azul-lavanda y las letras ZK
-    $dv = New-Object Windows.Media.DrawingVisual; $dc = $dv.RenderOpen()
-    $c1 = [Windows.Media.ColorConverter]::ConvertFromString('#7AA2F7'); $c2 = [Windows.Media.ColorConverter]::ConvertFromString('#BB9AF7')
-    $bg = New-Object Windows.Media.LinearGradientBrush $c1, $c2, 45.0
-    $r = $size * 0.22
-    $dc.DrawRoundedRectangle($bg, $null, (New-Object Windows.Rect 0, 0, $size, $size), $r, $r)
-    $inner = New-Object Windows.Media.SolidColorBrush ([Windows.Media.ColorConverter]::ConvertFromString('#1A1B26'))
-    $m = $size * 0.08
-    $dc.DrawRoundedRectangle($inner, $null, (New-Object Windows.Rect $m, $m, ($size - 2 * $m), ($size - 2 * $m)), $r * 0.75, $r * 0.75)
-    $tf = New-Object Windows.Media.Typeface (New-Object Windows.Media.FontFamily 'Segoe UI'), 'Normal', 'Bold', 'Normal'
-    $ft = New-Object Windows.Media.FormattedText ('ZK', [Globalization.CultureInfo]::InvariantCulture, 'LeftToRight', $tf, ($size * 0.42), $bg, 1.0)
-    $dc.DrawText($ft, (New-Object Windows.Point (($size - $ft.Width) / 2), (($size - $ft.Height) / 2)))
-    $dc.Close()
-    $rtb = New-Object Windows.Media.Imaging.RenderTargetBitmap $size, $size, 96, 96, ([Windows.Media.PixelFormats]::Pbgra32)
-    $rtb.Render($dv)
+    # Fusion: marco naranja + ZK + trazo de pincel con los colores de la paleta (ver IconArt.ps1)
+    $rtb = New-ZKIconBitmap $size
     if ($size -ge 256) {
         $enc = New-Object Windows.Media.Imaging.PngBitmapEncoder; $enc.Frames.Add([Windows.Media.Imaging.BitmapFrame]::Create($rtb))
         $ms = New-Object IO.MemoryStream; $enc.Save($ms); return , $ms.ToArray()
