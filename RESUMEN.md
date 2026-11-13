@@ -131,7 +131,7 @@ Personalizacion/
 │  ├─ Switch-DayNight.ps1   Tarea programada de día y noche
 │  └─ launcher/             Código del .exe, icono (IconArt.ps1) y Build-Launcher.ps1
 ├─ docs/DECISIONES.md       Decisiones de diseño y por qué
-├─ profiles/                Perfiles guardados
+├─ profiles/                Perfiles guardados (se crea al guardar el primero)
 ├─ assets/                  Tus fondos y orbs (los personales no se suben)
 ├─ cache/                   Descargas y miniaturas (no se sube)
 └─ backups/                 Copias de cada aplicación (no se sube)
